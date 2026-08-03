@@ -38,7 +38,7 @@ class HybridRecommender:
         # Entrenar modelo SVD
         self.model_svd.fit(self.ratings_df)
         
-    def get_recommendations(self, user_id, usage_type, budget, maut_weights, top_k=10, is_cold_start=None):
+    def get_recommendations(self, user_id, usage_type, budget, maut_weights, top_k=10, is_cold_start=None, lifestyle_tags=None):
         """
         Genera recomendaciones híbridas personalizadas en base a 2 niveles.
         - user_id: ID del usuario (e.g. 'U001', o uno nuevo)
@@ -46,6 +46,7 @@ class HybridRecommender:
         - budget: Presupuesto máximo (float)
         - maut_weights: dict con pesos cualitativos de MAUT
         - is_cold_start: boolean (fuerza comportamiento de cold start). Si es None, se autodetecta según ratings.
+        - lifestyle_tags: lista opcional de etiquetas de estilo de vida ('ultra_portable', 'oled_screen', etc.)
         """
         if self.laptops_df is None or self.ratings_df is None:
             self.load_data_and_train()
@@ -53,7 +54,7 @@ class HybridRecommender:
         n_laptops = len(self.laptops_df)
         
         # 1. NIVEL 1: Filtrado en Cascada (M_rules)
-        m_rules = self.model_rules.get_binary_mask(self.laptops_df, usage_type, budget)
+        m_rules = self.model_rules.get_binary_mask(self.laptops_df, usage_type, budget, lifestyle_tags=lifestyle_tags)
         
         # 2. NIVEL 2: Calcular componentes individuales para todo el catálogo
         u_knowledge = self.model_maut.compute_utility(self.laptops_df, maut_weights)
@@ -85,10 +86,26 @@ class HybridRecommender:
             profile_name = "Usuario Frecuente (Colaborativo)"
             
         # 4. Cálculo del Score Híbrido Ensamblado
-        # Score_Híbrido = M_rules * (alpha * U_Knowledge + beta * r_SVD + gamma * S_content)
         final_scores = m_rules * (alpha * u_knowledge + beta * svd_scores + gamma * s_content)
         
-        # 5. Estructurar Resultados
+        # 5. Cálculo del Value Score (Relación Calidad / Precio)
+        p_min = self.laptops_df["price"].min()
+        p_max = self.laptops_df["price"].max()
+        p_norm = (self.laptops_df["price"] - p_min) / (p_max - p_min + 1e-6) + 0.1
+        val_scores = u_knowledge / p_norm
+        
+        val_tags = []
+        for idx, row in self.laptops_df.iterrows():
+            vs = val_scores[idx]
+            pr = row["price"]
+            if pr > 2200:
+                val_tags.append("Gama Premium")
+            elif vs > 1.2:
+                val_tags.append("Top Calidad/Precio")
+            else:
+                val_tags.append("Precio Justo")
+
+        # 6. Estructurar Resultados
         results = self.laptops_df.copy()
         results["m_rules"] = m_rules
         results["u_knowledge"] = u_knowledge
@@ -96,6 +113,8 @@ class HybridRecommender:
         results["svd_score_norm"] = svd_scores
         results["svd_rating_pred"] = [self.model_svd.predict(user_id, l_id) for l_id in results["id"]]
         results["hybrid_score"] = final_scores
+        results["value_score"] = val_scores
+        results["value_tag"] = val_tags
         
         # Filtrar laptops con score final > 0 (es decir, m_rules == 1)
         valid_results = results[results["hybrid_score"] > 0].copy()
@@ -103,8 +122,6 @@ class HybridRecommender:
         # Ordenar por puntaje final descendente
         valid_results = valid_results.sort_values(by="hybrid_score", ascending=False)
         
-        # Si no hay laptops válidas que cumplan con los filtros duros, retornamos una lista vacía
-        # o relajamos reglas. Aquí devolvemos el Top-K ordenado.
         top_recommendations = valid_results.head(top_k)
         
         # Metadatos del cálculo para retornar
@@ -120,7 +137,8 @@ class HybridRecommender:
             "total_items_catalog": n_laptops,
             "items_passed_rules": int(np.sum(m_rules)),
             "usage_type": usage_type,
-            "budget": budget
+            "budget": budget,
+            "lifestyle_tags": lifestyle_tags or []
         }
         
         return top_recommendations, meta

@@ -148,6 +148,29 @@ body {
     background: rgba(6, 182, 212, 0.05);
 }
 
+.stat-badge.accent-currency {
+    border-color: rgba(245, 158, 11, 0.3);
+    background: rgba(245, 158, 11, 0.08);
+}
+
+.currency-select {
+    background: #18182a;
+    color: #f3f4f6;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    border-radius: var(--border-radius-sm);
+    padding: 2px 6px;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.currency-select option {
+    background: #18182a !important;
+    color: #f3f4f6 !important;
+}
+
 .stat-lbl {
     font-size: 0.65rem;
     color: var(--text-muted);
@@ -248,7 +271,7 @@ body {
 
 .custom-select-wrapper select {
     width: 100%;
-    background: rgba(255, 255, 255, 0.04);
+    background-color: #18182a;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 12px;
@@ -260,9 +283,23 @@ body {
     transition: var(--transition-smooth);
 }
 
+.custom-select-wrapper select option {
+    background-color: #18182a !important;
+    color: #f3f4f6 !important;
+    padding: 10px;
+    font-size: 0.85rem;
+}
+
+.custom-select-wrapper select option:hover,
+.custom-select-wrapper select option:focus,
+.custom-select-wrapper select option:checked {
+    background-color: #2b2b48 !important;
+    color: #ffffff !important;
+}
+
 .custom-select-wrapper select:focus {
     border-color: var(--color-primary);
-    background: rgba(99, 102, 241, 0.05);
+    background-color: #1c1c32;
 }
 
 .custom-select-wrapper::after {
@@ -832,7 +869,367 @@ input[type="range"]::-webkit-slider-thumb:hover {
     border-radius: var(--border-radius-sm);
 }
 
-/* Responsiveness */
+/* Tabs Header Container */
+.tabs-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 10px 18px;
+    border-radius: var(--border-radius-md);
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-primary);
+}
+
+/* Lifestyle Tags Checkboxes */
+.lifestyle-tags-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tag-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: var(--border-radius-md);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.tag-checkbox:hover {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: var(--border-focus);
+    color: var(--text-primary);
+}
+
+.tag-checkbox input[type="checkbox"] {
+    accent-color: var(--color-primary);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* Value Badges & Store Tags on Cards */
+.value-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    margin-top: 4px;
+}
+
+.badge-top-value {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-fair-price {
+    background: rgba(6, 182, 212, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.badge-premium {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.btn-trend-modal {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: #34d399;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition-smooth);
+}
+
+.btn-trend-modal:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.5);
+    transform: translateY(-1px);
+}
+
+.card-store-bar {
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px;
+    margin-top: auto;
+    border-bottom-left-radius: var(--border-radius-md);
+    border-bottom-right-radius: var(--border-radius-md);
+}
+
+.store-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.buy-link-amazon {
+    background: #ff9900;
+    color: #111 !important;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: var(--transition-smooth);
+}
+
+.buy-link-amazon:hover {
+    background: #ffac33;
+    transform: translateY(-1px);
+}
+
+.buy-link-store {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary) !important;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: var(--transition-smooth);
+}
+
+.buy-link-store:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.store-name {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.buy-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.buy-link:hover {
+    text-decoration: underline;
+}
+
+.card-compare-check {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    background: rgba(15, 15, 25, 0.7);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+}
+
+/* Floating Compare Bar */
+.compare-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 35, 0.92);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
+    padding: 12px 24px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 1000;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translate(-50%, 40px); opacity: 0; }
+    to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.compare-bar-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.compare-bar-info i {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.compare-bar-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-sm-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    cursor: pointer;
+}
+
+.btn-primary-sm {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border: none;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Modal 1vs1 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 5, 12, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-card {
+    width: 100%;
+    max-width: 960px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #121222;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 28px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-title i {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: white;
+}
+
+.compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.compare-laptop-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+}
+
+.compare-winner {
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    background: rgba(16, 185, 129, 0.03) !important;
+}
+
+.compare-verdict-box {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px dashed var(--color-primary);
+    border-radius: var(--border-radius-md);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.win-spec {
+    color: #34d399;
+    font-weight: 700;
+}
+
+/* Responsiveness & Print */
 @media (max-width: 1024px) {
     .app-main-layout {
         grid-template-columns: 1fr;
@@ -843,7 +1240,26 @@ input[type="range"]::-webkit-slider-thumb:hover {
         top: 0;
     }
     
-    .charts-row {
+    .charts-row, .compare-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    .controls-panel, .tabs-header-container, .compare-bar, .btn-primary, .btn-secondary {
+        display: none !important;
+    }
+    .app-main-layout {
+        grid-template-columns: 1fr !important;
+    }
+    .card-glass, .laptop-card {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
     }
 }

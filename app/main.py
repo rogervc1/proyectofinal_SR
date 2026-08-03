@@ -54,6 +54,7 @@ class RecommendRequest(BaseModel):
     budget: float
     maut_weights: MautWeights
     is_cold_start: Optional[bool] = None
+    lifestyle_tags: Optional[List[str]] = None
 
 @app.get("/api/laptops")
 def get_laptops():
@@ -68,7 +69,7 @@ def get_laptops():
 @app.get("/api/users")
 def get_users():
     """
-    Retorna una lista de IDs de usuarios históricos y su tipo de perfil.
+    Retorna una lista de IDs de usuarios históricos y su tipo de perfil con su descripción correspondiente.
     """
     if recommender.ratings_df is None:
         recommender.load_data_and_train()
@@ -83,19 +84,26 @@ def get_users():
         with open(profiles_path, "r") as f:
             profiles = json.load(f)
             
-    # Mapeo de nombres de perfiles
+    # Mapeo de nombres y descripciones de perfiles
     profile_mapping = {
         0: "Gamer / Power User",
         1: "Estudiante / Oficina",
         2: "Científico de Datos / IA"
     }
     
+    profile_descriptions = {
+        0: "Busca GPU dedicada de alto rendimiento, procesador multinúcleo y alto refresco de pantalla para gaming y renderizado 3D.",
+        1: "Busca portabilidad, peso liviano, buena autonomía de batería y precio accesible para estudios y productividad diaria.",
+        2: "Requiere GPU NVIDIA con soporte CUDA, VRAM >= 6GB y RAM >= 16GB para entrenamiento de modelos y ciencia de datos."
+    }
+    
     users_info = []
     for u in unique_users:
         p_id = profiles.get(u, 1)
         users_info.append({
-            "user_id": int(u),
-            "profile_name": profile_mapping.get(p_id, "Estudiante / Oficina")
+            "user_id": str(u),
+            "profile_name": profile_mapping.get(p_id, "Estudiante / Oficina"),
+            "profile_description": profile_descriptions.get(p_id, "Perfil de uso estándar")
         })
         
     return users_info
@@ -119,11 +127,12 @@ def get_recommendations(req: RecommendRequest):
             budget=req.budget,
             maut_weights=weights_dict,
             top_k=9,  # Grid de 3x3 en el frontend
-            is_cold_start=req.is_cold_start
+            is_cold_start=req.is_cold_start,
+            lifestyle_tags=req.lifestyle_tags
         )
         
-        # Formatear el DataFrame a lista de diccionarios JSON
-        recs_list = top_recs.to_dict(orient="records")
+        # Formatear el DataFrame a lista de diccionarios JSON asegurando no valores nulos
+        recs_list = top_recs.fillna("").to_dict(orient="records")
         
         return {
             "meta": meta,

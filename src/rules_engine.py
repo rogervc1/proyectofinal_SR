@@ -26,7 +26,7 @@ class LogicInferenceModel:
                 return default_rules
         return default_rules
 
-    def get_binary_mask(self, laptops_df, usage_type, budget):
+    def get_binary_mask(self, laptops_df, usage_type, budget, lifestyle_tags=None):
         """
         Calcula la máscara binaria M_rules(i) para cada laptop.
         Retorna una serie de Pandas o array de NumPy con valores 1 o 0.
@@ -60,6 +60,17 @@ class LogicInferenceModel:
                 
             # Soporte CUDA requerido (GPU Nvidia)
             if rule.get("cuda_required", False):
+                mask = mask & (laptops_df["cuda_support"] == True).astype(int)
+                
+        # 3. Filtros secundarios por etiquetas de estilo de vida
+        if lifestyle_tags:
+            if "ultra_portable" in lifestyle_tags:
+                mask = mask & (laptops_df["weight"] <= 1.5).astype(int)
+            if "oled_screen" in lifestyle_tags:
+                mask = mask & (laptops_df["screen_quality_score"] >= 0.8).astype(int)
+            if "high_ram" in lifestyle_tags:
+                mask = mask & (laptops_df["ram"] >= 16).astype(int)
+            if "nvidia_gpu" in lifestyle_tags:
                 mask = mask & (laptops_df["cuda_support"] == True).astype(int)
                 
         return mask

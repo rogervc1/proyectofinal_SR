@@ -86,6 +86,43 @@ def generate_datasets(dest_dir="data"):
             is_dedicated = t["vram"] > 0
             is_cuda = "NVIDIA" in t["gpu"]
             
+            stores = ["Amazon.com", "Falabella", "PC Componentes", "MercadoLibre"]
+            selected_store = np.random.choice(stores, p=[0.5, 0.2, 0.15, 0.15]) # Mayoría Amazon
+            
+            clean_query = f"{t['brand']}+{t['model'].replace(' ', '+')}+{ram}GB"
+            amazon_url = f"https://www.amazon.com/s?k={clean_query}"
+            
+            if selected_store == "Amazon.com":
+                buy_url = amazon_url
+            elif selected_store == "Falabella":
+                buy_url = f"https://www.falabella.com.pe/falabella-pe/search?Ntt=laptop+{clean_query}"
+            elif selected_store == "PC Componentes":
+                buy_url = f"https://www.pccomponentes.com/buscar/?query=laptop+{clean_query}"
+            else:
+                buy_url = f"https://listado.mercadolibre.com.pe/laptop-{clean_query}"
+
+            hist_low = int(round(price * np.random.uniform(0.84, 0.92)))
+            hist_high = int(round(price * np.random.uniform(1.08, 1.18)))
+            hist_avg = int(round((price * 2 + hist_low + hist_high) / 4))
+            
+            diff_from_avg = round(((price - hist_avg) / hist_avg) * 100)
+            
+            if price <= hist_low * 1.03:
+                trend_tag = f"¡Mínimo Histórico! (${hist_low} USD)"
+            elif diff_from_avg < 0:
+                trend_tag = f"{abs(diff_from_avg)}% por debajo del promedio (${hist_avg} USD)"
+            else:
+                trend_tag = f"Precio regular (Prom: ${hist_avg} USD)"
+
+            # Serie temporal de 6 meses (Marzo a Agosto)
+            p_m1 = int(round(hist_high))
+            p_m2 = int(round(hist_high * np.random.uniform(0.95, 0.99)))
+            p_m3 = int(round(hist_avg * np.random.uniform(1.01, 1.05)))
+            p_m4 = int(round(hist_avg))
+            p_m5 = int(round(hist_low * np.random.uniform(1.02, 1.06)))
+            p_m6 = int(round(price))
+            price_history_json = json.dumps([p_m1, p_m2, p_m3, p_m4, p_m5, p_m6])
+
             laptops.append({
                 "id": id_counter,
                 "brand": t["brand"],
@@ -103,6 +140,14 @@ def generate_datasets(dest_dir="data"):
                 "screen_resolution": res,
                 "screen_quality_score": screen_qual,
                 "rating_avg": rating_avg,
+                "best_store": selected_store,
+                "historical_low": hist_low,
+                "historical_high": hist_high,
+                "historical_avg": hist_avg,
+                "price_trend_tag": trend_tag,
+                "price_history_json": price_history_json,
+                "buy_url": buy_url,
+                "amazon_url": amazon_url,
                 "description": f"Laptop {t['brand']} diseñada para uso tipo {t['type']} con procesador {t['cpu']}, {ram}GB de memoria RAM y pantalla de {t['screen_size']} pulgadas."
             })
             id_counter += 1

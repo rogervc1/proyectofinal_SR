@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for interactive price trend charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,6 +29,14 @@
                 </div>
             </div>
             <div class="system-stats">
+                <div class="stat-badge accent-currency">
+                    <span class="stat-lbl"><i class="fa-solid fa-coins"></i> Moneda</span>
+                    <select id="currency-selector" class="currency-select">
+                        <option value="USD" selected>USD ($) Dólares</option>
+                        <option value="PEN">PEN (S/) Soles</option>
+                        <option value="EUR">EUR (€) Euros</option>
+                    </select>
+                </div>
                 <div class="stat-badge">
                     <span class="stat-lbl">Catálogo</span>
                     <span class="stat-val" id="stat-laptops">150 Laptops</span>
@@ -56,7 +66,7 @@
                     <label for="user-selector">Perfil de Usuario</label>
                     <div class="custom-select-wrapper">
                         <select id="user-selector">
-                            <option value="NEW_USER" selected>👤 Usuario Nuevo (Cold Start)</option>
+                            <option value="NEW_USER" selected>Usuario Nuevo (Cold Start)</option>
                             <!-- Se poblará con JS -->
                         </select>
                     </div>
@@ -69,10 +79,10 @@
                     <label for="usage-selector">Caso de Uso Técnico</label>
                     <div class="custom-select-wrapper">
                         <select id="usage-selector">
-                            <option value="Uso de Oficina / Estudiante">🎒 Oficina / Estudiante (Uso Diario)</option>
-                            <option value="Desarrollo de Software">💻 Desarrollo de Software</option>
-                            <option value="Arquitectura / Render 3D">📐 Arquitectura / Render 3D</option>
-                            <option value="Deep Learning">🤖 Inteligencia Artificial / Deep Learning</option>
+                            <option value="Uso de Oficina / Estudiante">Oficina / Estudiante (Uso Diario)</option>
+                            <option value="Desarrollo de Software">Desarrollo de Software</option>
+                            <option value="Arquitectura / Render 3D">Arquitectura / Render 3D</option>
+                            <option value="Deep Learning">Inteligencia Artificial / Deep Learning</option>
                         </select>
                     </div>
                 </div>
@@ -87,6 +97,31 @@
                         <span>400</span>
                         <span>3600+</span>
                     </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="panel-section-subtitle">
+                    <i class="fa-solid fa-filter"></i>
+                    <h3>Filtros de Estilo de Vida</h3>
+                </div>
+                <div class="lifestyle-tags-container">
+                    <label class="tag-checkbox">
+                        <input type="checkbox" value="ultra_portable" class="tag-input">
+                        <span><i class="fa-solid fa-feather-pointed"></i> Ultra Portátil (≤1.5kg)</span>
+                    </label>
+                    <label class="tag-checkbox">
+                        <input type="checkbox" value="oled_screen" class="tag-input">
+                        <span><i class="fa-solid fa-display"></i> Pantalla OLED / 3K+</span>
+                    </label>
+                    <label class="tag-checkbox">
+                        <input type="checkbox" value="high_ram" class="tag-input">
+                        <span><i class="fa-solid fa-memory"></i> RAM Elevada (≥16GB)</span>
+                    </label>
+                    <label class="tag-checkbox">
+                        <input type="checkbox" value="nvidia_gpu" class="tag-input">
+                        <span><i class="fa-solid fa-microchip"></i> GPU NVIDIA CUDA</span>
+                    </label>
                 </div>
 
                 <div class="divider"></div>
@@ -138,15 +173,20 @@
             <!-- RIGHT PANEL: CONTENT & RESULTS -->
             <section class="results-panel">
                 <!-- TABS HEADER -->
-                <div class="tabs-header">
-                    <button class="tab-btn active" data-tab="tab-recs">
-                        <i class="fa-solid fa-list-check"></i> Recomendaciones Top-K
-                    </button>
-                    <button class="tab-btn" data-tab="tab-catalog">
-                        <i class="fa-solid fa-database"></i> Catálogo Completo
-                    </button>
-                    <button class="tab-btn" data-tab="tab-metrics">
-                        <i class="fa-solid fa-chart-line"></i> Evaluación Científica
+                <div class="tabs-header-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="tab-recs">
+                            <i class="fa-solid fa-list-check"></i> Recomendaciones Top-K
+                        </button>
+                        <button class="tab-btn" data-tab="tab-catalog">
+                            <i class="fa-solid fa-database"></i> Catálogo Completo
+                        </button>
+                        <button class="tab-btn" data-tab="tab-metrics">
+                            <i class="fa-solid fa-chart-line"></i> Evaluación Científica
+                        </button>
+                    </div>
+                    <button class="btn-secondary" id="btn-export-pdf">
+                        <i class="fa-solid fa-file-pdf"></i> Exportar Reporte
                     </button>
                 </div>
 
@@ -261,6 +301,57 @@
 
             </section>
         </main>
+    </div>
+
+    <!-- FLOATING COMPARE BAR -->
+    <div class="compare-bar" id="compare-bar" style="display: none;">
+        <div class="compare-bar-info">
+            <i class="fa-solid fa-code-compare"></i>
+            <span>Seleccionadas para comparar: <strong id="compare-count">0</strong> / 2</span>
+        </div>
+        <div class="compare-bar-actions">
+            <button class="btn-sm-outline" id="btn-clear-compare">Limpiar</button>
+            <button class="btn-primary-sm" id="btn-open-compare">Ver Comparativa 1vs1</button>
+        </div>
+    </div>
+
+    <!-- COMPARISON MODAL 1VS1 -->
+    <div class="modal-overlay" id="compare-modal" style="display: none;">
+        <div class="modal-card card-glass">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                    <h2>Comparativa Cara a Cara (Head-to-Head 1vs1)</h2>
+                </div>
+                <button class="modal-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body" id="modal-compare-body">
+                <!-- Se poblará dinámicamente con JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICE TREND CHART MODAL -->
+    <div class="modal-overlay" id="price-modal" style="display: none;">
+        <div class="modal-card card-glass" style="max-width: 750px;">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-chart-line font-green"></i>
+                    <h2 id="price-modal-title">Histórico de Precios (6 Meses)</h2>
+                </div>
+                <button class="modal-close" id="btn-close-price-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="price-chart-metrics" id="price-modal-metrics">
+                    <!-- Se poblará con JS -->
+                </div>
+                <div class="price-chart-wrapper" style="position: relative; height: 320px; width: 100%; margin-top: 15px;">
+                    <canvas id="priceTrendCanvas"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- SCRIPT -->
