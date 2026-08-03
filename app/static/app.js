@@ -142,12 +142,16 @@ async function fetchUsersList() {
         if (!response.ok) throw new Error("Error fetching users list");
         usersList = await response.json();
         
-        // Populate select
+        // Populate select (solo 1 usuario representativo por perfil)
+        let seenProfiles = new Set();
         usersList.forEach(u => {
-            const opt = document.createElement("option");
-            opt.value = u.user_id;
-            opt.textContent = `${u.user_id} (${u.profile_name})`;
-            userSelector.appendChild(opt);
+            if (!seenProfiles.has(u.profile_name)) {
+                seenProfiles.add(u.profile_name);
+                const opt = document.createElement("option");
+                opt.value = u.user_id;
+                opt.textContent = `Perfil: ${u.profile_name} (Historial SVD)`;
+                userSelector.appendChild(opt);
+            }
         });
     } catch (error) {
         console.error(error);
