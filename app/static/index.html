@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Hybrid Recommender - Dashboard Científico</title>
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg-decor decor-1"></div>
+    <div class="glass-bg-decor decor-2"></div>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="logo-container">
+                <i class="fa-solid fa-laptop-code logo-icon"></i>
+                <div class="logo-text">
+                    <h1>LaptopRec <span>Híbrido</span></h1>
+                    <p>Ensamble en Cascada y Ponderación Dinámica</p>
+                </div>
+            </div>
+            <div class="system-stats">
+                <div class="stat-badge">
+                    <span class="stat-lbl">Catálogo</span>
+                    <span class="stat-val" id="stat-laptops">150 Laptops</span>
+                </div>
+                <div class="stat-badge">
+                    <span class="stat-lbl">Calificaciones</span>
+                    <span class="stat-val" id="stat-ratings">1,997 Ratings</span>
+                </div>
+                <div class="stat-badge accent">
+                    <span class="stat-lbl">Nivel de Hibridación</span>
+                    <span class="stat-val">2 Niveles</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <main class="app-main-layout">
+            
+            <!-- LEFT PANEL: CONTROLS & INPUTS -->
+            <section class="controls-panel card-glass">
+                <div class="panel-section-title">
+                    <i class="fa-solid fa-sliders"></i>
+                    <h2>Preferencias del Usuario</h2>
+                </div>
+
+                <div class="control-group">
+                    <label for="user-selector">Perfil de Usuario</label>
+                    <div class="custom-select-wrapper">
+                        <select id="user-selector">
+                            <option value="NEW_USER" selected>👤 Usuario Nuevo (Cold Start)</option>
+                            <!-- Se poblará con JS -->
+                        </select>
+                    </div>
+                    <small class="helper-text" id="user-profile-desc">
+                        El sistema aplicará pesos óptimos para resolver el problema de Cold Start.
+                    </small>
+                </div>
+
+                <div class="control-group">
+                    <label for="usage-selector">Caso de Uso Técnico</label>
+                    <div class="custom-select-wrapper">
+                        <select id="usage-selector">
+                            <option value="Uso de Oficina / Estudiante">🎒 Oficina / Estudiante (Uso Diario)</option>
+                            <option value="Desarrollo de Software">💻 Desarrollo de Software</option>
+                            <option value="Arquitectura / Render 3D">📐 Arquitectura / Render 3D</option>
+                            <option value="Deep Learning">🤖 Inteligencia Artificial / Deep Learning</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="label-with-val">
+                        <label for="budget-input">Presupuesto Máximo (USD)</label>
+                        <span class="val-display" id="budget-display">1500 USD</span>
+                    </div>
+                    <input type="range" id="budget-input" min="400" max="3600" step="50" value="1500">
+                    <div class="range-endpoints">
+                        <span>400</span>
+                        <span>3600+</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="panel-section-subtitle">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h3>Ponderación de Utilidad (MAUT)</h3>
+                </div>
+                <p class="section-desc-small">Define la importancia cualitativa de cada dimensión. La suma se normalizará a 1.0.</p>
+
+                <!-- MAUT Sliders -->
+                <div class="slider-val-group">
+                    <div class="label-with-val">
+                        <span class="maut-label"><i class="fa-solid fa-tag"></i> Precio bajo</span>
+                        <span class="val-display maut-val" id="w-price-display">25%</span>
+                    </div>
+                    <input type="range" class="maut-slider" id="w-price" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-val-group">
+                    <div class="label-with-val">
+                        <span class="maut-label"><i class="fa-solid fa-microchip"></i> Rendimiento</span>
+                        <span class="val-display maut-val" id="w-perf-display">25%</span>
+                    </div>
+                    <input type="range" class="maut-slider" id="w-perf" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-val-group">
+                    <div class="label-with-val">
+                        <span class="maut-label"><i class="fa-solid fa-feather-pointed"></i> Portabilidad</span>
+                        <span class="val-display maut-val" id="w-portability-display">25%</span>
+                    </div>
+                    <input type="range" class="maut-slider" id="w-portability" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-val-group">
+                    <div class="label-with-val">
+                        <span class="maut-label"><i class="fa-solid fa-circle-half-stroke"></i> Pantalla</span>
+                        <span class="val-display maut-val" id="w-screen-display">25%</span>
+                    </div>
+                    <input type="range" class="maut-slider" id="w-screen" min="0" max="100" value="25">
+                </div>
+
+                <button class="btn-primary" id="btn-calculate">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Calcular Recomendaciones
+                </button>
+            </section>
+
+            <!-- RIGHT PANEL: CONTENT & RESULTS -->
+            <section class="results-panel">
+                <!-- TABS HEADER -->
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="tab-recs">
+                        <i class="fa-solid fa-list-check"></i> Recomendaciones Top-K
+                    </button>
+                    <button class="tab-btn" data-tab="tab-catalog">
+                        <i class="fa-solid fa-database"></i> Catálogo Completo
+                    </button>
+                    <button class="tab-btn" data-tab="tab-metrics">
+                        <i class="fa-solid fa-chart-line"></i> Evaluación Científica
+                    </button>
+                </div>
+
+                <!-- TAB CONTENT: RECOMMENDATIONS -->
+                <div class="tab-content active" id="tab-recs">
+                    <div class="meta-info-bar card-glass" id="meta-info-bar" style="display: none;">
+                        <div class="meta-item">
+                            <span class="meta-lbl">Ajuste de Pesos:</span>
+                            <span class="meta-val highlight" id="meta-profile-type">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-lbl">Ponderación Híbrida:</span>
+                            <span class="meta-val" id="meta-ensemble-weights">α=0.0 | β=0.0 | γ=0.0</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-lbl">Pasaron Filtro:</span>
+                            <span class="meta-val font-green" id="meta-passed-items">0 / 150</span>
+                        </div>
+                    </div>
+
+                    <div class="results-grid" id="recommendations-container">
+                        <!-- Las tarjetas se poblarán dinámicamente -->
+                        <div class="empty-state">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>Modifica las preferencias en el panel lateral y haz clic en <strong>Calcular Recomendaciones</strong> para ver los resultados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT: CATALOG -->
+                <div class="tab-content" id="tab-catalog">
+                    <div class="table-container card-glass">
+                        <div class="table-actions">
+                            <h3>Catálogo de Equipos (<span id="catalog-count">0</span>)</h3>
+                            <div class="search-wrapper">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="catalog-search" placeholder="Buscar por marca o CPU...">
+                            </div>
+                        </div>
+                        <div class="table-scroll">
+                            <table class="catalog-table" id="catalog-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Laptop</th>
+                                        <th>Precio</th>
+                                        <th>CPU Cores</th>
+                                        <th>RAM</th>
+                                        <th>GPU / VRAM</th>
+                                        <th>CUDA</th>
+                                        <th>Peso</th>
+                                        <th>Pantalla</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Poblado dinámicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT: METRICS -->
+                <div class="tab-content" id="tab-metrics">
+                    <div class="metrics-grid">
+                        <div class="metric-card card-glass">
+                            <div class="metric-header">
+                                <i class="fa-solid fa-bullseye m-icon"></i>
+                                <h4>RMSE de SVD</h4>
+                            </div>
+                            <div class="metric-value font-blue" id="metric-rmse"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                            <p class="metric-desc">Error Cuadrático Medio en la predicción del rating colaborativo (Split 80/20).</p>
+                        </div>
+
+                        <div class="metric-card card-glass">
+                            <div class="metric-header">
+                                <i class="fa-solid fa-shield-halved m-icon"></i>
+                                <h4>Constraint Satisfaction Rate (CSR)</h4>
+                            </div>
+                            <div class="metric-value font-green" id="metric-csr"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                            <p class="metric-desc">Porcentaje de recomendaciones del Top-10 que cumplen al 100% las restricciones duras.</p>
+                        </div>
+
+                        <div class="metric-card card-glass">
+                            <div class="metric-header">
+                                <i class="fa-solid fa-chart-pie m-icon"></i>
+                                <h4>Precision@10 (Histórica)</h4>
+                            </div>
+                            <div class="metric-value font-purple" id="metric-precision"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                            <p class="metric-desc">Precisión de las recomendaciones frente a valoraciones del test set.</p>
+                        </div>
+                    </div>
+
+                    <div class="charts-row">
+                        <div class="chart-container card-glass">
+                            <h4>CSR Comparativo (Sistema Híbrido vs Baselines)</h4>
+                            <p class="chart-desc">Demuestra el impacto del nivel 1 (Filtro en Cascada) frente a SVD y Content-Based puros.</p>
+                            <div class="chart-img-wrapper">
+                                <img src="/plots/evaluation_csr.png?v=2" alt="Constraint Satisfaction Rate Comparativo" class="eval-chart-img" onerror="this.src='https://placehold.co/600x400/181824/ffffff?text=Cargando+M%C3%A9tricas...'">
+                            </div>
+                        </div>
+
+                        <div class="chart-container card-glass">
+                            <h4>Precisión y Recall Comparativo (Top-10)</h4>
+                            <p class="chart-desc">Evaluación del ranking híbrido comparado con el baseline tradicional de factorización SVD.</p>
+                            <div class="chart-img-wrapper">
+                                <img src="/plots/evaluation_precision_recall.png?v=2" alt="Precision y Recall Comparativo" class="eval-chart-img" onerror="this.src='https://placehold.co/600x400/181824/ffffff?text=Cargando+M%C3%A9tricas...'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>

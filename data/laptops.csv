@@ -1,0 +1,1274 @@
+id,brand,model,category,price,cpu,cpu_cores,ram,gpu,gpu_vram,dedicated_gpu,cuda_support,weight,screen_size,screen_resolution,screen_quality_score
+1,Apple,Apple Ultrabook,Ultrabook,859.98,Intel Core i5 2.3GHz,4,8,Intel Iris Plus Graphics 640,0,False,False,1.37,13.3,2560x1600,0.8
+2,Apple,Apple Ultrabook,Ultrabook,577.05,Intel Core i5 1.8GHz,4,8,Intel HD Graphics 6000,0,False,False,1.34,13.3,1440x900,0.4
+3,HP,HP Notebook,Notebook,369.11,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.86,15.6,1920x1080,0.6
+4,Apple,Apple Ultrabook,Ultrabook,1628.86,Intel Core i7 2.7GHz,8,16,AMD Radeon Pro 455,4,True,False,1.83,15.4,2880x1800,0.8
+5,Apple,Apple Ultrabook,Ultrabook,1157.78,Intel Core i5 3.1GHz,4,8,Intel Iris Plus Graphics 650,0,False,False,1.37,13.3,2560x1600,0.8
+6,Acer,Acer Notebook,Notebook,256.77,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5,0,False,False,2.1,15.6,1366x768,0.4
+7,Apple,Apple Ultrabook,Ultrabook,1373.71,Intel Core i7 2.2GHz,8,16,Intel Iris Pro Graphics,0,False,False,2.04,15.4,2880x1800,0.8
+8,Apple,Apple Ultrabook,Ultrabook,743.8,Intel Core i5 1.8GHz,4,8,Intel HD Graphics 6000,0,False,False,1.34,13.3,1440x900,0.4
+9,Asus,Asus Ultrabook,Ultrabook,959.68,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce MX150,2,True,True,1.3,14.0,1920x1080,0.6
+10,Acer,Acer Ultrabook,Ultrabook,494.28,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+11,HP,HP Notebook,Notebook,252.86,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.86,15.6,1366x768,0.4
+12,HP,HP Notebook,Notebook,221.46,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1920x1080,0.6
+13,Apple,Apple Ultrabook,Ultrabook,1566.28,Intel Core i7 2.8GHz,8,16,AMD Radeon Pro 555,4,True,False,1.83,15.4,2880x1800,0.8
+14,Dell,Dell Notebook,Notebook,320.26,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+15,Apple,Apple Ultrabook,Ultrabook,810.37,Intel Core M m3 1.2GHz,2,8,Intel HD Graphics 615,0,False,False,0.92,12.0,2304x1440,0.4
+16,Apple,Apple Ultrabook,Ultrabook,974.8,Intel Core i5 2.3GHz,4,8,Intel Iris Plus Graphics 640,0,False,False,1.37,13.3,2560x1600,0.8
+17,Dell,Dell Notebook,Notebook,478.24,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+18,Apple,Apple Ultrabook,Ultrabook,1834.63,Intel Core i7 2.9GHz,8,16,AMD Radeon Pro 560,4,True,False,1.83,15.4,2880x1800,0.8
+19,Lenovo,Lenovo Notebook,Notebook,320.32,Intel Core i3 7100U 2.4GHz,2,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+20,Dell,Dell Ultrabook,Ultrabook,628.45,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.22,13.3,1920x1080,0.6
+21,Lenovo,Lenovo Gaming,Gaming,641.29,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+22,HP,HP Notebook,Notebook,165.62,AMD E-Series E2-9000e 1.5GHz,2,4,AMD Radeon R2,0,False,False,1.86,15.6,1366x768,0.4
+23,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,525.74,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.62,13.3,1920x1080,0.6
+24,HP,HP Ultrabook,Ultrabook,423.03,Intel Core i7 8550U 1.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.91,15.6,1920x1080,0.6
+25,Dell,Dell Notebook,Notebook,268.74,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.3,15.6,1366x768,0.4
+26,Apple,Apple Ultrabook,Ultrabook,705.48,Intel Core i5 1.6GHz,4,8,Intel HD Graphics 6000,0,False,False,1.35,13.3,1440x900,0.4
+27,Dell,Dell Notebook,Notebook,513.54,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+28,Dell,Dell Ultrabook,Ultrabook,833.22,Intel Core i7 8650U 1.9GHz,8,8,Intel UHD Graphics 620,0,False,False,1.88,15.6,1920x1080,0.6
+29,HP,HP Notebook,Notebook,575.17,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.5,17.3,1920x1080,0.6
+30,Chuwi,Chuwi Notebook,Notebook,157.27,Intel Atom x5-Z8300 1.44GHz,2,4,Intel HD Graphics,0,False,False,1.89,15.6,1920x1080,0.6
+31,Asus,Asus Notebook,Notebook,127.74,AMD E-Series E2-6110 1.5GHz,2,2,AMD Radeon R2,0,False,False,1.65,14.0,1366x768,0.4
+32,HP,HP Notebook,Notebook,281.81,AMD A6-Series 9220 2.5GHz,2,4,AMD Radeon 530,4,True,False,2.71,17.3,1920x1080,0.6
+33,Dell,Dell Ultrabook,Ultrabook,1199.76,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.2,13.3,3200x1800,0.4
+34,Apple,Apple Ultrabook,Ultrabook,640.64,Intel Core i5 1.6GHz,4,8,Intel HD Graphics 6000,0,False,False,1.35,13.3,1440x900,0.4
+35,Lenovo,Lenovo Notebook,Notebook,159.84,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.44,14.0,1366x768,0.4
+36,Acer,Acer Notebook,Notebook,235.59,Intel Core i3 7130U 2.7GHz,2,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1366x768,0.4
+37,Dell,Dell Notebook,Notebook,628.45,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+38,HP,HP Notebook,Notebook,313.7,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.86,15.6,1366x768,0.4
+39,HP,HP Notebook,Notebook,564.25,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 930MX ,4,True,True,2.1,15.6,1920x1080,0.6
+40,Asus,Asus Notebook,Notebook,249.71,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+41,Dell,Dell Gaming,Gaming,962.25,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.65,15.6,1920x1080,0.6
+42,Asus,Asus Notebook,Notebook,335.72,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.3,15.6,1366x768,0.4
+43,Acer,Acer Notebook,Notebook,437.79,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,2.2,15.6,1920x1080,0.6
+44,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,641.29,Intel Core i5 8250U 1.6GHz,4,12,Nvidia GeForce 150MX,4,True,True,2.77,17.3,1920x1080,0.6
+45,Apple,Apple Ultrabook,Ultrabook,910.9,Intel Core i5 2.0GHz,4,8,Intel Iris Graphics 540,0,False,False,1.37,13.3,2560x1600,0.8
+46,Asus,Asus Gaming,Gaming,833.86,AMD Ryzen 1700 3GHz,2,8,AMD Radeon RX 580,4,True,False,3.2,17.3,1920x1080,0.6
+47,Dell,Dell Notebook,Notebook,410.19,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon R5 M430,0,False,False,2.3,15.6,1920x1080,0.6
+48,Asus,Asus Notebook,Notebook,299.14,Intel Pentium Quad Core N4200 1.1GHz,2,4,Nvidia GeForce 920MX,4,True,True,2.8,17.3,1366x768,0.4
+49,Acer,Acer Notebook,Notebook,539.86,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce MX150,2,True,True,2.2,15.6,1920x1080,0.6
+50,HP,HP Notebook,Notebook,255.8,AMD A6-Series 9220 2.5GHz,2,4,AMD Radeon R4 Graphics,0,False,False,1.86,15.6,1920x1080,0.6
+51,HP,HP Notebook,Notebook,708.05,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+52,Acer,Acer Notebook,Notebook,246.5,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.4,15.6,1366x768,0.4
+53,Dell,Dell Notebook,Notebook,492.87,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 520,4,True,False,2.13,15.6,1920x1080,0.6
+54,HP,HP Notebook,Notebook,281.81,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.91,15.6,1920x1080,0.6
+55,Asus,Asus Notebook,Notebook,376.29,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.0,15.6,1366x768,0.4
+56,MSI,MSI Gaming,Gaming,1572.08,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.43,17.3,1920x1080,0.6
+57,Asus,Asus Notebook,Notebook,266.4,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.0,15.6,1920x1080,0.6
+58,Dell,Dell Notebook,Notebook,833.86,Intel Core i7 8550U 1.8GHz,8,16,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+59,Dell,Dell Ultrabook,Ultrabook,564.25,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+60,Lenovo,Lenovo Notebook,Notebook,384.51,Intel Core i3 7130U 2.7GHz,2,8,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+61,Asus,Asus Notebook,Notebook,604.05,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.4,14.0,1920x1080,0.6
+62,HP,HP Notebook,Notebook,442.93,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.86,15.6,1920x1080,0.6
+63,Asus,Asus Ultrabook,Ultrabook,1272.94,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,1.8,15.6,1920x1080,0.6
+64,HP,HP Notebook,Notebook,281.61,Intel Core i3 6006U 2GHz,2,4,AMD Radeon 520,4,True,False,1.86,15.6,1366x768,0.4
+65,HP,HP Notebook,Notebook,147.0,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.44,14.0,1366x768,0.4
+66,Lenovo,Lenovo Notebook,Notebook,352.42,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+67,Asus,Asus Gaming,Gaming,609.19,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1050 Ti,2,True,True,3.0,17.3,1920x1080,0.6
+68,Microsoft,Microsoft Ultrabook,Ultrabook,699.06,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.25,13.5,2256x1504,0.4
+69,Dell,Dell Ultrabook,Ultrabook,613.04,Intel Core i7 8550U 1.8GHz,8,64,AMD Radeon 530,4,True,False,1.4,13.3,1920x1080,0.6
+70,Dell,Dell Notebook,Notebook,558.48,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+71,MSI,MSI Gaming,Gaming,702.91,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.7,17.3,1920x1080,0.6
+72,Acer,Acer Notebook,Notebook,249.71,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,2.1,14.0,1366x768,0.4
+73,Asus,Asus Gaming,Gaming,609.19,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+74,Lenovo,Lenovo Notebook,Notebook,333.16,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.2,15.6,1920x1080,0.6
+75,Dell,Dell Notebook,Notebook,548.85,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.02,15.6,1920x1080,0.6
+76,Acer,Acer Notebook,Notebook,340.22,Intel Core i3 7130U 2.7GHz,2,4,Nvidia GeForce MX130,4,True,True,2.2,15.6,1920x1080,0.6
+77,HP,HP Notebook,Notebook,627.16,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.5,17.3,1920x1080,0.6
+78,Dell,Dell Ultrabook,Ultrabook,703.66,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.88,15.6,1920x1080,0.6
+79,Apple,Apple Ultrabook,Ultrabook,969.31,Intel Core i5 1.3GHz,4,8,Intel HD Graphics 615,0,False,False,0.92,12.0,2304x1440,0.4
+80,HP,HP Notebook,Notebook,552.06,Intel Core i5 8250U 1.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.63,14.0,1920x1080,0.6
+81,Lenovo,Lenovo Notebook,Notebook,256.13,AMD A6-Series 9220 2.5GHz,2,4,AMD R4 Graphics,4,True,False,2.2,15.6,1920x1080,0.6
+82,Acer,Acer Notebook,Notebook,253.56,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5,0,False,False,2.1,15.6,1366x768,0.4
+83,Dell,Dell Gaming,Gaming,865.96,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.65,15.6,1920x1080,0.6
+84,HP,HP Ultrabook,Ultrabook,448.71,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce GTX 940MX,4,True,True,1.83,15.6,1920x1080,0.6
+85,HP,HP Notebook,Notebook,384.51,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.96,15.6,1920x1080,0.6
+86,Asus,Asus Gaming,Gaming,930.15,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.2,15.6,1920x1080,0.6
+87,Dell,Dell Ultrabook,Ultrabook,1058.54,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.21,13.3,1920x1080,0.6
+88,Asus,Asus Gaming,Gaming,448.71,AMD FX 9830P 3GHz,2,8,AMD Radeon RX 560,4,True,False,2.45,15.6,1920x1080,0.6
+89,Acer,Acer Notebook,Notebook,442.29,Intel Core i7 8550U 1.8GHz,8,2,Nvidia GeForce MX150,2,True,True,2.2,15.6,1920x1080,0.6
+90,HP,HP Notebook,Notebook,768.39,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+91,Dell,Dell Gaming,Gaming,767.1,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1060,4,True,True,2.65,15.6,1920x1080,0.6
+92,Asus,Asus Ultrabook,Ultrabook,673.38,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.25,14.0,1920x1080,0.6
+93,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,543.71,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.5,13.3,1920x1080,0.6
+94,Dell,Dell Notebook,Notebook,385.09,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+95,Dell,Dell Notebook,Notebook,311.33,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+96,Asus,Asus Notebook,Notebook,370.39,Intel Core i3 7100U 2.4GHz,2,6,Nvidia GeForce 920M,4,True,True,2.0,15.6,1920x1080,0.6
+97,HP,HP Gaming,Gaming,801.77,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1050,2,True,True,2.62,15.6,1920x1080,0.6
+98,HP,HP Notebook,Notebook,461.55,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon 530,4,True,False,1.91,15.6,1920x1080,0.6
+99,HP,HP Notebook,Notebook,224.03,AMD E-Series E2-9000e 1.5GHz,2,4,AMD Radeon R2,0,False,False,2.1,15.6,1920x1080,0.6
+100,Dell,Dell Notebook,Notebook,415.33,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 520,4,True,False,2.2,15.6,1920x1080,0.6
+101,HP,HP Ultrabook,Ultrabook,718.32,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce MX150,2,True,True,1.38,13.3,1920x1080,0.6
+102,Microsoft,Microsoft Ultrabook,Ultrabook,860.18,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.25,13.5,2256x1504,0.4
+103,HP,HP Notebook,Notebook,423.03,Intel Core i5 7200U 2.5GHz,4,6,Nvidia GeForce 940MX,4,True,True,1.58,14.0,1920x1080,0.6
+104,Lenovo,Lenovo Notebook,Notebook,266.34,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.85,15.6,1920x1080,0.6
+105,Asus,Asus Ultrabook,Ultrabook,765.82,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,1.3,14.0,1920x1080,0.6
+106,MSI,MSI Gaming,Gaming,833.86,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.2,15.6,1920x1080,0.6
+107,Lenovo,Lenovo Notebook,Notebook,950.05,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.58,14.0,1920x1080,0.6
+108,Asus,Asus Ultrabook,Ultrabook,810.11,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce MX150,2,True,True,1.5,15.6,1920x1080,0.6
+109,Dell,Dell Ultrabook,Ultrabook,885.22,Intel Core i7 7560U 2.4GHz,8,8,Intel Iris Plus Graphics 640,0,False,False,1.23,13.3,3200x1800,0.4
+110,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,898.06,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+111,HP,HP Notebook,Notebook,463.47,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,1.63,14.0,1366x768,0.4
+112,Dell,Dell Ultrabook,Ultrabook,1045.7,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.21,13.3,1920x1080,0.6
+113,HP,HP Notebook,Notebook,695.85,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.63,14.0,1920x1080,0.6
+114,Dell,Dell Notebook,Notebook,725.59,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.16,15.6,1920x1080,0.6
+115,Asus,Asus Notebook,Notebook,362.05,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce 920MX,4,True,True,2.0,17.3,1920x1080,0.6
+116,Asus,Asus Notebook,Notebook,717.68,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 940MX,4,True,True,1.7,15.6,1920x1080,0.6
+117,Acer,Acer Notebook,Notebook,307.48,Intel Core i3 7100U 2.4GHz,2,6,Intel HD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+118,MSI,MSI Gaming,Gaming,1438.88,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,1.8,15.6,1920x1080,0.6
+119,Lenovo,Lenovo Notebook,Notebook,403.77,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+120,HP,HP Notebook,Notebook,815.89,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce 930MX ,4,True,True,2.5,17.3,1920x1080,0.6
+121,Acer,Acer Notebook,Notebook,289.51,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5,0,False,False,2.1,15.6,1366x768,0.4
+122,HP,HP Notebook,Notebook,521.25,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.63,14.0,1920x1080,0.6
+123,Asus,Asus Notebook,Notebook,178.45,AMD E-Series 6110 1.5GHz,2,4,AMD Radeon R2,0,False,False,1.65,14.0,1366x768,0.4
+124,Dell,Dell Notebook,Notebook,896.13,Intel Core i7 8550U 1.8GHz,8,16,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+125,HP,HP Notebook,Notebook,595.71,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,2.5,17.3,1920x1080,0.6
+126,Dell,Dell Notebook,Notebook,410.19,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M445,0,False,False,2.36,15.6,1366x768,0.4
+127,Dell,Dell Notebook,Notebook,288.23,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+128,Acer,Acer Ultrabook,Ultrabook,567.46,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+129,Acer,Acer Notebook,Notebook,367.18,Intel Core i3 7130U 2.7GHz,2,4,Nvidia GeForce MX130,4,True,True,7.2,15.6,1920x1080,0.6
+130,HP,HP Notebook,Notebook,383.87,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.05,15.6,1366x768,0.4
+131,HP,HP Notebook,Notebook,634.22,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.63,14.0,1920x1080,0.6
+132,Lenovo,Lenovo Notebook,Notebook,162.0,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.9,15.6,1366x768,0.4
+133,Asus,Asus Gaming,Gaming,602.13,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,3.0,17.3,1920x1080,0.6
+134,Lenovo,Lenovo Notebook,Notebook,320.32,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 920MX,4,True,True,2.2,15.6,1920x1080,0.6
+135,HP,HP Notebook,Notebook,448.71,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.32,13.3,1920x1080,0.6
+136,Acer,Acer Notebook,Notebook,420.46,Intel Core i3 7130U 2.7GHz,2,4,Nvidia GeForce MX130,4,True,True,3.0,17.3,1920x1080,0.6
+137,Lenovo,Lenovo Notebook,Notebook,716.4,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon RX 550,4,True,False,1.75,14.0,1920x1080,0.6
+138,Lenovo,Lenovo Gaming,Gaming,557.84,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050M,2,True,True,2.4,15.6,1920x1080,0.6
+139,Toshiba,Toshiba Notebook,Notebook,386.44,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+140,HP,HP Notebook,Notebook,236.87,AMD A6-Series 9220 2.5GHz,2,4,AMD Radeon R4 Graphics,0,False,False,1.86,15.6,1366x768,0.4
+141,Asus,Asus Ultrabook,Ultrabook,705.48,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.25,14.0,1920x1080,0.6
+142,HP,HP Ultrabook,Ultrabook,1292.84,Intel Core M 6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,0.97,12.5,3840x2160,1.0
+143,Asus,Asus Notebook,Notebook,220.82,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.0,15.6,1920x1080,0.6
+144,Acer,Acer Notebook,Notebook,286.94,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+145,Dell,Dell Gaming,Gaming,801.93,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.56,15.6,1920x1080,0.6
+146,Dell,Dell Gaming,Gaming,577.09,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.62,15.6,1920x1080,0.6
+147,Lenovo,Lenovo Notebook,Notebook,319.68,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.9,15.6,1366x768,0.4
+148,MSI,MSI Gaming,Gaming,1213.24,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.8,17.3,1920x1080,0.6
+149,HP,HP Ultrabook,Ultrabook,694.57,Intel Core i5 7500U 2.7GHz,4,4,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+150,HP,HP Notebook,Notebook,397.35,Intel Core i5 8250U 1.6GHz,4,6,AMD Radeon 520,4,True,False,1.91,15.6,1920x1080,0.6
+151,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,403.77,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.74,14.0,1920x1080,0.6
+152,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,844.13,Intel Core i5 8250U 1.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.1,13.3,1920x1080,0.6
+153,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,673.38,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.56,15.6,1920x1080,0.6
+154,Toshiba,Toshiba Notebook,Notebook,286.94,Intel Core i3 6006U 2.2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+155,Asus,Asus Notebook,Notebook,258.7,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5 M420,0,False,False,2.03,15.6,1366x768,0.4
+156,Acer,Acer Notebook,Notebook,516.75,Intel Core i5 8250U 1.6GHz,4,4,Nvidia GeForce MX150,2,True,True,3.0,17.3,1920x1080,0.6
+157,Dell,Dell Notebook,Notebook,467.32,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 520,4,True,False,2.13,15.6,1920x1080,0.6
+158,Lenovo,Lenovo Gaming,Gaming,692.64,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+159,Acer,Acer Notebook,Notebook,223.39,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.1,15.6,1366x768,0.4
+160,MSI,MSI Gaming,Gaming,1154.83,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.4,15.6,1920x1080,0.6
+161,Acer,Acer Notebook,Notebook,233.35,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.1,15.6,1366x768,0.4
+162,Dell,Dell Gaming,Gaming,680.76,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.56,15.6,1920x1080,0.6
+163,Acer,Acer Notebook,Notebook,548.21,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce MX150,2,True,True,3.0,17.3,1920x1080,0.6
+164,HP,HP Notebook,Notebook,484.01,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+165,Huawei,Huawei Ultrabook,Ultrabook,865.96,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.05,13.0,2160x1440,0.4
+166,HP,HP Notebook,Notebook,448.71,Intel Core i5 7200U 2.5GHz,4,6,AMD Radeon 520,4,True,False,2.71,17.3,1920x1080,0.6
+167,Lenovo,Lenovo Notebook,Notebook,198.36,AMD A6-Series 9220 2.9GHz,2,4,AMD Radeon R4 Graphics,0,False,False,2.2,15.6,1366x768,0.4
+168,Toshiba,Toshiba Notebook,Notebook,313.9,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,5.4,15.6,1366x768,0.4
+169,HP,HP Notebook,Notebook,592.5,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.5,17.3,1920x1080,0.6
+170,Dell,Dell Notebook,Notebook,294.64,Intel Core i3 7100U 2.4GHz,2,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+171,Acer,Acer Notebook,Notebook,288.23,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+172,MSI,MSI Gaming,Gaming,1796.76,Intel Core i7 6920HQ 2.9GHz,8,32,Nvidia GTX 980 SLI,4,True,True,4.4,18.4,1920x1080,0.6
+173,Lenovo,Lenovo Notebook,Notebook,521.89,Intel Core i5 7200U 2.5GHz,4,8,AMD R17M-M1-70,4,True,False,1.9,15.6,1920x1080,0.6
+174,HP,HP 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.29,13.3,3840x2160,1.0
+175,Dell,Dell Notebook,Notebook,673.38,Intel Core i7 8550U 1.8GHz,8,16,AMD Radeon 530,4,True,False,2.02,15.6,1920x1080,0.6
+176,Dell,Dell Ultrabook,Ultrabook,898.06,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.23,13.3,1920x1080,0.6
+177,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1186.92,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.4,13.9,3840x2160,1.0
+178,Toshiba,Toshiba Notebook,Notebook,509.05,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1366x768,0.4
+179,Xiaomi,Xiaomi Notebook,Notebook,769.67,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce MX150,2,True,True,1.95,15.6,1920x1080,0.6
+180,Dell,Dell Notebook,Notebook,994.35,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce 150MX,4,True,True,2.77,17.3,1920x1080,0.6
+181,Dell,Dell Notebook,Notebook,1538.7,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.06,15.6,3840x2160,1.0
+182,Lenovo,Lenovo Gaming,Gaming,500.06,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+183,Acer,Acer Ultrabook,Ultrabook,634.87,Intel Core i5 7Y54 1.2GHz,4,8,Intel HD Graphics 615,0,False,False,1.12,13.3,1920x1080,0.6
+184,Dell,Dell Notebook,Notebook,696.49,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+185,Vero,Vero Notebook,Notebook,166.9,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.3,14.0,1920x1080,0.6
+186,Xiaomi,Xiaomi Ultrabook,Ultrabook,641.86,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce MX150,2,True,True,1.3,13.3,1920x1080,0.6
+187,Lenovo,Lenovo Notebook,Notebook,448.07,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce MX150,2,True,True,2.8,17.3,1600x900,0.4
+188,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,538.58,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.62,13.3,1920x1080,0.6
+189,HP,HP Notebook,Notebook,586.72,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.5,17.3,1920x1080,0.6
+190,Razer,Razer Gaming,Gaming,3915.12,Intel Core i7 7820HK 2.9GHz,8,32,Nvidia GeForce GTX 1080,8,True,True,3.49,17.3,3840x2160,1.0
+191,HP,HP Notebook,Notebook,615.61,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+192,HP,HP Gaming,Gaming,885.22,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,3.35,17.3,1920x1080,0.6
+193,HP,HP Notebook,Notebook,670.81,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 930MX ,4,True,True,2.5,17.3,1920x1080,0.6
+194,Dell,Dell Gaming,Gaming,1184.36,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.65,15.6,3840x2160,1.0
+195,Lenovo,Lenovo Notebook,Notebook,316.47,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+196,Acer,Acer Notebook,Notebook,476.31,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.23,15.6,1920x1080,0.6
+197,Lenovo,Lenovo Gaming,Gaming,1122.73,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,3.2,15.6,1920x1080,0.6
+198,Dell,Dell Workstation,Workstation,1961.09,Intel Xeon E3-1505M V6 3GHz,2,16,Nvidia Quadro M1200,4,True,True,2.8,15.6,3840x2160,1.0
+199,Lenovo,Lenovo Gaming,Gaming,897.41,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.4,15.6,1920x1080,0.6
+200,Dell,Dell Notebook,Notebook,281.81,Intel Core i3 7100U 2.4GHz,2,6,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+201,Dell,Dell Ultrabook,Ultrabook,1251.12,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.21,13.3,3840x2160,1.0
+202,Dell,Dell Ultrabook,Ultrabook,930.15,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.08,13.3,1920x1080,0.6
+203,Acer,Acer Notebook,Notebook,500.06,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+204,Asus,Asus Gaming,Gaming,903.19,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.9,17.3,1920x1080,0.6
+205,HP,HP Notebook,Notebook,224.03,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1920x1080,0.6
+206,Lenovo,Lenovo Notebook,Notebook,352.42,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.2,15.6,1920x1080,0.6
+207,Huawei,Huawei Ultrabook,Ultrabook,962.25,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.05,13.0,2160x1440,0.4
+208,Dell,Dell Ultrabook,Ultrabook,598.2,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,1.4,13.3,1920x1080,0.6
+209,Lenovo,Lenovo Notebook,Notebook,378.1,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce GTX 940MX,4,True,True,2.8,17.3,1600x900,0.4
+210,HP,HP Notebook,Notebook,661.83,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 930MX,4,True,True,1.63,14.0,1920x1080,0.6
+211,Dell,Dell Ultrabook,Ultrabook,737.57,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+212,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,821.03,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.62,13.3,1920x1080,0.6
+213,Dell,Dell Notebook,Notebook,434.81,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 520,4,True,False,2.2,15.6,1920x1080,0.6
+214,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,577.09,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.74,14.0,1920x1080,0.6
+215,Toshiba,Toshiba Ultrabook,Ultrabook,874.95,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+216,HP,HP Notebook,Notebook,509.69,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+217,Dell,Dell Gaming,Gaming,1576.79,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,4.42,17.3,1920x1080,0.6
+218,Acer,Acer Notebook,Notebook,534.08,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+219,Dell,Dell Notebook,Notebook,551.42,Intel Core i7 7500U 2.7GHz,8,16,AMD Radeon R7 M445,0,False,False,2.3,15.6,1920x1080,0.6
+220,Asus,Asus Notebook,Notebook,493.64,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 920MX ,4,True,True,2.0,15.6,1920x1080,0.6
+221,Asus,Asus Notebook,Notebook,571.96,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce GTX 950M,4,True,True,2.69,17.3,1920x1080,0.6
+222,HP,HP Notebook,Notebook,814.61,Intel Core i7 7500U 2.7GHz,8,8,AMD FirePro W4190M ,4,True,False,1.9,15.6,1920x1080,0.6
+223,Asus,Asus Notebook,Notebook,256.12,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.37,15.6,1366x768,0.4
+224,HP,HP Notebook,Notebook,211.84,AMD E-Series 9000e 1.5GHz,2,4,AMD Radeon R2,0,False,False,2.1,15.6,1366x768,0.4
+225,Lenovo,Lenovo Gaming,Gaming,962.25,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,3.2,15.6,1920x1080,0.6
+226,Dell,Dell Notebook,Notebook,551.42,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+227,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,442.29,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.6,13.3,1920x1080,0.6
+228,Dell,Dell Notebook,Notebook,577.09,Intel Core i7 7500U 2.7GHz,8,16,AMD Radeon R7 M445,0,False,False,2.36,15.6,1920x1080,0.6
+229,Acer,Acer Notebook,Notebook,250.35,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+230,Asus,Asus Notebook,Notebook,369.11,AMD A10-Series A10-9620P 2.5GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+231,Asus,Asus Gaming,Gaming,2497.1,Intel Core i7 7820HK 2.9GHz,8,32,Nvidia GeForce GTX 1080,8,True,True,4.7,17.3,1920x1080,0.6
+232,Acer,Acer Gaming,Gaming,543.07,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+233,Lenovo,Lenovo Notebook,Notebook,378.1,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,7.2,15.6,1366x768,0.4
+234,Asus,Asus Notebook,Notebook,735.01,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 150MX,4,True,True,2.1,17.3,1920x1080,0.6
+235,Asus,Asus Notebook,Notebook,570.67,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GTX 950M,4,True,True,2.69,17.3,1920x1080,0.6
+236,Dell,Dell Gaming,Gaming,564.25,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.56,15.6,1920x1080,0.6
+237,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,692.64,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.38,13.9,1920x1080,0.6
+238,Dell,Dell Notebook,Notebook,632.3,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+239,HP,HP Notebook,Notebook,358.84,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+240,Asus,Asus Gaming,Gaming,1925.14,Intel Core i7 7820HK 2.9GHz,8,16,Nvidia GeForce GTX 1080,8,True,True,3.6,17.3,1920x1080,0.6
+241,HP,HP Notebook,Notebook,433.3,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+242,Apple,Apple Ultrabook,Ultrabook,1309.53,Intel Core i5 3.1GHz,4,8,Intel Iris Plus Graphics 650,0,False,False,1.37,13.3,2560x1600,0.8
+243,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,525.74,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.08,15.6,1920x1080,0.6
+244,Asus,Asus Gaming,Gaming,1154.83,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.3,17.3,1920x1080,0.6
+245,Asus,Asus Notebook,Notebook,301.06,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5 M420,0,False,False,1.68,15.6,1366x768,0.4
+246,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1186.92,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.37,13.9,1920x1080,0.6
+247,Acer,Acer Notebook,Notebook,450.63,Intel Core i3 7130U 2.7GHz,2,4,Nvidia GeForce MX130,4,True,True,3.0,17.3,1920x1080,0.6
+248,Dell,Dell Ultrabook,Ultrabook,609.19,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.41,13.3,1920x1080,0.6
+249,HP,HP Notebook,Notebook,286.24,AMD A6-Series A6-9220 2.5GHz,2,8,AMD Radeon R4 Graphics,0,False,False,1.91,15.6,1366x768,0.4
+250,HP,HP Notebook,Notebook,679.8,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce MX150,2,True,True,2.9,17.3,1920x1080,0.6
+251,MSI,MSI Gaming,Gaming,1604.18,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.14,17.3,1920x1080,0.6
+252,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1090.64,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050M,2,True,True,2.0,15.6,1920x1080,0.6
+253,Dell,Dell Notebook,Notebook,733.08,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+254,Lenovo,Lenovo Notebook,Notebook,285.02,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.2,15.6,1920x1080,0.6
+255,HP,HP Notebook,Notebook,463.47,Intel Core i5 8250U 1.6GHz,4,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+256,Dell,Dell Notebook,Notebook,421.75,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.18,15.6,1920x1080,0.6
+257,Dell,Dell Notebook,Notebook,362.69,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R5 M430,0,False,False,2.24,15.6,1920x1080,0.6
+258,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,512.9,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,2.67,15.6,1920x1080,0.6
+259,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,4.1,13.3,1920x1080,0.6
+260,HP,HP Notebook,Notebook,653.48,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 930MX ,4,True,True,2.5,17.3,1920x1080,0.6
+261,Lenovo,Lenovo Notebook,Notebook,564.9,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.05,15.6,1920x1080,0.6
+262,Apple,Apple Ultrabook,Ultrabook,1257.47,Intel Core i5 2.9GHz,4,8,Intel Iris Graphics 550,0,False,False,1.37,13.3,2560x1600,0.8
+263,Asus,Asus Gaming,Gaming,994.35,AMD Ryzen 1700 3GHz,2,16,AMD Radeon RX 580,4,True,False,3.2,17.3,1920x1080,0.6
+264,Dell,Dell Notebook,Notebook,471.86,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 520,4,True,False,2.14,15.6,1920x1080,0.6
+265,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1604.18,Intel Core i7 6600U 2.6GHz,8,16,Intel HD Graphics 520,0,False,False,1.36,14.0,2560x1440,0.8
+266,Toshiba,Toshiba Notebook,Notebook,521.25,Intel Core i7 6500U 2.5GHz,8,8,Nvidia GeForce 930M,4,True,True,2.2,15.6,1366x768,0.4
+267,Dell,Dell Notebook,Notebook,457.74,Intel Core i7 7500U 2.7GHz,8,12,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+268,Dell,Dell Notebook,Notebook,705.48,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+269,Acer,Acer Notebook,Notebook,478.24,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce MX130,4,True,True,2.2,15.6,1920x1080,0.6
+270,Lenovo,Lenovo Notebook,Notebook,313.9,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.8,17.3,1600x900,0.4
+271,Lenovo,Lenovo Notebook,Notebook,545.0,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce MX150,2,True,True,2.8,17.3,1920x1080,0.6
+272,Lenovo,Lenovo Notebook,Notebook,551.42,Intel Core i7 7500U 2.7GHz,8,6,Nvidia GeForce 940MX,4,True,True,2.8,17.3,1600x900,0.4
+273,Dell,Dell Notebook,Notebook,274.75,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R5 M430,0,False,False,2.25,15.6,1920x1080,0.6
+274,Lenovo,Lenovo Gaming,Gaming,532.16,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+275,Lenovo,Lenovo Notebook,Notebook,371.68,Intel Core i5 7200U 2.5GHz,4,6,Intel HD Graphics 620,0,False,False,2.2,15.6,1920x1080,0.6
+276,Acer,Acer Notebook,Notebook,610.47,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce MX150,2,True,True,3.0,15.6,1920x1080,0.6
+277,Acer,Acer Notebook,Notebook,423.03,Intel Core i7 7500U 2.7GHz,8,12,Intel HD Graphics 620,0,False,False,2.15,15.6,1920x1080,0.6
+278,Lenovo,Lenovo Notebook,Notebook,704.19,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 630,0,False,False,1.95,15.6,1920x1080,0.6
+279,Asus,Asus Ultrabook,Ultrabook,627.16,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,1.7,15.6,1920x1080,0.6
+280,Lenovo,Lenovo Gaming,Gaming,756.83,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+281,Lenovo,Lenovo Notebook,Notebook,423.04,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+282,Acer,Acer Notebook,Notebook,127.74,Intel Celeron Dual Core 3205U 1.5GHz,2,2,Intel HD Graphics,0,False,False,2.19,15.6,1366x768,0.4
+283,Asus,Asus Gaming,Gaming,761.97,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,3.0,17.3,1920x1080,0.6
+284,HP,HP Notebook,Notebook,313.9,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,2.54,17.3,1600x900,0.4
+285,Dell,Dell Notebook,Notebook,1174.09,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.0,15.6,1920x1080,0.6
+286,Lenovo,Lenovo Notebook,Notebook,474.38,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,2.05,15.6,1920x1080,0.6
+287,Lenovo,Lenovo Gaming,Gaming,833.86,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,3.2,15.6,1920x1080,0.6
+288,Acer,Acer Notebook,Notebook,628.45,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+289,Dell,Dell Workstation,Workstation,1851.87,Intel Core i7 7820HQ 2.9GHz,8,16,Nvidia Quadro M1200,4,True,True,3.42,17.3,1920x1080,0.6
+290,Lenovo,Lenovo Notebook,Notebook,320.32,AMD A10-Series 9600P 2.4GHz,2,6,AMD Radeon R5 430,0,False,False,2.4,15.6,1920x1080,0.6
+291,Asus,Asus Ultrabook,Ultrabook,942.35,Intel Core i7 7500U 2.7GHz,8,16,Nvidia GeForce 940MX,4,True,True,1.63,15.6,1920x1080,0.6
+292,Asus,Asus Notebook,Notebook,326.74,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.3,14.0,1366x768,0.4
+293,Asus,Asus Gaming,Gaming,1362.17,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.9,17.3,1920x1080,0.6
+294,Lenovo,Lenovo Notebook,Notebook,416.61,Intel Core i5 7200U 2.5GHz,4,6,Nvidia GeForce GTX 940M,4,True,True,5.8,17.3,1600x900,0.4
+295,Lenovo,Lenovo Notebook,Notebook,352.42,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1366x768,0.4
+296,Asus,Asus Gaming,Gaming,812.04,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+297,Lenovo,Lenovo Notebook,Notebook,231.09,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.2,15.6,1366x768,0.4
+298,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1267.81,Intel Core i7 7600U 2.8GHz,8,16,Intel HD Graphics 620,0,False,False,1.28,13.3,1920x1080,0.6
+299,Toshiba,Toshiba Notebook,Notebook,669.53,Intel Core i7 6500U 2.5GHz,8,8,Nvidia GeForce 930M,4,True,True,2.2,15.6,1920x1080,0.6
+300,Lenovo,Lenovo Notebook,Notebook,525.74,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.3,15.6,1920x1080,0.6
+301,HP,HP Notebook,Notebook,301.06,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1920x1080,0.6
+302,Lenovo,Lenovo Notebook,Notebook,641.29,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.1,13.3,1920x1080,0.6
+303,Dell,Dell Ultrabook,Ultrabook,1604.18,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.21,13.3,3840x2160,1.0
+304,MSI,MSI Gaming,Gaming,1347.41,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.8,15.6,1920x1080,0.6
+305,Acer,Acer Notebook,Notebook,301.06,AMD A8-Series 7410 2.2GHz,2,8,AMD Radeon R5,0,False,False,2.23,15.6,1920x1080,0.6
+306,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,176.53,Intel Celeron Dual Core N3350 1.1GHz,2,2,Intel HD Graphics 500,0,False,False,1.1,11.6,1366x768,0.4
+307,Dell,Dell Notebook,Notebook,541.79,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.33,15.6,1920x1080,0.6
+308,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1572.08,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.29,13.3,3840x2160,1.0
+309,Lenovo,Lenovo Notebook,Notebook,295.22,Intel Celeron Dual Core 3855U 1.6GHz,2,4,Intel HD Graphics 510,0,False,False,1.45,13.3,1366x768,0.4
+310,HP,HP Notebook,Notebook,629.09,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.95,14.0,1920x1080,0.6
+311,Acer,Acer Notebook,Notebook,311.33,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,1.4,11.6,1366x768,0.4
+312,HP,HP Notebook,Notebook,829.37,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+313,Lenovo,Lenovo Notebook,Notebook,378.1,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 920MX,4,True,True,2.79,17.3,1600x900,0.4
+314,Asus,Asus Notebook,Notebook,702.27,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.0,14.0,1920x1080,0.6
+315,HP,HP Notebook,Notebook,579.02,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.1,15.6,1366x768,0.4
+316,Acer,Acer Notebook,Notebook,423.03,AMD A12-Series 9720P 2.7GHz,2,8,AMD Radeon RX 540,4,True,False,2.2,15.6,1366x768,0.4
+317,Lenovo,Lenovo Notebook,Notebook,187.44,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.44,14.0,1366x768,0.4
+318,Acer,Acer Notebook,Notebook,352.42,Intel Core i5 7200U 2.5GHz,4,6,Intel HD Graphics 620,0,False,False,8.23,15.6,1366x768,0.4
+319,Asus,Asus Ultrabook,Ultrabook,673.96,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,1.7,15.6,1920x1080,0.6
+320,HP,HP Ultrabook,Ultrabook,856.97,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.26,12.5,1920x1080,0.6
+321,Dell,Dell Notebook,Notebook,1694.05,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1050,2,True,True,2.06,15.6,3840x2160,1.0
+322,MSI,MSI Gaming,Gaming,769.67,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.7,17.3,1920x1080,0.6
+323,Toshiba,Toshiba Notebook,Notebook,605.34,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+324,Asus,Asus Notebook,Notebook,856.33,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.0,14.0,1920x1080,0.6
+325,Lenovo,Lenovo Notebook,Notebook,288.23,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.85,15.6,1920x1080,0.6
+326,Asus,Asus Gaming,Gaming,641.29,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+327,HP,HP Notebook,Notebook,813.96,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+328,HP,HP Notebook,Notebook,734.37,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.84,15.6,1920x1080,0.6
+329,Asus,Asus Notebook,Notebook,176.52,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.0,15.6,1366x768,0.4
+330,Dell,Dell Notebook,Notebook,733.56,Intel Core i5 8250U 1.6GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.0,15.6,1920x1080,0.6
+331,Dell,Dell Notebook,Notebook,176.47,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+332,Lenovo,Lenovo Notebook,Notebook,577.09,AMD A12-Series 9720P 3.6GHz,2,12,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+333,HP,HP Notebook,Notebook,459.62,Intel Core i3 7100U 2.4GHz,2,8,Nvidia GeForce 930MX ,4,True,True,2.1,15.6,1920x1080,0.6
+334,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1347.41,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,1.4,13.9,3840x2160,1.0
+335,Dell,Dell Ultrabook,Ultrabook,1013.6,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.2,13.3,1920x1080,0.6
+336,Lenovo,Lenovo Gaming,Gaming,724.74,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.4,15.6,1920x1080,0.6
+337,HP,HP Notebook,Notebook,179.1,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.44,14.0,1366x768,0.4
+338,Dell,Dell Ultrabook,Ultrabook,1032.19,Intel Core i7 8650U 1.9GHz,8,16,Intel UHD Graphics 620,0,False,False,1.88,15.6,1920x1080,0.6
+339,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,240.72,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.5,11.6,1366x768,0.4
+340,Dell,Dell Ultrabook,Ultrabook,425.6,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,0.0,15.6,1920x1080,0.6
+341,HP,HP Notebook,Notebook,837.07,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.84,15.6,1920x1080,0.6
+342,MSI,MSI Gaming,Gaming,904.48,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.7,17.3,1920x1080,0.6
+343,HP,HP Workstation,Workstation,1115.84,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M1200,4,True,True,2.6,15.6,1920x1080,0.6
+344,Toshiba,Toshiba Notebook,Notebook,900.62,Intel Core i7 6500U 2.5GHz,8,16,Nvidia GeForce 930M,4,True,True,2.4,15.6,1920x1080,0.6
+345,Dell,Dell Notebook,Notebook,623.25,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.02,15.6,1920x1080,0.6
+346,Lenovo,Lenovo Notebook,Notebook,206.69,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.2,15.6,1366x768,0.4
+347,Dell,Dell Gaming,Gaming,641.29,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.65,15.6,1920x1080,0.6
+348,Dell,Dell Notebook,Notebook,357.79,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.36,15.6,1366x768,0.4
+349,Dell,Dell Notebook,Notebook,916.03,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.36,14.0,1920x1080,0.6
+350,HP,HP Notebook,Notebook,281.81,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1366x768,0.4
+351,Asus,Asus Notebook,Notebook,606.62,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,14.0,1920x1080,0.6
+352,Lenovo,Lenovo Notebook,Notebook,461.55,Intel Core i5 7200U 2.5GHz,4,6,Nvidia GeForce GTX 940MX,4,True,True,2.8,17.3,1600x900,0.4
+353,HP,HP Notebook,Notebook,410.19,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.86,15.6,1920x1080,0.6
+354,Lenovo,Lenovo Notebook,Notebook,320.32,Intel Core i3 6006U 2GHz,2,8,Nvidia GeForce 920MX ,4,True,True,2.2,15.6,1366x768,0.4
+355,HP,HP Notebook,Notebook,249.71,Intel Pentium Quad Core N3710 1.6GHz,2,8,Intel HD Graphics 405,0,False,False,2.04,15.6,1366x768,0.4
+356,Dell,Dell Notebook,Notebook,696.49,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+357,Lenovo,Lenovo Gaming,Gaming,519.32,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+358,Dell,Dell Notebook,Notebook,577.09,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R7 M445,0,False,False,2.33,15.6,1920x1080,0.6
+359,HP,HP Ultrabook,Ultrabook,1123.37,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.36,14.0,1920x1080,0.6
+360,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,705.48,Intel Core i7 7500U 2.7GHz,8,12,Nvidia GeForce GT 940MX,4,True,True,2.26,15.6,1920x1080,0.6
+361,Acer,Acer Notebook,Notebook,273.46,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5,0,False,False,2.1,15.6,1366x768,0.4
+362,Asus,Asus Gaming,Gaming,1411.6,AMD Ryzen 1700 3GHz,2,16,AMD Radeon RX 580,4,True,False,3.25,17.3,1920x1080,0.6
+363,Lenovo,Lenovo Notebook,Notebook,313.9,AMD A8-Series 7410 2.2GHz,2,4,AMD Radeon R5,0,False,False,2.6,17.3,1600x900,0.4
+364,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,557.84,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.62,13.3,1920x1080,0.6
+365,HP,HP Notebook,Notebook,313.9,AMD A9-Series 9420 3GHz,2,4,AMD Radeon R5,0,False,False,1.91,15.6,1920x1080,0.6
+366,Lenovo,Lenovo Netbook,Netbook,354.99,Intel Celeron Quad Core N3450 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.59,11.6,1366x768,0.4
+367,Dell,Dell Notebook,Notebook,198.36,Intel Celeron Dual Core N3060 1.60GHz,2,4,Intel HD Graphics 400,0,False,False,1.8,15.6,1366x768,0.4
+368,Asus,Asus Notebook,Notebook,183.59,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.5,14.0,1366x768,0.4
+369,Acer,Acer Notebook,Notebook,543.07,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+370,HP,HP Gaming,Gaming,764.54,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,3.35,17.3,1920x1080,0.6
+371,Lenovo,Lenovo Notebook,Notebook,259.02,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.85,15.6,1920x1080,0.6
+372,Asus,Asus Gaming,Gaming,1062.39,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.3,15.6,1920x1080,0.6
+373,Lenovo,Lenovo Notebook,Notebook,705.48,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,1.5,14.0,1920x1080,0.6
+374,Asus,Asus Ultrabook,Ultrabook,1122.67,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.1,13.3,1920x1080,0.6
+375,Lenovo,Lenovo Ultrabook,Ultrabook,1464.88,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.13,14.0,2560x1440,0.8
+376,Lenovo,Lenovo Notebook,Notebook,352.42,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.5,13.3,1920x1080,0.6
+377,Dell,Dell Workstation,Workstation,878.8,Intel Core i5 6440HQ 2.6GHz,4,8,AMD FirePro W5130M,4,True,False,2.23,15.6,1920x1080,0.6
+378,Dell,Dell Workstation,Workstation,1370.52,Intel Core i7 6820HQ 2.7GHz,8,8,Nvidia Quadro M1200,4,True,True,2.0,15.6,1920x1080,0.6
+379,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1610.6,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.42,14.0,2560x1440,0.8
+380,Asus,Asus Gaming,Gaming,666.96,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,3.0,17.3,1920x1080,0.6
+381,Asus,Asus Gaming,Gaming,1021.31,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,3.0,17.3,1920x1080,0.6
+382,Acer,Acer Notebook,Notebook,445.49,Intel Core i5 8250U 1.6GHz,4,12,Nvidia GeForce MX130,4,True,True,2.2,15.6,1366x768,0.4
+383,MSI,MSI Gaming,Gaming,865.96,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.7,17.3,1920x1080,0.6
+384,Dell,Dell Notebook,Notebook,499.98,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R7 M445,0,False,False,2.33,15.6,1920x1080,0.6
+385,HP,HP Ultrabook,Ultrabook,320.32,AMD A9-Series 9420 3GHz,2,4,AMD Radeon 520,4,True,False,1.91,15.6,1920x1080,0.6
+386,Lenovo,Lenovo Notebook,Notebook,789.29,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon RX 550,4,True,False,2.1,15.6,1920x1080,0.6
+387,Lenovo,Lenovo Notebook,Notebook,602.13,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,14.0,1920x1080,0.6
+388,Dell,Dell Workstation,Workstation,1740.91,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M1200,4,True,True,1.78,15.6,3840x2160,1.0
+389,Lenovo,Lenovo Ultrabook,Ultrabook,1685.06,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.13,14.0,2560x1440,0.8
+390,Lenovo,Lenovo Notebook,Notebook,196.43,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.2,15.6,1366x768,0.4
+391,Asus,Asus Gaming,Gaming,981.51,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.9,17.3,1920x1080,0.6
+392,Lenovo,Lenovo Notebook,Notebook,734.69,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon RX 550,4,True,False,2.1,25.6,1920x1080,0.6
+393,Acer,Acer Notebook,Notebook,564.25,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+394,MSI,MSI Gaming,Gaming,1443.7,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.8,17.3,1920x1080,0.6
+395,Asus,Asus Ultrabook,Ultrabook,1202.33,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.1,14.0,1920x1080,0.6
+396,Toshiba,Toshiba Ultrabook,Ultrabook,1121.45,Intel Core i7 6500U 2.5GHz,8,16,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+397,Dell,Dell Ultrabook,Ultrabook,1078.44,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics,0,False,False,1.36,14.0,1920x1080,0.6
+398,Lenovo,Lenovo Notebook,Notebook,262.55,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.2,35.6,1920x1080,0.6
+399,Lenovo,Lenovo Notebook,Notebook,195.43,Intel Celeron Dual Core N3350 1.1GHz,2,2,Intel HD Graphics 500,0,False,False,1.15,11.6,1366x768,0.4
+400,Lenovo,Lenovo Workstation,Workstation,1235.71,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M1200,4,True,True,2.67,15.6,1920x1080,0.6
+401,Lenovo,Lenovo Ultrabook,Ultrabook,1247.27,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GT 940MX,4,True,True,1.7,14.0,2560x1440,0.8
+402,HP,HP Notebook,Notebook,301.06,Intel Core i3 6006U 2GHz,2,4,AMD Radeon 520,4,True,False,2.1,15.6,1920x1080,0.6
+403,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,506.49,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.6,13.3,1920x1080,0.6
+404,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,595.71,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.27,13.3,1920x1080,0.6
+405,Dell,Dell Notebook,Notebook,384.45,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon R5 M430,0,False,False,2.3,15.6,1920x1080,0.6
+406,Dell,Dell Notebook,Notebook,442.29,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.65,13.3,1366x768,0.4
+407,HP,HP Ultrabook,Ultrabook,962.89,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.43,14.0,1920x1080,0.6
+408,Dell,Dell Notebook,Notebook,346.61,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.14,15.6,1366x768,0.4
+409,Lenovo,Lenovo Ultrabook,Ultrabook,780.19,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon RX 550,4,True,False,1.75,14.0,1920x1080,0.6
+410,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1219.02,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.0,15.6,3840x2160,1.0
+411,Chuwi,Chuwi Notebook,Notebook,288.23,Intel Celeron Quad Core N3450 1.1GHz,2,6,Intel HD Graphics 500,0,False,False,1.4,12.3,2736x1824,0.4
+412,HP,HP Notebook,Notebook,916.03,Intel Core i7 7820HQ 2.9GHz,8,8,Intel HD Graphics 630,0,False,False,2.31,15.6,1920x1080,0.6
+413,Asus,Asus Notebook,Notebook,383.23,Intel Core i3 7100U 2.4GHz,2,8,Nvidia GeForce 940MX,4,True,True,2.3,35.6,1920x1080,0.6
+414,Dell,Dell Gaming,Gaming,1796.76,Intel Core i7 7820HK 2.9GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.42,27.3,2560x1440,0.8
+415,Dell,Dell Gaming,Gaming,743.99,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.62,15.6,1920x1080,0.6
+416,Dell,Dell Notebook,Notebook,733.34,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.02,15.6,1920x1080,0.6
+417,Dell,Dell Ultrabook,Ultrabook,705.48,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+418,HP,HP Gaming,Gaming,1283.21,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1070,6,True,True,3.35,17.3,1920x1080,0.6
+419,Mediacom,Mediacom 2 in 1 Convertible,2 in 1 Convertible,191.94,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.16,11.6,1920x1080,0.6
+420,Samsung,Samsung Netbook,Netbook,172.68,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.15,11.6,1366x768,0.4
+421,Lenovo,Lenovo Notebook,Notebook,648.35,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.4,13.3,1920x1080,0.6
+422,Lenovo,Lenovo Notebook,Notebook,384.51,Intel Core i3 7130U 2.7GHz,2,4,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+423,Lenovo,Lenovo Workstation,Workstation,1569.51,Intel Core i7 7600U 2.8GHz,8,16,Nvidia GeForce 940MX,4,True,True,2.3,15.6,3840x2160,1.0
+424,Lenovo,Lenovo Notebook,Notebook,1572.08,Intel Core i7 7820HQ 2.9GHz,8,16,Nvidia Quadro M2200M,4,True,True,2.5,15.6,1920x1080,0.6
+425,Asus,Asus Gaming,Gaming,1088.07,AMD Ryzen 1600 3.2GHz,2,8,AMD Radeon RX 580,4,True,False,3.2,17.3,1920x1080,0.6
+426,HP,HP Notebook,Notebook,222.75,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,2.1,15.6,1366x768,0.4
+427,Google,Google Ultrabook,Ultrabook,1411.6,Intel Core i7 7Y75 1.3GHz,8,16,Intel HD Graphics 615,0,False,False,1.1,12.3,2400x1600,0.4
+428,Lenovo,Lenovo Ultrabook,Ultrabook,1529.07,Intel Core i7 7500U 2.7GHz,8,24,Intel HD Graphics 620,0,False,False,1.32,24.0,2560x1440,0.8
+429,Asus,Asus Notebook,Notebook,358.84,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+430,Lenovo,Lenovo Notebook,Notebook,333.16,AMD A6-Series 9220 2.5GHz,2,8,AMD Radeon R4,0,False,False,2.8,17.3,1600x900,0.4
+431,Dell,Dell Notebook,Notebook,480.8,Intel Core i5 8250U 1.6GHz,4,4,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+432,Lenovo,Lenovo Ultrabook,Ultrabook,917.31,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.36,12.5,1920x1080,0.6
+433,Lenovo,Lenovo Notebook,Notebook,224.03,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.2,15.6,1920x1080,0.6
+434,HP,HP Gaming,Gaming,705.48,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+435,Dell,Dell Notebook,Notebook,756.83,Intel Core i5 7440HQ 2.8GHz,4,8,Nvidia GeForce 930MX,4,True,True,1.64,14.0,1920x1080,0.6
+436,Acer,Acer Notebook,Notebook,283.6,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.4,15.6,1366x768,0.4
+437,Dell,Dell Workstation,Workstation,1279.36,Intel Xeon E3-1505M V6 3GHz,2,8,Nvidia Quadro M620,4,True,True,2.23,15.6,1920x1080,0.6
+438,MSI,MSI Gaming,Gaming,659.73,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+439,Microsoft,Microsoft Ultrabook,Ultrabook,1661.95,Intel Core i7 7660U 2.5GHz,8,16,Intel Iris Plus Graphics 640,0,False,False,1.25,13.5,2256x1504,0.4
+440,HP,HP Notebook,Notebook,378.1,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.91,15.6,1366x768,0.4
+441,Dell,Dell Workstation,Workstation,1267.81,Intel Core i7 6820HQ 2.7GHz,8,16,Nvidia Quadro M620,4,True,True,2.17,15.6,1920x1080,0.6
+442,HP,HP Workstation,Workstation,984.72,Intel Core i7 7820HQ 2.9GHz,8,8,Intel HD Graphics 620,0,False,False,2.31,15.6,1920x1080,0.6
+443,Lenovo,Lenovo Notebook,Notebook,863.39,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.65,14.0,1920x1080,0.6
+444,Dell,Dell Notebook,Notebook,628.45,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,2.36,15.6,1920x1080,0.6
+445,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,307.48,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,1.47,11.6,1366x768,0.4
+446,Dell,Dell Notebook,Notebook,1313.38,Intel Core i7 7700HQ 2.7GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,4.42,17.3,1920x1080,0.6
+447,Microsoft,Microsoft Ultrabook,Ultrabook,634.87,Intel Core M m3-7Y30 2.2GHz,2,4,Intel HD Graphics 615,0,False,False,1.25,13.5,2256x1504,0.4
+448,Microsoft,Microsoft Ultrabook,Ultrabook,1154.83,Intel Core i7 7660U 2.5GHz,8,8,Intel Iris Plus Graphics 640,0,False,False,1.25,33.5,2256x1504,0.4
+449,HP,HP Notebook,Notebook,410.77,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,2.5,17.3,1600x900,0.4
+450,Acer,Acer Notebook,Notebook,349.21,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce 940MX,4,True,True,2.23,15.6,1920x1080,0.6
+451,Acer,Acer Netbook,Netbook,279.24,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.4,11.6,1366x768,0.4
+452,Asus,Asus Notebook,Notebook,480.8,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.37,15.6,1920x1080,0.6
+453,Lenovo,Lenovo Notebook,Notebook,512.9,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R7 M460,0,False,False,1.5,14.0,1920x1080,0.6
+454,Lenovo,Lenovo Notebook,Notebook,1341.63,Intel Core i7 7820HQ 2.9GHz,8,8,Nvidia Quadro M2200M,4,True,True,2.67,15.6,1920x1080,0.6
+455,Asus,Asus Notebook,Notebook,195.15,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.0,15.6,1366x768,0.4
+456,Acer,Acer Notebook,Notebook,301.06,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce GTX 940MX,4,True,True,2.2,15.6,1366x768,0.4
+457,Dell,Dell Notebook,Notebook,487.22,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.02,15.6,1920x1080,0.6
+458,HP,HP Gaming,Gaming,1090.64,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1060,4,True,True,3.78,17.3,1920x1080,0.6
+459,Lenovo,Lenovo Ultrabook,Ultrabook,1192.7,Intel Core i7 6600U 2.6GHz,8,12,Intel HD Graphics 520,0,False,False,1.4,14.0,2560x1440,0.8
+460,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1283.21,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.29,13.3,3840x2160,1.0
+461,HP,HP Notebook,Notebook,740.78,Intel Core i5 7200U 2.5GHz,4,8,AMD FirePro W4190M ,4,True,False,1.9,15.6,1920x1080,0.6
+462,Google,Google Ultrabook,Ultrabook,818.46,Intel Core i5 7Y57 1.2GHz,4,8,Intel HD Graphics 615,0,False,False,1.1,12.3,2400x1600,0.4
+463,Dell,Dell Ultrabook,Ultrabook,1182.33,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.42,13.3,1920x1080,0.6
+464,Asus,Asus Notebook,Notebook,833.86,Intel Core i7 6700HQ 2.6GHz,8,12,Intel HD Graphics 530,0,False,False,2.06,15.6,3840x2160,1.0
+465,Dell,Dell Notebook,Notebook,475.03,Intel Core i3 6100U 2.3GHz,2,8,Intel HD Graphics 520,0,False,False,1.79,14.0,1366x768,0.4
+466,Dell,Dell Workstation,Workstation,1545.76,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M1200,4,True,True,1.78,,1920x1080,0.6
+467,Lenovo,Lenovo Notebook,Notebook,875.59,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+468,Toshiba,Toshiba Notebook,Notebook,1073.3,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.05,13.3,1920x1080,0.6
+469,Dell,Dell Notebook,Notebook,810.11,Intel Core i7 8550U 1.8GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.16,15.6,1920x1080,0.6
+470,Dell,Dell Notebook,Notebook,376.55,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.18,15.6,1366x768,0.4
+471,HP,HP Notebook,Notebook,466.04,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+472,Chuwi,Chuwi Notebook,Notebook,159.78,Intel Atom x5-Z8350 1.44GHz,2,4,Intel HD Graphics,0,False,False,1.89,15.6,1920x1080,0.6
+473,Lenovo,Lenovo Notebook,Notebook,362.69,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.3,15.6,1366x768,0.4
+474,Lenovo,Lenovo Notebook,Notebook,673.38,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.75,14.0,1920x1080,0.6
+475,Dell,Dell Workstation,Workstation,1500.83,Intel Core i7 6820HQ 2.7GHz,8,16,Nvidia Quadro M620,4,True,True,2.17,15.6,1920x1080,0.6
+476,Dell,Dell Notebook,Notebook,1219.02,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.06,15.6,1920x1080,0.6
+477,Lenovo,Lenovo Ultrabook,Ultrabook,1154.19,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.36,12.5,1920x1080,0.6
+478,Asus,Asus Ultrabook,Ultrabook,1251.76,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,0.91,12.5,1920x1080,0.6
+479,Lenovo,Lenovo Notebook,Notebook,649.62,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 940MX,4,True,True,2.3,15.6,1920x1080,0.6
+480,Toshiba,Toshiba Ultrabook,Ultrabook,1796.76,Intel Core i7 7500U 2.7GHz,8,32,Intel HD Graphics 620,0,False,False,1.05,13.3,1920x1080,0.6
+481,Asus,Asus Gaming,Gaming,866.6,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,1.99,15.6,1920x1080,0.6
+482,Acer,Acer Notebook,Notebook,371.68,AMD A10-Series 9620P 2.5GHz,2,8,AMD Radeon RX 540,4,True,False,2.2,15.6,1366x768,0.4
+483,Asus,Asus Gaming,Gaming,814.61,Intel Core i7 6700HQ 2.6GHz,8,24,Nvidia GeForce GTX 965M,4,True,True,4.33,17.3,1920x1080,0.6
+484,Lenovo,Lenovo Ultrabook,Ultrabook,705.48,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.3,12.5,1366x768,0.4
+485,Lenovo,Lenovo Notebook,Notebook,577.03,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,2.17,15.6,1920x1080,0.6
+486,HP,HP Notebook,Notebook,1122.73,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+487,Lenovo,Lenovo Notebook,Notebook,609.19,Intel Core i3 7100U 2.4GHz,2,8,Intel HD Graphics 620,0,False,False,1.4,13.3,1920x1080,0.6
+488,Lenovo,Lenovo Notebook,Notebook,584.8,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+489,Asus,Asus Netbook,Netbook,218.26,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.2,11.6,1366x768,0.4
+490,HP,HP Notebook,Notebook,397.35,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon 520,4,True,False,1.91,15.6,1366x768,0.4
+491,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1026.44,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.4,13.9,1920x1080,0.6
+492,Lenovo,Lenovo Notebook,Notebook,191.94,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.1,14.0,1366x768,0.4
+493,Lenovo,Lenovo Netbook,Netbook,170.11,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.25,11.6,1366x768,0.4
+494,Lenovo,Lenovo Notebook,Notebook,609.19,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.44,13.3,1920x1080,0.6
+495,Asus,Asus Notebook,Notebook,785.72,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+496,Acer,Acer Notebook,Notebook,393.5,Intel Core i5 8250U 1.6GHz,4,4,Nvidia GeForce MX150,2,True,True,2.2,15.6,1920x1080,0.6
+497,HP,HP Ultrabook,Ultrabook,849.27,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.34,13.3,1920x1080,0.6
+498,Lenovo,Lenovo Gaming,Gaming,737.57,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.4,15.6,1920x1080,0.6
+499,Dell,Dell Ultrabook,Ultrabook,577.09,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.29,13.3,1920x1080,0.6
+500,Acer,Acer Notebook,Notebook,410.19,Intel Core i7 7500U 2.7GHz,8,4,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+501,Dell,Dell Notebook,Notebook,536.65,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.18,15.6,1920x1080,0.6
+502,Dell,Dell Notebook,Notebook,782.66,Intel Core i7 8550U 1.8GHz,8,16,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+503,Xiaomi,Xiaomi Notebook,Notebook,898.67,Intel Core i7 8550U 1.8GHz,8,16,Nvidia GeForce MX150,2,True,True,1.95,15.6,1920x1080,0.6
+504,Asus,Asus Netbook,Netbook,157.27,Intel Celeron Dual Core N3350 1.1GHz,2,2,Intel HD Graphics 500,0,False,False,1.1,11.6,1366x768,0.4
+505,HP,HP Notebook,Notebook,334.75,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+506,Asus,Asus Gaming,Gaming,1905.24,Intel Core i7 7700HQ 2.8GHz,8,24,Nvidia GeForce GTX1080,8,True,True,2.24,15.6,1920x1080,0.6
+507,HP,HP Notebook,Notebook,570.67,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.04,15.6,1920x1080,0.6
+508,Asus,Asus Gaming,Gaming,965.46,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX1050 Ti,2,True,True,3.0,17.3,1920x1080,0.6
+509,Lenovo,Lenovo Gaming,Gaming,898.06,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,3.2,15.6,1920x1080,0.6
+510,HP,HP Ultrabook,Ultrabook,898.06,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.32,13.3,1920x1080,0.6
+511,Dell,Dell Notebook,Notebook,821.49,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.64,14.0,1920x1080,0.6
+512,HP,HP Notebook,Notebook,442.29,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.63,15.6,1366x768,0.4
+513,Dell,Dell Notebook,Notebook,570.67,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.8,17.3,1920x1080,0.6
+514,Lenovo,Lenovo Notebook,Notebook,860.18,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,2.02,24.0,1920x1080,0.6
+515,Lenovo,Lenovo Notebook,Notebook,512.9,Intel Core i7 7500U 2.7GHz,8,4,Nvidia GeForce 920MX,4,True,True,2.2,15.6,1920x1080,0.6
+516,Lenovo,Lenovo Notebook,Notebook,294.64,Intel Core i3 6006U 2GHz,2,8,Nvidia GeForce 920MX ,4,True,True,2.2,15.6,1366x768,0.4
+517,Dell,Dell Notebook,Notebook,375.53,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon R5 M430,0,False,False,2.3,15.6,1920x1080,0.6
+518,Dell,Dell Notebook,Notebook,883.93,Intel Core i5 7440HQ 2.8GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+519,Dell,Dell Gaming,Gaming,1933.98,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,1920x1080,0.6
+520,Toshiba,Toshiba Notebook,Notebook,552.06,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+521,Asus,Asus Notebook,Notebook,833.86,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.0,15.6,3840x2160,1.0
+522,Mediacom,Mediacom Notebook,Notebook,236.87,Intel Celeron Quad Core N3450 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.2,13.3,1920x1080,0.6
+523,Asus,Asus Gaming,Gaming,1058.54,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1060,4,True,True,2.3,15.6,1920x1080,0.6
+524,Dell,Dell Notebook,Notebook,878.8,Intel Core i7 7600U 2.8GHz,8,8,Nvidia GeForce 930MX,4,True,True,1.93,15.6,1920x1080,0.6
+525,Dell,Dell Notebook,Notebook,511.88,Intel Core i5 8250U 1.6GHz,4,8,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+526,HP,HP Notebook,Notebook,256.12,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,1.86,15.6,1920x1080,0.6
+527,HP,HP Gaming,Gaming,1154.83,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1060,4,True,True,2.62,17.3,1920x1080,0.6
+528,Lenovo,Lenovo Notebook,Notebook,551.42,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,1.87,14.0,1920x1080,0.6
+529,Dell,Dell Ultrabook,Ultrabook,898.06,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.2,13.3,3200x1800,0.4
+530,Dell,Dell Notebook,Notebook,472.38,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.6,14.0,1920x1080,0.6
+531,HP,HP Ultrabook,Ultrabook,735.01,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.34,13.3,3200x1800,0.4
+532,Acer,Acer Gaming,Gaming,512.26,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+533,Asus,Asus Notebook,Notebook,224.03,AMD E-Series 7110 1.8GHz,2,4,AMD Radeon R2 Graphics,0,False,False,2.0,15.6,1366x768,0.4
+534,HP,HP Notebook,Notebook,452.88,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+535,Lenovo,Lenovo Notebook,Notebook,503.91,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.87,14.0,1920x1080,0.6
+536,Lenovo,Lenovo Notebook,Notebook,296.8,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.15,15.6,1920x1080,0.6
+537,HP,HP Notebook,Notebook,254.85,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1920x1080,0.6
+538,Lenovo,Lenovo Notebook,Notebook,1109.89,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.99,15.6,1920x1080,0.6
+539,Lenovo,Lenovo Notebook,Notebook,320.32,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.2,15.6,1920x1080,0.6
+540,Dell,Dell Notebook,Notebook,717.03,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+541,Dell,Dell Gaming,Gaming,1732.56,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,1920x1080,0.6
+542,HP,HP Notebook,Notebook,349.3,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,2.65,17.3,1600x900,0.4
+543,HP,HP Notebook,Notebook,821.67,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 930MX,4,True,True,2.63,17.3,1920x1080,0.6
+544,Asus,Asus Notebook,Notebook,143.79,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.0,15.6,1366x768,0.4
+545,Mediacom,Mediacom Notebook,Notebook,163.69,Intel Atom x5-Z8350 1.44GHz,2,4,Intel HD Graphics,0,False,False,1.35,13.3,1920x1080,0.6
+546,Lenovo,Lenovo Notebook,Notebook,609.19,Intel Core i7 7500U 2.7GHz,8,6,Nvidia GeForce 940MX,4,True,True,2.8,17.3,1600x900,0.4
+547,HP,HP Notebook,Notebook,365.19,AMD A10-Series A10-9620P 2.5GHz,2,6,AMD Radeon 530,4,True,False,1.91,15.6,1920x1080,0.6
+548,Dell,Dell Notebook,Notebook,396.65,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M420,0,False,False,2.18,15.6,1366x768,0.4
+549,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,224.03,Intel Celeron Dual Core N3350 2.0GHz,2,4,Intel HD Graphics 500,0,False,False,1.25,11.6,1920x1080,0.6
+550,Lenovo,Lenovo Notebook,Notebook,404.41,Intel Core i3 7130U 2.7GHz,2,4,Intel HD Graphics 620,0,False,False,2.05,15.6,1920x1080,0.6
+551,HP,HP Ultrabook,Ultrabook,1261.39,Intel Core M 6Y75 1.2GHz,2,16,Intel HD Graphics 515,0,False,False,1.16,13.3,3200x1800,0.4
+552,Lenovo,Lenovo Notebook,Notebook,1925.14,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M620M,4,True,True,3.4,17.3,1920x1080,0.6
+553,Asus,Asus Notebook,Notebook,538.58,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+554,Dell,Dell Ultrabook,Ultrabook,1026.44,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.21,13.3,3840x2160,1.0
+555,Dell,Dell Notebook,Notebook,615.61,Intel Core i5 7300U 2.6GHz,4,4,Intel HD Graphics 620,0,False,False,1.93,15.6,1366x768,0.4
+556,Lenovo,Lenovo Notebook,Notebook,220.82,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.2,15.6,1920x1080,0.6
+557,Lenovo,Lenovo Notebook,Notebook,635.51,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.02,14.0,1366x768,0.4
+558,HP,HP Workstation,Workstation,1194.62,Intel Core i5 7440HQ 2.8GHz,4,8,Nvidia Quadro M1200,4,True,True,3.14,17.3,1600x900,0.4
+559,HP,HP Notebook,Notebook,249.71,Intel Pentium Quad Core N3710 1.6GHz,2,8,Intel HD Graphics 405,0,False,False,1.94,14.0,1366x768,0.4
+560,HP,HP Notebook,Notebook,416.61,AMD A9-Series A9-9420 3GHz,2,6,AMD Radeon 530,4,True,False,1.95,15.6,1920x1080,0.6
+561,Lenovo,Lenovo Notebook,Notebook,532.8,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+562,Lenovo,Lenovo Notebook,Notebook,439.72,Intel Core i5 8250U 1.6GHz,4,4,Intel HD Graphics 620,0,False,False,2.05,15.6,1920x1080,0.6
+563,Mediacom,Mediacom Notebook,Notebook,159.84,Intel Atom x5-Z8350 1.44GHz,2,4,Intel HD Graphics,0,False,False,1.4,14.0,1920x1080,0.6
+564,Toshiba,Toshiba Ultrabook,Ultrabook,1197.2,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.24,14.0,1920x1080,0.6
+565,Lenovo,Lenovo Gaming,Gaming,1709.45,Intel Core i7 6820HK 2.7GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.6,17.3,1920x1080,0.6
+566,MSI,MSI Gaming,Gaming,1751.82,Intel Core i7 7820HK 2.9GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.14,17.3,1920x1080,0.6
+567,Dell,Dell Notebook,Notebook,480.81,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+568,Mediacom,Mediacom Notebook,Notebook,249.71,Intel Celeron Quad Core N3450 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.45,14.0,1920x1080,0.6
+569,Dell,Dell Notebook,Notebook,647.4,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1366x768,0.4
+570,HP,HP Notebook,Notebook,461.55,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+571,Dell,Dell Notebook,Notebook,986.89,Intel Core i7 7600U 2.8GHz,8,16,Nvidia GeForce 930MX,4,True,True,1.93,15.6,1920x1080,0.6
+572,Dell,Dell Netbook,Netbook,189.37,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.26,11.6,1366x768,0.4
+573,MSI,MSI Gaming,Gaming,1507.89,Intel Core i7 6820HK 2.7GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.5,17.3,1920x1080,0.6
+574,HP,HP Gaming,Gaming,961.61,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,3.78,17.3,1920x1080,0.6
+575,Lenovo,Lenovo Ultrabook,Ultrabook,1073.95,Intel Core i7 6600U 2.6GHz,8,12,Intel HD Graphics 520,0,False,False,8.4,14.0,1920x1080,0.6
+576,Lenovo,Lenovo Notebook,Notebook,390.93,Intel Core i7 8550U 1.8GHz,8,12,Intel HD Graphics 620,0,False,False,2.2,15.6,1366x768,0.4
+577,Asus,Asus Gaming,Gaming,1136.21,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1060,4,True,True,2.73,17.3,1920x1080,0.6
+578,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,474.38,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 520,0,False,False,2.2,15.6,1366x768,0.4
+579,Lenovo,Lenovo Notebook,Notebook,609.19,AMD A12-Series 9720P 3.6GHz,2,12,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+580,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,387.08,Intel Core M 7Y30 1.0GHz,2,4,Intel HD Graphics 615,0,False,False,1.39,31.6,1366x768,0.4
+581,Samsung,Samsung Notebook,Notebook,1090.64,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+582,Lenovo,Lenovo Notebook,Notebook,339.58,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.8,17.3,1920x1080,0.6
+583,Lenovo,Lenovo Notebook,Notebook,294.64,Intel Core i3 6100U 2.3GHz,2,8,Intel HD Graphics 520,0,False,False,2.29,15.6,1366x768,0.4
+584,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1299.9,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+585,Lenovo,Lenovo Notebook,Notebook,946.2,Intel Core i5 7300HQ 2.5GHz,4,8,Intel HD Graphics 630,0,False,False,1.7,14.0,1920x1080,0.6
+586,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1072.02,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.34,12.5,1920x1080,0.6
+587,Dell,Dell Workstation,Workstation,1131.72,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M620,4,True,True,2.06,15.6,1920x1080,0.6
+588,HP,HP Notebook,Notebook,782.51,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.84,15.6,1920x1080,0.6
+589,HP,HP Notebook,Notebook,429.12,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1366x768,0.4
+590,Acer,Acer Notebook,Notebook,211.19,Intel Celeron Quad Core N3450 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.6,14.0,1920x1080,0.6
+591,MSI,MSI Gaming,Gaming,1411.6,Intel Core i7 6820HK 2.7GHz,8,16,Nvidia GeForce GTX 970M,4,True,True,4.14,17.3,1920x1080,0.6
+592,Dell,Dell Notebook,Notebook,298.5,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M420,0,False,False,2.18,15.6,1366x768,0.4
+593,MSI,MSI Gaming,Gaming,1475.79,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.8,15.6,3840x2160,1.0
+594,Toshiba,Toshiba Notebook,Notebook,898.06,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,2.2,15.6,1920x1080,0.6
+595,Lenovo,Lenovo Notebook,Notebook,362.05,Intel Core i5 7200U 2.5GHz,4,6,Intel HD Graphics 620,0,False,False,2.4,15.6,1920x1080,0.6
+596,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,833.86,Intel Core i7 7700HQ 2.8GHz,8,8,Intel HD Graphics 630,0,False,False,2.0,15.6,1920x1080,0.6
+597,Acer,Acer Notebook,Notebook,224.03,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,1.6,14.0,1366x768,0.4
+598,Lenovo,Lenovo Notebook,Notebook,3144.8,Intel Xeon E3-1535M v6 3.1GHz,2,32,Nvidia Quadro M2200M,4,True,True,2.5,15.6,3840x2160,1.0
+599,Dell,Dell Gaming,Gaming,564.26,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 960<U+039C>,4,True,True,2.59,15.6,1920x1080,0.6
+600,Dell,Dell Notebook,Notebook,284.95,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.18,15.6,1366x768,0.4
+601,Dell,Dell Notebook,Notebook,230.45,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.25,15.6,1366x768,0.4
+602,Dell,Dell Notebook,Notebook,557.84,Intel Core i5 7300U 2.6GHz,4,4,Intel HD Graphics 620,0,False,False,1.93,15.6,1366x768,0.4
+603,Asus,Asus Gaming,Gaming,749.77,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,3.0,17.3,1920x1080,0.6
+604,HP,HP Ultrabook,Ultrabook,891.64,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.84,15.6,1920x1080,0.6
+605,MSI,MSI Gaming,Gaming,1455.8,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.94,15.6,1920x1080,0.6
+606,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,243.29,Intel Celeron Quad Core N3160 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.25,11.6,1366x768,0.4
+607,HP,HP Notebook,Notebook,721.53,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,2.31,14.0,1366x768,0.4
+608,Lenovo,Lenovo Notebook,Notebook,940.42,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.65,14.0,1920x1080,0.6
+609,Dell,Dell Notebook,Notebook,498.14,Intel Core i5 8250U 1.6GHz,4,4,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+610,Fujitsu,Fujitsu Notebook,Notebook,512.9,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.2,15.6,1366x768,0.4
+611,HP,HP Notebook,Notebook,598.28,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.88,15.6,1366x768,0.4
+612,Mediacom,Mediacom Notebook,Notebook,153.42,Intel Atom x5-Z8350 1.44GHz,2,2,Intel HD Graphics,0,False,False,1.4,14.0,1920x1080,0.6
+613,Lenovo,Lenovo Notebook,Notebook,300.42,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.2,15.6,1920x1080,0.6
+614,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,410.2,Intel Core i5 7200U 2.5GHz,4,6,Intel HD Graphics 620,0,False,False,1.5,13.3,1920x1080,0.6
+615,Asus,Asus Ultrabook,Ultrabook,1219.66,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,11.1,14.0,1920x1080,0.6
+616,Dell,Dell Gaming,Gaming,949.41,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.62,15.6,1920x1080,0.6
+617,Lenovo,Lenovo Notebook,Notebook,532.16,Intel Core i5 8250U 1.6GHz,4,4,Intel UHD Graphics 620,0,False,False,1.8,15.6,1920x1080,0.6
+618,Lenovo,Lenovo Notebook,Notebook,371.68,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce 920MX ,4,True,True,2.2,15.6,1920x1080,0.6
+619,Asus,Asus Notebook,Notebook,256.13,Intel Celeron Dual Core N3350 1.1GHz,2,8,Intel HD Graphics 500,0,False,False,2.0,15.6,1366x768,0.4
+620,Asus,Asus Notebook,Notebook,581.98,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,1.99,15.6,1920x1080,0.6
+621,Dell,Dell Ultrabook,Ultrabook,1199.76,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.23,13.3,3200x1800,0.4
+622,Lenovo,Lenovo Notebook,Notebook,159.84,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.42,14.0,1366x768,0.4
+623,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1128.14,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+624,Dell,Dell Notebook,Notebook,1539.98,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.06,15.6,3840x2160,1.0
+625,Lenovo,Lenovo Gaming,Gaming,711.9,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050M,2,True,True,2.5,15.6,1920x1080,0.6
+626,HP,HP Notebook,Notebook,334.38,AMD A9-Series 9420 3GHz,2,8,AMD Radeon R5,0,False,False,2.6,17.0,1600x900,0.4
+627,Lenovo,Lenovo Ultrabook,Ultrabook,1572.72,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.14,14.0,1920x1080,0.6
+628,Asus,Asus Gaming,Gaming,750.41,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+629,Acer,Acer Notebook,Notebook,288.87,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.4,15.6,1366x768,0.4
+630,Lenovo,Lenovo Notebook,Notebook,175.89,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics,0,False,False,1.43,14.0,1366x768,0.4
+631,Acer,Acer Ultrabook,Ultrabook,589.93,Intel Core i5 7200U 2.5GHz,4,8,Intel Graphics 620,0,False,False,1.8,14.0,1920x1080,0.6
+632,Razer,Razer Gaming,Gaming,1668.37,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.95,14.0,1920x1080,0.6
+633,Toshiba,Toshiba Notebook,Notebook,778.66,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+634,Lenovo,Lenovo Ultrabook,Ultrabook,1016.81,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.36,12.5,1920x1080,0.6
+635,Asus,Asus Gaming,Gaming,1796.76,Intel Core i7 6820HK 2.7GHz,8,32,Nvidia GeForce GTX 1080,8,True,True,3.8,17.3,1920x1080,0.6
+636,Acer,Acer Gaming,Gaming,455.13,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+637,Dell,Dell Ultrabook,Ultrabook,930.73,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.2,13.3,1920x1080,0.6
+638,MSI,MSI Gaming,Gaming,765.05,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.2,15.6,1920x1080,0.6
+639,HP,HP Notebook,Notebook,234.24,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1366x768,0.4
+640,Toshiba,Toshiba Notebook,Notebook,683.01,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+641,Dell,Dell Notebook,Notebook,589.93,Intel Core i7 8550U 1.8GHz,8,8,AMD Radeon 530,4,True,False,6.2,15.6,1920x1080,0.6
+642,Dell,Dell Notebook,Notebook,728.59,Intel Core i7 8550U 1.8GHz,8,16,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+643,Lenovo,Lenovo Gaming,Gaming,767.75,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960,4,True,True,3.31,15.6,1920x1080,0.6
+644,Dell,Dell Gaming,Gaming,2020.38,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,3840x2160,1.0
+645,Dell,Dell Notebook,Notebook,788.93,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.56,14.0,1920x1080,0.6
+646,Lenovo,Lenovo Notebook,Notebook,268.97,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.2,15.6,1366x768,0.4
+647,Lenovo,Lenovo Notebook,Notebook,343.43,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.2,15.6,1920x1080,0.6
+648,HP,HP Notebook,Notebook,346.0,Intel Core i3 6006U 2GHz,2,6,AMD Radeon R5 M430,0,False,False,2.04,15.6,1920x1080,0.6
+649,MSI,MSI Gaming,Gaming,954.4,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.7,17.3,1920x1080,0.6
+650,Toshiba,Toshiba Notebook,Notebook,319.68,Intel Core i3 6100U 2.1GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+651,HP,HP Notebook,Notebook,478.24,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon 530,4,True,False,2.1,15.6,1920x1080,0.6
+652,Toshiba,Toshiba Notebook,Notebook,807.55,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+653,Acer,Acer Notebook,Notebook,264.47,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+654,Microsoft,Microsoft Ultrabook,Ultrabook,1199.02,Intel Core i7 7600U 2.8GHz,8,8,Intel Iris Plus Graphics 640,0,False,False,1.25,13.5,2256x1504,0.4
+655,Lenovo,Lenovo Notebook,Notebook,525.06,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R5 M430,0,False,False,1.9,15.6,1920x1080,0.6
+656,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,663.75,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.3,13.3,1920x1080,0.6
+657,Lenovo,Lenovo Notebook,Notebook,224.03,AMD E-Series E2-9000 2.2GHz,2,4,AMD Radeon R2 Graphics,0,False,False,2.2,35.6,1366x768,0.4
+658,HP,HP 2 in 1 Convertible,2 in 1 Convertible,448.71,Intel Core i3 7100U 2.4GHz,2,4,Nvidia GeForce 940MX,4,True,True,1.63,14.0,1920x1080,0.6
+659,MSI,MSI Gaming,Gaming,830.65,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+660,Asus,Asus Ultrabook,Ultrabook,728.59,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.1,14.0,1920x1080,0.6
+661,HP,HP 2 in 1 Convertible,2 in 1 Convertible,317.75,Intel Celeron Dual Core N3350 1.1GHz,2,8,Intel HD Graphics 500,0,False,False,1.4,11.6,1366x768,0.4
+662,LG,LG Ultrabook,Ultrabook,1475.79,Intel Core i7 8550U 1.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.09,15.6,1920x1080,0.6
+663,Acer,Acer Gaming,Gaming,833.86,Intel Core i5 7300HQ 2.5GHz,4,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+664,MSI,MSI Gaming,Gaming,640.58,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+665,Asus,Asus Notebook,Notebook,268.97,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.86,15.6,1366x768,0.4
+666,Dell,Dell Gaming,Gaming,1316.59,Intel Core i5 7300HQ 2.5GHz,4,16,Nvidia GeForce GTX 1060,4,True,True,3.21,15.6,1920x1080,0.6
+667,HP,HP Notebook,Notebook,448.71,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 520,0,False,False,2.5,17.3,1920x1080,0.6
+668,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i7 8550U 1.8GHz,8,8,Intel UHD Graphics 620,0,False,False,1.19,13.3,1920x1080,0.6
+669,Dell,Dell Gaming,Gaming,1806.22,Intel Core i7 7820HK 2.9GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,3.49,15.6,1920x1080,0.6
+670,HP,HP Notebook,Notebook,393.25,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon 520,4,True,False,1.86,15.6,1366x768,0.4
+671,Dell,Dell Notebook,Notebook,350.28,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1366x768,0.4
+672,HP,HP Notebook,Notebook,365.26,AMD A10-Series 9600P 2.4GHz,2,6,AMD Radeon R7 M440,0,False,False,2.65,17.3,1920x1080,0.6
+673,Lenovo,Lenovo Notebook,Notebook,204.13,Intel Celeron Dual Core 3855U 1.6GHz,2,4,Intel HD Graphics 510,0,False,False,2.1,15.6,1366x768,0.4
+674,Acer,Acer Notebook,Notebook,240.72,Intel Celeron Dual Core 3855U 1.6GHz,2,4,Intel HD Graphics 510,0,False,False,1.45,14.0,1366x768,0.4
+675,Lenovo,Lenovo Notebook,Notebook,448.71,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+676,HP,HP Workstation,Workstation,1224.79,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M1200,4,True,True,3.14,17.3,1920x1080,0.6
+677,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1662.59,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.42,14.0,2560x1440,0.8
+678,Toshiba,Toshiba Notebook,Notebook,624.6,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.5,13.3,1920x1080,0.6
+679,Acer,Acer Netbook,Netbook,172.68,Intel Celeron Dual Core N3050 1.6GHz,2,4,Intel HD Graphics,0,False,False,1.4,11.6,1366x768,0.4
+680,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1122.73,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.38,14.0,1920x1080,0.6
+681,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,429.45,Intel Core M M3-6Y30 0.9GHz,2,4,Intel HD Graphics 515,0,False,False,1.2,12.5,1920x1080,0.6
+682,Toshiba,Toshiba Ultrabook,Ultrabook,1204.9,Intel Core i7 6500U 2.5GHz,8,16,Intel HD Graphics 520,0,False,False,1.36,13.3,1920x1080,0.6
+683,Dell,Dell Gaming,Gaming,525.74,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.56,15.6,1920x1080,0.6
+684,Lenovo,Lenovo Notebook,Notebook,256.13,AMD A9-Series 9420 2.9GHz,2,4,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+685,Lenovo,Lenovo Notebook,Notebook,275.39,AMD A12-Series 9720P 3.6GHz,2,8,AMD Radeon R7,0,False,False,2.2,15.6,1366x768,0.4
+686,Lenovo,Lenovo Notebook,Notebook,398.93,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+687,Lenovo,Lenovo Notebook,Notebook,288.87,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.9,15.6,1366x768,0.4
+688,Dell,Dell Notebook,Notebook,510.33,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.18,15.6,1920x1080,0.6
+689,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,641.29,Intel Core i5 8250U 1.6GHz,4,1,Intel UHD Graphics 620,0,False,False,1.6,13.3,1920x1080,0.6
+690,Lenovo,Lenovo Workstation,Workstation,1190.78,Intel Core i7 6500U 2.5GHz,8,16,Nvidia Quadro M520M,4,True,True,2.18,15.6,1920x1080,0.6
+691,Lenovo,Lenovo Notebook,Notebook,764.54,Intel Core i5 6300HQ 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+692,HP,HP Notebook,Notebook,420.47,AMD A10-Series 9620P 2.5GHz,2,6,AMD Radeon 530,4,True,False,2.71,17.3,1920x1080,0.6
+693,Lenovo,Lenovo Gaming,Gaming,801.77,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+694,Dell,Dell Notebook,Notebook,699.06,Intel Core i5 7440HQ 2.8GHz,4,8,Nvidia GeForce 930MX,4,True,True,1.64,14.0,1920x1080,0.6
+695,Dell,Dell Notebook,Notebook,466.04,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.98,15.6,1920x1080,0.6
+696,Asus,Asus Notebook,Notebook,191.29,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.5,14.0,1920x1080,0.6
+697,Dell,Dell Notebook,Notebook,915.81,Intel Core i5 7300U 2.6GHz,4,16,Intel HD Graphics 620,0,False,False,1.93,15.6,1920x1080,0.6
+698,Lenovo,Lenovo Notebook,Notebook,550.18,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 920MX,4,True,True,1.87,14.0,1920x1080,0.6
+699,Dell,Dell Notebook,Notebook,756.83,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+700,Lenovo,Lenovo Notebook,Notebook,191.29,AMD A6-Series 7310 2GHz,2,4,AMD Radeon R4,0,False,False,2.19,15.6,1366x768,0.4
+701,Mediacom,Mediacom Notebook,Notebook,170.11,Intel Atom Z8350 1.92GHz,2,4,Intel HD Graphics 400,0,False,False,1.4,14.0,1920x1200,0.6
+702,HP,HP Notebook,Notebook,770.31,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 930MX,4,True,True,2.63,17.3,1920x1080,0.6
+703,Lenovo,Lenovo Ultrabook,Ultrabook,1082.7,Intel Core i7 6500U 2.5GHz,8,64,Intel HD Graphics 520,0,False,False,1.17,14.0,2560x1440,0.8
+704,HP,HP 2 in 1 Convertible,2 in 1 Convertible,537.04,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.58,13.3,1366x768,0.4
+705,Lenovo,Lenovo Ultrabook,Ultrabook,962.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.32,14.0,1920x1080,0.6
+706,Dell,Dell Gaming,Gaming,2349.07,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.36,17.3,3840x2160,1.0
+707,MSI,MSI Gaming,Gaming,865.63,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.7,17.3,1920x1080,0.6
+708,Lenovo,Lenovo Notebook,Notebook,314.48,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.9,15.6,1366x768,0.4
+709,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,416.61,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.71,13.3,1920x1080,0.6
+710,Dell,Dell Notebook,Notebook,378.43,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M445,0,False,False,2.32,15.6,1366x768,0.4
+711,HP,HP Notebook,Notebook,313.9,AMD A9-Series 9420 3GHz,2,4,AMD Radeon 520,4,True,False,2.1,15.6,1920x1080,0.6
+712,Acer,Acer Gaming,Gaming,1242.13,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,4.2,17.3,1920x1080,0.6
+713,Dell,Dell Notebook,Notebook,416.61,Intel Core i5 7200U 2.5GHz,4,12,Intel HD Graphics 620,0,False,False,2.25,15.6,1366x768,0.4
+714,HP,HP Notebook,Notebook,417.25,AMD A9-Series A9-9420 3GHz,2,6,AMD Radeon 520,4,True,False,2.1,15.6,1920x1080,0.6
+715,Acer,Acer Notebook,Notebook,358.84,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.4,15.6,1366x768,0.4
+716,Lenovo,Lenovo Notebook,Notebook,616.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.44,13.3,1920x1080,0.6
+717,Lenovo,Lenovo Notebook,Notebook,500.06,Intel Core i7 7500U 2.7GHz,8,4,Intel HD Graphics 620,0,False,False,1.85,15.6,1920x1080,0.6
+718,HP,HP Workstation,Workstation,1552.82,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia Quadro M2200,4,True,True,2.6,15.6,1920x1080,0.6
+719,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,423.03,Intel Core i5 8250U 1.6GHz,4,8,Intel UHD Graphics 620,0,False,False,1.55,13.3,1920x1080,0.6
+720,MSI,MSI Gaming,Gaming,1344.5,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.8,15.6,1920x1080,0.6
+721,Acer,Acer Notebook,Notebook,263.7,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.4,15.6,1366x768,0.4
+722,Dell,Dell Notebook,Notebook,774.81,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.0,15.6,1920x1080,0.6
+723,Dell,Dell Notebook,Notebook,426.88,Intel Core i3 6006U 2GHz,2,8,Intel HD Graphics 520,0,False,False,2.0,15.6,1366x768,0.4
+724,Toshiba,Toshiba Notebook,Notebook,985.36,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.25,14.0,1920x1080,0.6
+725,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,641.29,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+726,Lenovo,Lenovo Workstation,Workstation,2117.72,Intel Core i7 7600U 2.8GHz,8,16,Nvidia Quadro M520M,4,True,True,2.5,15.6,3840x2160,1.0
+727,Acer,Acer Notebook,Notebook,211.84,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.68,14.0,1366x768,0.4
+728,Samsung,Samsung Ultrabook,Ultrabook,1058.54,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,0.81,13.3,1920x1080,0.6
+729,Dell,Dell Notebook,Notebook,723.27,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.6,14.0,1366x768,0.4
+730,HP,HP Workstation,Workstation,2817.42,Intel Xeon E3-1535M v5 2.9GHz,2,16,Nvidia Quadro M2000M,4,True,True,3.0,17.3,1920x1080,0.6
+731,Lenovo,Lenovo Netbook,Netbook,304.92,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.4,11.6,1366x768,0.4
+732,HP,HP Notebook,Notebook,1219.66,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.84,15.6,1920x1080,0.6
+733,Asus,Asus Notebook,Notebook,371.68,Intel Core i5 6300HQ 2.3GHz,4,4,Nvidia GeForce GTX 950M,4,True,True,2.45,15.6,1366x768,0.4
+734,Asus,Asus Notebook,Notebook,545.57,Intel Core i7 7500U 2.7GHz,8,4,Intel HD Graphics 620,0,False,False,2.37,15.6,1366x768,0.4
+735,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,769.67,Intel Core i5 6260U 1.8GHz,4,8,Intel HD Graphics 540,0,False,False,1.3,13.3,3200x1800,0.4
+736,HP,HP Notebook,Notebook,705.48,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+737,HP,HP Workstation,Workstation,1002.05,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia Quadro M1000M,4,True,True,2.59,15.6,1920x1080,0.6
+738,Dell,Dell Gaming,Gaming,1841.68,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.42,15.6,3840x2160,1.0
+739,Acer,Acer Notebook,Notebook,384.51,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.1,15.6,1366x768,0.4
+740,Lenovo,Lenovo Gaming,Gaming,672.74,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+741,Dell,Dell Ultrabook,Ultrabook,1193.34,Intel Core i7 7600U 2.8GHz,8,16,Intel HD Graphics 620,0,False,False,1.18,12.5,1920x1080,0.6
+742,Google,Google Ultrabook,Ultrabook,1000.77,Intel Core i5 7Y57 1.2GHz,4,8,Intel HD Graphics 615,0,False,False,1.1,12.3,2400x1600,0.4
+743,Asus,Asus Ultrabook,Ultrabook,724.74,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.2,13.3,3200x1800,0.4
+744,Dell,Dell Notebook,Notebook,545.0,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.65,13.3,1366x768,0.4
+745,Acer,Acer Notebook,Notebook,420.46,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.6,13.3,1366x768,0.4
+746,Asus,Asus Notebook,Notebook,301.92,Intel Pentium Quad Core N4200 1.1GHz,2,4,Nvidia GeForce 920MX,4,True,True,2.8,17.3,1366x768,0.4
+747,Dell,Dell Gaming,Gaming,705.48,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 960M,4,True,True,2.72,15.6,3840x2160,1.0
+748,Samsung,Samsung Ultrabook,Ultrabook,1026.44,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.31,13.3,1920x1080,0.6
+749,Acer,Acer Notebook,Notebook,191.29,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.1,15.6,1366x768,0.4
+750,Dell,Dell Notebook,Notebook,758.29,Intel Core i7 7500U 2.7GHz,8,16,AMD Radeon R7 M445,0,False,False,2.3,15.6,1920x1080,0.6
+751,Samsung,Samsung 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i7 7500U 2.7GHz,8,16,AMD Radeon 540,4,True,False,1.71,15.0,1920x1080,0.6
+752,Toshiba,Toshiba Notebook,Notebook,654.77,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.75,14.0,1366x768,0.4
+753,Dell,Dell Gaming,Gaming,705.48,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.62,15.6,1920x1080,0.6
+754,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,538.58,Intel Core i7 7500U 2.7GHz,8,12,Nvidia GeForce 940MX,4,True,True,2.3,15.6,1920x1080,0.6
+755,Lenovo,Lenovo Notebook,Notebook,1521.37,Intel Core i7 6820HQ 2.7GHz,8,16,Nvidia Quadro M2000M,4,True,True,2.5,15.6,3840x2160,1.0
+756,Acer,Acer Notebook,Notebook,408.27,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.8,14.0,1920x1080,0.6
+757,Razer,Razer Gaming,Gaming,1860.95,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.95,14.0,1920x1080,0.6
+758,Asus,Asus Notebook,Notebook,373.54,Intel Pentium Dual Core N4200 1.1GHz,2,8,Intel HD Graphics 505,0,False,False,2.0,15.6,1920x1080,0.6
+759,Dell,Dell Gaming,Gaming,2303.75,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1070M,6,True,True,4.42,17.3,1920x1080,0.6
+760,Asus,Asus Gaming,Gaming,1508.53,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.3,17.3,1920x1080,0.6
+761,Toshiba,Toshiba Ultrabook,Ultrabook,1132.36,Intel Core i7 6600U 2.6GHz,8,16,Nvidia GeForce 930M,4,True,True,1.47,14.0,1920x1080,0.6
+762,Lenovo,Lenovo Notebook,Notebook,211.19,Intel Celeron Quad Core N3710 1.6GHz,2,8,Intel HD Graphics 405,0,False,False,2.2,15.6,1366x768,0.4
+763,Lenovo,Lenovo Ultrabook,Ultrabook,1475.79,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.7,14.0,1920x1080,0.6
+764,MSI,MSI Gaming,Gaming,1213.89,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.6,14.0,1920x1080,0.6
+765,MSI,MSI Gaming,Gaming,699.06,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+766,Lenovo,Lenovo Gaming,Gaming,641.29,Intel Core i7 7700HQ 2.8GHz,8,4,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+767,Acer,Acer Gaming,Gaming,1475.79,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,4.2,17.3,1920x1080,0.6
+768,Dell,Dell Gaming,Gaming,632.3,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.62,15.6,1920x1080,0.6
+769,Asus,Asus Gaming,Gaming,859.54,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX1060,4,True,True,2.24,15.6,1920x1080,0.6
+770,Vero,Vero Notebook,Notebook,130.25,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.22,14.0,1920x1080,0.6
+771,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1264.6,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+772,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,615.61,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M460,0,False,False,2.08,15.6,1920x1080,0.6
+773,Apple,Apple Ultrabook,Ultrabook,747.85,Intel Core M 1.2GHz,2,8,Intel HD Graphics 5300,0,False,False,0.92,12.0,2304x1440,0.4
+774,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1495.69,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.42,14.0,2560x1440,0.8
+775,Asus,Asus Notebook,Notebook,191.94,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.63,14.0,1366x768,0.4
+776,Dell,Dell Notebook,Notebook,519.96,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.95,15.6,1366x768,0.4
+777,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,865.96,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.38,13.9,1920x1080,0.6
+778,Dell,Dell Notebook,Notebook,474.38,Intel Core i3 6006U 2GHz,2,8,AMD Radeon R5 M420X,0,False,False,2.0,15.6,1920x1080,0.6
+779,HP,HP Workstation,Workstation,1325.52,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M2200,4,True,True,3.14,15.6,1920x1080,0.6
+780,Asus,Asus Notebook,Notebook,705.48,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.37,15.6,1920x1080,0.6
+781,Dell,Dell Ultrabook,Ultrabook,962.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.29,13.3,1920x1080,0.6
+782,Dell,Dell Notebook,Notebook,1122.73,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.06,15.6,3840x2160,1.0
+783,Dell,Dell Netbook,Netbook,477.59,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,1.63,11.6,1366x768,0.4
+784,HP,HP Netbook,Netbook,891.64,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.26,12.5,1366x768,0.4
+785,Toshiba,Toshiba Notebook,Notebook,500.7,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+786,HP,HP Notebook,Notebook,403.77,AMD A12-Series 9700P 2.5GHz,2,8,AMD Radeon R7 Graphics,0,False,False,2.04,15.6,1366x768,0.4
+787,Dell,Dell Gaming,Gaming,1077.8,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.62,15.6,3840x2160,1.0
+788,Lenovo,Lenovo Notebook,Notebook,390.93,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 920M,4,True,True,2.4,15.6,1920x1080,0.6
+789,HP,HP Gaming,Gaming,1122.73,Intel Core i7 7700HQ 2.8GHz,8,12,AMD Radeon RX 580,4,True,False,3.74,17.3,1920x1080,0.6
+790,MSI,MSI Gaming,Gaming,1550.26,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.9,17.3,1920x1080,0.6
+791,Samsung,Samsung Ultrabook,Ultrabook,962.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,0.81,13.3,1920x1080,0.6
+792,Dell,Dell Notebook,Notebook,616.89,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GT 940MX,4,True,True,1.98,15.6,1920x1080,0.6
+793,Dell,Dell Notebook,Notebook,507.0,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R5 M420,0,False,False,2.18,15.6,1920x1080,0.6
+794,Lenovo,Lenovo Ultrabook,Ultrabook,1193.34,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.32,14.0,1920x1080,0.6
+795,Razer,Razer Ultrabook,Ultrabook,1154.83,Intel Core i7 7500U 2.5GHz,8,16,Intel HD Graphics 620,0,False,False,1.29,12.5,3840x2160,1.0
+796,HP,HP Netbook,Netbook,247.14,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.23,11.6,1366x768,0.4
+797,Dell,Dell Gaming,Gaming,1608.04,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,4.36,17.3,1920x1080,0.6
+798,Dell,Dell Notebook,Notebook,484.66,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.76,14.0,1366x768,0.4
+799,Lenovo,Lenovo Notebook,Notebook,314.48,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+800,Toshiba,Toshiba Ultrabook,Ultrabook,699.7,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.25,14.0,1366x768,0.4
+801,Lenovo,Lenovo Ultrabook,Ultrabook,1604.18,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.13,14.0,1920x1080,0.6
+802,MSI,MSI Gaming,Gaming,769.67,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+803,Lenovo,Lenovo Ultrabook,Ultrabook,1203.61,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.13,14.0,1920x1080,0.6
+804,Toshiba,Toshiba Notebook,Notebook,320.32,Intel Pentium Dual Core 4405U 2.1GHz,2,4,Intel HD Graphics 510,0,False,False,1.75,14.0,1366x768,0.4
+805,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,871.74,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.1,13.3,1920x1080,0.6
+806,Dell,Dell Notebook,Notebook,375.53,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.76,14.0,1366x768,0.4
+807,Acer,Acer Netbook,Netbook,227.88,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.35,11.6,1366x768,0.4
+808,Acer,Acer Notebook,Notebook,397.35,Intel Core i3 7100U 2.4GHz,2,8,Intel HD Graphics 620,0,False,False,1.5,14.0,1920x1080,0.6
+809,Razer,Razer Gaming,Gaming,3529.96,Intel Core i7 7820HK 2.9GHz,8,32,Nvidia GeForce GTX 1080,8,True,True,3.49,17.3,3840x2160,1.0
+810,Lenovo,Lenovo Ultrabook,Ultrabook,1347.41,Intel Core i7 6600U 2.6GHz,8,16,Intel HD Graphics 520,0,False,False,1.1,14.0,2560x1440,0.8
+811,Asus,Asus Notebook,Notebook,333.16,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 920,4,True,True,2.1,15.6,1920x1080,0.6
+812,Lenovo,Lenovo Notebook,Notebook,761.33,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.7,14.0,1920x1080,0.6
+813,Lenovo,Lenovo Notebook,Notebook,1059.18,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.32,14.0,1920x1080,0.6
+814,Dell,Dell Gaming,Gaming,1781.11,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,3.21,15.6,1920x1080,0.6
+815,Asus,Asus Gaming,Gaming,1552.82,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.9,17.3,1920x1080,0.6
+816,Toshiba,Toshiba Notebook,Notebook,429.45,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.0,15.6,1366x768,0.4
+817,Lenovo,Lenovo Notebook,Notebook,208.63,Intel Celeron Quad Core N3160 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.5,14.0,1366x768,0.4
+818,Asus,Asus Notebook,Notebook,378.74,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+819,Asus,Asus Gaming,Gaming,1154.83,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.73,17.3,1920x1080,0.6
+820,Dell,Dell Gaming,Gaming,1972.57,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,1920x1080,0.6
+821,HP,HP Notebook,Notebook,584.15,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.63,17.3,1600x900,0.4
+822,Dell,Dell Notebook,Notebook,458.33,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.18,15.6,1366x768,0.4
+823,HP,HP Ultrabook,Ultrabook,1200.4,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+824,Dell,Dell Notebook,Notebook,474.38,Intel Core i7 7500U 2.7GHz,8,4,AMD Radeon R5 M420,0,False,False,2.18,15.6,1920x1080,0.6
+825,HP,HP 2 in 1 Convertible,2 in 1 Convertible,394.79,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.4,11.6,1366x768,0.4
+826,Asus,Asus Ultrabook,Ultrabook,658.62,Intel Core i5 6200U 2.3GHz,4,8,Nvidia GeForce 940M,4,True,True,1.45,13.3,1920x1080,0.6
+827,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1461.67,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.28,13.3,1920x1080,0.6
+828,HP,HP Ultrabook,Ultrabook,942.35,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+829,HP,HP Notebook,Notebook,191.94,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.86,15.6,1366x768,0.4
+830,Asus,Asus Gaming,Gaming,1219.02,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.1,15.6,1920x1080,0.6
+831,Dell,Dell Notebook,Notebook,555.27,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R7 M445,0,False,False,2.83,17.3,1920x1080,0.6
+832,Lenovo,Lenovo Ultrabook,Ultrabook,1221.59,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GT 940MX,4,True,True,1.96,14.0,1920x1080,0.6
+833,Asus,Asus Notebook,Notebook,505.2,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GTX 930MX,4,True,True,2.3,15.6,1920x1080,0.6
+834,Dell,Dell Notebook,Notebook,606.62,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+835,Asus,Asus Notebook,Notebook,288.23,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.0,15.6,1366x768,0.4
+836,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1642.69,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.28,13.3,1920x1080,0.6
+837,Dell,Dell Notebook,Notebook,416.61,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.62,13.3,1920x1080,0.6
+838,Lenovo,Lenovo Notebook,Notebook,301.06,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.2,15.6,1920x1080,0.6
+839,Lenovo,Lenovo Notebook,Notebook,546.06,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+840,HP,HP Notebook,Notebook,865.96,Intel Core i5 7300U 2.6GHz,4,8,AMD Radeon R7 M465,0,False,False,1.84,15.6,1920x1080,0.6
+841,Toshiba,Toshiba Notebook,Notebook,824.88,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.05,13.3,1920x1080,0.6
+842,Lenovo,Lenovo Gaming,Gaming,652.84,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.5,15.6,1920x1080,0.6
+843,Dell,Dell Ultrabook,Ultrabook,1437.92,Intel Core i7 7660U 2.5GHz,8,16,Intel Iris Plus Graphics 640,0,False,False,1.29,13.3,3200x1800,0.4
+844,HP,HP Notebook,Notebook,584.15,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.07,15.6,1920x1080,0.6
+845,Toshiba,Toshiba Ultrabook,Ultrabook,702.91,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1366x768,0.4
+846,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1251.76,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+847,Acer,Acer Notebook,Notebook,579.02,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.56,14.0,1920x1080,0.6
+848,Dell,Dell Workstation,Workstation,1141.35,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia Quadro M620,4,True,True,2.23,15.6,1920x1080,0.6
+849,Lenovo,Lenovo Notebook,Notebook,677.23,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.38,15.6,1366x768,0.4
+850,Lenovo,Lenovo Notebook,Notebook,307.48,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,2.2,15.6,1920x1080,0.6
+851,Toshiba,Toshiba Notebook,Notebook,891.0,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.0,15.6,1920x1080,0.6
+852,Lenovo,Lenovo Notebook,Notebook,471.82,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.44,13.3,1920x1080,0.6
+853,Samsung,Samsung Ultrabook,Ultrabook,1186.92,Intel Core i7 7500U 2.7GHz,8,16,Nvidia GeForce 940MX,4,True,True,1.23,15.0,1920x1080,0.6
+854,Dell,Dell Ultrabook,Ultrabook,1084.86,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.6,12.5,1920x1080,0.6
+855,Asus,Asus Notebook,Notebook,256.12,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.0,15.6,1366x768,0.4
+856,Xiaomi,Xiaomi Ultrabook,Ultrabook,600.2,Intel Core i5 6200U 2.3GHz,4,8,Nvidia GeForce 940MX,4,True,True,1.28,13.3,1920x1080,0.6
+857,Dell,Dell Notebook,Notebook,585.76,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 940MX,4,True,True,2.18,15.6,1920x1080,0.6
+858,HP,HP Notebook,Notebook,538.58,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.04,15.6,1920x1080,0.6
+859,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1091.28,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.28,13.3,1920x1080,0.6
+860,HP,HP 2 in 1 Convertible,2 in 1 Convertible,439.59,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+861,Asus,Asus Notebook,Notebook,223.39,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.65,14.1,1366x768,0.4
+862,Lenovo,Lenovo Notebook,Notebook,429.45,Intel Core i7 6500U 2.5GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+863,Dell,Dell Notebook,Notebook,236.87,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+864,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.28,13.3,1920x1080,0.6
+865,Dell,Dell Notebook,Notebook,292.53,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R5 M420X,0,False,False,2.18,15.6,1366x768,0.4
+866,Asus,Asus Gaming,Gaming,879.38,Intel Core i5 7300HQ 2.5GHz,4,12,Nvidia GeForce GTX 1050,2,True,True,2.2,17.3,1920x1080,0.6
+867,Acer,Acer Netbook,Netbook,190.65,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.25,11.6,1366x768,0.4
+868,Lenovo,Lenovo Notebook,Notebook,243.29,AMD A4-Series 7210 2.2GHz,2,4,AMD Radeon R3,0,False,False,2.8,17.3,1600x900,0.4
+869,HP,HP Notebook,Notebook,812.04,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.95,14.0,1920x1080,0.6
+870,HP,HP 2 in 1 Convertible,2 in 1 Convertible,898.06,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.42,13.3,3200x1800,0.4
+871,Samsung,Samsung Ultrabook,Ultrabook,1090.64,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.17,15.0,1920x1080,0.6
+872,Lenovo,Lenovo Ultrabook,Ultrabook,1154.83,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.32,14.0,1920x1080,0.6
+873,MSI,MSI Gaming,Gaming,1700.47,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.43,17.3,3840x2160,1.0
+874,Toshiba,Toshiba Notebook,Notebook,946.84,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.05,13.3,1920x1080,0.6
+875,Dell,Dell Gaming,Gaming,596.35,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050Ti,2,True,True,2.62,15.6,1920x1080,0.6
+876,HP,HP Notebook,Notebook,577.73,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 930MX,4,True,True,2.04,15.6,1920x1080,0.6
+877,Dell,Dell Notebook,Notebook,394.14,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R5 M420X,0,False,False,2.18,15.6,1366x768,0.4
+878,Dell,Dell Notebook,Notebook,600.2,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.9,15.6,1920x1080,0.6
+879,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1292.26,Intel Core i7 7Y75 1.3GHz,8,8,Intel HD Graphics 615,0,False,False,1.24,13.3,3200x1800,0.4
+880,Asus,Asus Gaming,Gaming,821.03,Intel Core i7 6820HK 2.7GHz,8,32,Nvidia GeForce GTX 980M,4,True,True,3.58,17.3,1920x1080,0.6
+881,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1058.54,Intel Core i7 7Y75 1.3GHz,8,16,Intel HD Graphics 615,0,False,False,1.22,13.3,1920x1080,0.6
+882,Lenovo,Lenovo Ultrabook,Ultrabook,1315.31,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.13,14.0,1920x1080,0.6
+883,Lenovo,Lenovo Notebook,Notebook,1260.1,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.95,15.6,1920x1080,0.6
+884,LG,LG Ultrabook,Ultrabook,1347.41,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.08,15.6,1920x1080,0.6
+885,HP,HP Netbook,Netbook,951.98,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.26,12.5,1920x1080,0.6
+886,Acer,Acer Notebook,Notebook,230.45,Intel Celeron Dual Core 3205U 1.5GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1920x1080,0.6
+887,Lenovo,Lenovo Notebook,Notebook,506.48,Intel Core i5 6300HQ 2.3GHz,4,8,Nvidia GeForce GTX 960M,4,True,True,2.6,15.6,1920x1080,0.6
+888,LG,LG Ultrabook,Ultrabook,1219.02,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,0.98,14.0,1920x1080,0.6
+889,Dell,Dell Notebook,Notebook,773.52,Intel Core i5 7440HQ 2.8GHz,4,8,Intel HD Graphics 620,0,False,False,1.6,14.0,1920x1080,0.6
+890,HP,HP Ultrabook,Ultrabook,1989.98,Intel Core M 6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,1.09,12.5,3840x2160,1.0
+891,Lenovo,Lenovo Notebook,Notebook,506.48,Intel Core i7 7500U 2.7GHz,8,6,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+892,HP,HP Notebook,Notebook,654.12,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 930MX,4,True,True,2.04,15.6,1920x1080,0.6
+893,Acer,Acer Notebook,Notebook,320.32,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.4,15.6,1920x1080,0.6
+894,Lenovo,Lenovo Notebook,Notebook,565.54,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.44,13.3,1920x1080,0.6
+895,HP,HP Notebook,Notebook,616.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+896,MSI,MSI Gaming,Gaming,1026.44,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.7,17.3,1920x1080,0.6
+897,Dell,Dell Gaming,Gaming,865.96,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.6,15.6,1920x1080,0.6
+898,MSI,MSI Gaming,Gaming,718.9,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+899,Dell,Dell Notebook,Notebook,439.71,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon R5 M420,0,False,False,2.18,15.6,1366x768,0.4
+900,HP,HP Ultrabook,Ultrabook,832.57,Intel Core i7 6500U 2.5GHz,8,8,AMD Radeon R7 M365X,0,False,False,1.84,15.6,1920x1080,0.6
+901,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1171.52,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.37,13.3,1920x1080,0.6
+902,Dell,Dell Notebook,Notebook,468.54,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.95,15.6,1366x768,0.4
+903,Lenovo,Lenovo Ultrabook,Ultrabook,1059.18,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.36,12.5,1920x1080,0.6
+904,HP,HP Notebook,Notebook,747.85,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,2.31,15.6,1920x1080,0.6
+905,Dell,Dell Notebook,Notebook,454.52,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.18,15.6,1366x768,0.4
+906,HP,HP Notebook,Notebook,737.57,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.95,14.0,1366x768,0.4
+907,Lenovo,Lenovo Notebook,Notebook,198.36,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.2,15.6,1366x768,0.4
+908,HP,HP Ultrabook,Ultrabook,1013.6,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+909,HP,HP Notebook,Notebook,185.45,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.86,15.6,1366x768,0.4
+910,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i7 6560U 2.2GHz,8,16,Intel Iris Graphics 540,0,False,False,1.3,13.3,3200x1800,0.4
+911,Toshiba,Toshiba Notebook,Notebook,709.33,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.47,14.0,1920x1080,0.6
+912,HP,HP Netbook,Netbook,1071.38,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+913,Dell,Dell Notebook,Notebook,358.58,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.18,15.6,1366x768,0.4
+914,MSI,MSI Gaming,Gaming,769.67,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+915,Dell,Dell Gaming,Gaming,1770.44,Intel Core i7 6820HK 2.7GHz,8,16,Nvidia GeForce GTX 1080,8,True,True,4.36,17.3,2560x1440,0.8
+916,HP,HP Gaming,Gaming,898.06,Intel Core i5 6300HQ 2.3GHz,4,8,Nvidia GeForce GTX 965M,4,True,True,2.75,17.3,1920x1080,0.6
+917,Asus,Asus Notebook,Notebook,340.22,Intel Pentium Quad Core N3710 1.6GHz,2,4,Nvidia GeForce 920MX,4,True,True,2.8,17.3,1600x900,0.4
+918,Acer,Acer Notebook,Notebook,397.35,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.23,15.6,1366x768,0.4
+919,Toshiba,Toshiba Notebook,Notebook,718.32,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,2.2,15.6,1366x768,0.4
+920,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,833.86,Intel Core M m7-6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,1.1,11.3,1920x1080,0.6
+921,Lenovo,Lenovo Gaming,Gaming,641.29,AMD FX 8800P 2.1GHz,2,16,AMD Radeon R9 M385,0,False,False,2.5,15.6,1920x1080,0.6
+922,Dell,Dell Ultrabook,Ultrabook,945.05,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics,0,False,False,1.36,12.5,1920x1080,0.6
+923,Lenovo,Lenovo Notebook,Notebook,439.72,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 920MX,4,True,True,2.2,15.6,1920x1080,0.6
+924,Dell,Dell Notebook,Notebook,423.03,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R7 M445,0,False,False,2.36,17.3,1600x900,0.4
+925,Acer,Acer Notebook,Notebook,224.03,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.68,14.0,1366x768,0.4
+926,HP,HP Workstation,Workstation,1443.7,Intel Core i7 6820HQ 2.7GHz,8,8,Nvidia Quadro M1000M,4,True,True,2.0,15.6,1920x1080,0.6
+927,Dell,Dell Ultrabook,Ultrabook,1139.42,Intel Core i7 7600U 2.8GHz,8,8,Intel HD Graphics 620,0,False,False,1.36,14.0,1920x1080,0.6
+928,Toshiba,Toshiba Notebook,Notebook,937.21,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+929,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,743.99,Intel Core M M7-6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,1.2,12.5,1920x1080,0.6
+930,Lenovo,Lenovo Ultrabook,Ultrabook,955.82,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.7,14.0,1920x1080,0.6
+931,Dell,Dell Gaming,Gaming,2024.64,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.36,17.3,3840x2160,1.0
+932,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1219.02,Intel Core i5 7Y54 1.2GHz,4,8,Intel HD Graphics 615,0,False,False,1.24,13.3,1920x1080,0.6
+933,HP,HP 2 in 1 Convertible,2 in 1 Convertible,497.49,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,1.45,11.6,1366x768,0.4
+934,Dell,Dell Ultrabook,Ultrabook,813.96,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.3,13.3,3200x1800,0.4
+935,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,249.71,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.25,11.6,1366x768,0.4
+936,Toshiba,Toshiba Notebook,Notebook,985.36,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+937,Lenovo,Lenovo Ultrabook,Ultrabook,1129.79,Intel Core i5 7300U 2.6GHz,4,8,Intel HD Graphics 620,0,False,False,1.36,12.5,1920x1080,0.6
+938,Acer,Acer Notebook,Notebook,647.71,Intel Core i5 7200U 2.5GHz,4,12,Nvidia GeForce GTX 950M,4,True,True,2.4,15.6,1920x1080,0.6
+939,Toshiba,Toshiba Ultrabook,Ultrabook,1149.05,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.1,12.5,1920x1080,0.6
+940,HP,HP Notebook,Notebook,543.39,Intel Core i5 7200U 2.50GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.04,15.6,1366x768,0.4
+941,Dell,Dell Notebook,Notebook,298.89,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R5 M430,0,False,False,2.25,15.6,1366x768,0.4
+942,Dell,Dell Notebook,Notebook,529.59,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.9,15.6,1366x768,0.4
+943,HP,HP Notebook,Notebook,439.72,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.04,15.6,1920x1080,0.6
+944,Dell,Dell Gaming,Gaming,2021.43,Intel Core i7 7700HQ 2.8GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,1920x1080,0.6
+945,Lenovo,Lenovo Notebook,Notebook,446.14,Intel Core i5 7200U 2.5GHz,4,6,Nvidia GeForce 920MX,4,True,True,2.4,15.6,1920x1080,0.6
+946,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1219.02,Intel Core i7 7Y75 1.3GHz,8,16,Intel HD Graphics 615,0,False,False,1.22,13.3,3200x1800,0.4
+947,Dell,Dell Ultrabook,Ultrabook,1260.09,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.5,14.0,2560x1440,0.8
+948,Dell,Dell Gaming,Gaming,1797.4,Intel Core i7 6700HQ 2.6GHz,8,32,Nvidia GeForce GTX 1070,6,True,True,4.42,17.3,1920x1080,0.6
+949,Toshiba,Toshiba Notebook,Notebook,757.47,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.95,14.0,1920x1080,0.6
+950,Asus,Asus Gaming,Gaming,1315.89,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.73,17.3,1920x1080,0.6
+951,HP,HP Notebook,Notebook,628.45,Intel Core i5 7200U 2.70GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.04,15.6,1920x1080,0.6
+952,Lenovo,Lenovo Notebook,Notebook,643.21,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.7,14.0,1366x768,0.4
+953,Asus,Asus 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i7 7500U 2.7GHz,8,16,Nvidia GeForce GTX 950M,4,True,True,2.3,15.6,3840x2160,1.0
+954,Asus,Asus Gaming,Gaming,1122.73,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.99,17.3,1920x1080,0.6
+955,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,833.86,Intel Core i7 7500U 2.7GHz,8,12,Intel HD Graphics 620,0,False,False,2.19,15.6,1920x1080,0.6
+956,Toshiba,Toshiba Notebook,Notebook,767.1,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+957,Lenovo,Lenovo Notebook,Notebook,352.42,AMD A12-Series 9720P 3.6GHz,2,6,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+958,Fujitsu,Fujitsu Notebook,Notebook,416.61,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.3,15.6,1366x768,0.4
+959,Toshiba,Toshiba Notebook,Notebook,587.36,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.75,14.0,1366x768,0.4
+960,Dell,Dell Notebook,Notebook,384.51,Intel Core i5 7200U 2.5GHz,4,4,AMD Radeon R5 M430,0,False,False,2.25,15.6,1366x768,0.4
+961,HP,HP Notebook,Notebook,517.39,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.04,15.6,1920x1080,0.6
+962,Lenovo,Lenovo Gaming,Gaming,763.25,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.5,15.6,1920x1080,0.6
+963,Dell,Dell Notebook,Notebook,480.8,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R7 M445,0,False,False,2.36,15.6,1366x768,0.4
+964,Dell,Dell Notebook,Notebook,718.32,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620 ,0,False,False,1.6,14.0,1920x1080,0.6
+965,HP,HP Netbook,Netbook,1224.8,Intel Core M 6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,0.97,12.5,1920x1080,0.6
+966,HP,HP Notebook,Notebook,320.32,Intel Core i3 6006U 2GHz,2,4,AMD Radeon 520,4,True,False,2.1,15.6,1920x1080,0.6
+967,Lenovo,Lenovo Notebook,Notebook,173.72,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.9,15.6,1366x768,0.4
+968,Lenovo,Lenovo Notebook,Notebook,865.96,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,2.3,15.6,1920x1080,0.6
+969,Asus,Asus Notebook,Notebook,738.22,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.4,13.3,3200x1800,0.4
+970,HP,HP Ultrabook,Ultrabook,865.96,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.11,13.3,1920x1080,0.6
+971,Acer,Acer Notebook,Notebook,243.93,Intel Pentium Quad Core N4200 1.1GHz,2,4,Intel HD Graphics 505,0,False,False,2.4,15.6,1366x768,0.4
+972,Asus,Asus Gaming,Gaming,1154.83,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.5,15.6,1920x1080,0.6
+973,HP,HP Ultrabook,Ultrabook,1340.99,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+974,Acer,Acer Gaming,Gaming,808.83,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.7,15.6,1920x1080,0.6
+975,HP,HP Notebook,Notebook,763.25,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.34,13.3,1920x1080,0.6
+976,Dell,Dell Notebook,Notebook,351.13,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.18,15.6,1366x768,0.4
+977,HP,HP Notebook,Notebook,500.06,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.64,14.0,1366x768,0.4
+978,Toshiba,Toshiba Notebook,Notebook,767.1,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+979,HP,HP Notebook,Notebook,706.11,Intel Core i5 6300U 2.4GHz,4,4,Intel HD Graphics 520,0,False,False,1.48,14.0,1366x768,0.4
+980,HP,HP Notebook,Notebook,773.52,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.95,14.0,1920x1080,0.6
+981,HP,HP Ultrabook,Ultrabook,930.15,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.43,14.0,1920x1080,0.6
+982,HP,HP Notebook,Notebook,673.55,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 930MX,4,True,True,1.64,14.0,1920x1080,0.6
+983,HP,HP Notebook,Notebook,439.08,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.64,14.0,1366x768,0.4
+984,Dell,Dell Gaming,Gaming,609.19,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.65,15.6,1920x1080,0.6
+985,HP,HP Ultrabook,Ultrabook,987.93,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.26,12.5,1920x1080,0.6
+986,HP,HP Notebook,Notebook,1020.67,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.48,14.0,1920x1080,0.6
+987,HP,HP Ultrabook,Ultrabook,1211.45,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+988,HP,HP Notebook,Notebook,513.54,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,1.49,13.3,1366x768,0.4
+989,Toshiba,Toshiba Notebook,Notebook,776.73,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.5,13.3,1366x768,0.4
+990,HP,HP Notebook,Notebook,494.28,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+991,Lenovo,Lenovo Notebook,Notebook,1905.24,Intel Core i7 6820HQ 2.7GHz,8,16,Nvidia Quadro 3000M,4,True,True,2.4,17.3,3840x2160,1.0
+992,Toshiba,Toshiba Notebook,Notebook,956.47,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.47,14.0,1920x1080,0.6
+993,HP,HP Notebook,Notebook,1430.86,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.43,14.0,1920x1080,0.6
+994,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,510.97,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,2.08,15.6,1920x1080,0.6
+995,Toshiba,Toshiba Ultrabook,Ultrabook,1020.67,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.2,13.3,1920x1080,0.6
+996,HP,HP Notebook,Notebook,737.57,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.11,13.3,1920x1080,0.6
+997,HP,HP Notebook,Notebook,760.96,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 930MX,4,True,True,1.64,14.0,1920x1080,0.6
+998,Dell,Dell Notebook,Notebook,671.74,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,2.09,15.6,1920x1080,0.6
+999,HP,HP Ultrabook,Ultrabook,1000.77,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.26,12.5,1366x768,0.4
+1000,HP,HP Notebook,Notebook,763.25,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.31,14.0,1366x768,0.4
+1001,HP,HP Notebook,Notebook,680.44,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.95,14.0,1366x768,0.4
+1002,Dell,Dell Ultrabook,Ultrabook,1042.49,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.29,13.3,3200x1800,0.4
+1003,HP,HP Notebook,Notebook,693.28,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce 930MX,4,True,True,2.63,17.3,1920x1080,0.6
+1004,HP,HP Notebook,Notebook,624.6,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.64,14.0,1366x768,0.4
+1005,Acer,Acer Notebook,Notebook,262.55,AMD A9-Series 9420 3GHz,2,6,AMD Radeon R5,0,False,False,2.1,15.6,1366x768,0.4
+1006,MSI,MSI Gaming,Gaming,765.05,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.7,17.3,1920x1080,0.6
+1007,HP,HP Notebook,Notebook,767.1,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.95,14.0,1920x1080,0.6
+1008,HP,HP Notebook,Notebook,788.92,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.84,15.6,1920x1080,0.6
+1009,HP,HP Ultrabook,Ultrabook,865.96,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+1010,HP,HP Notebook,Notebook,476.31,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+1011,Toshiba,Toshiba Ultrabook,Ultrabook,1107.33,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.47,14.0,1920x1080,0.6
+1012,Dell,Dell Notebook,Notebook,682.34,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,2.09,15.6,1920x1080,0.6
+1013,HP,HP Notebook,Notebook,648.67,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.64,14.0,1920x1080,0.6
+1014,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,543.71,Intel Core i7 6500U 2.5GHz,8,4,Intel HD Graphics 520,0,False,False,1.8,15.6,1920x1080,0.6
+1015,Vero,Vero Notebook,Notebook,135.32,Intel Atom X5-Z8350 1.44GHz,2,2,Intel HD Graphics 400,0,False,False,1.45,14.0,1366x768,0.4
+1016,Toshiba,Toshiba Notebook,Notebook,914.75,Intel Core i7 6500U 2.5GHz,8,16,Nvidia GeForce 930M,4,True,True,2.4,15.6,1920x1080,0.6
+1017,Lenovo,Lenovo Notebook,Notebook,673.77,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,2.3,15.6,1920x1080,0.6
+1018,HP,HP Notebook,Notebook,641.93,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+1019,HP,HP Notebook,Notebook,1350.19,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.84,15.6,1920x1080,0.6
+1020,HP,HP Notebook,Notebook,942.99,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.43,14.0,1920x1080,0.6
+1021,MSI,MSI Gaming,Gaming,992.19,Intel Core i7 6820HK 2.7GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,3.78,17.3,1920x1080,0.6
+1022,Lenovo,Lenovo Gaming,Gaming,1470.01,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.6,17.3,1920x1080,0.6
+1023,Asus,Asus Netbook,Netbook,184.81,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,1.2,11.6,1366x768,0.4
+1024,Lenovo,Lenovo Notebook,Notebook,1681.85,Intel Core i7 6600U 2.6GHz,8,16,Intel HD Graphics 520,0,False,False,1.1,14.0,2560x1440,0.8
+1025,HP,HP Notebook,Notebook,628.45,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,1.91,15.6,1920x1080,0.6
+1026,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,702.27,Intel Core i5 7200U 2.7GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+1027,HP,HP Notebook,Notebook,628.45,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+1028,Dell,Dell Ultrabook,Ultrabook,1446.91,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.2,13.3,3200x1800,0.4
+1029,HP,HP Notebook,Notebook,452.66,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,2.31,15.6,1366x768,0.4
+1030,HP,HP Notebook,Notebook,320.32,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.96,15.6,1366x768,0.4
+1031,Acer,Acer Notebook,Notebook,288.23,AMD A8-Series 7410 2.2GHz,2,8,AMD Radeon R5,0,False,False,2.4,15.6,1366x768,0.4
+1032,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,833.86,Intel Core i7 7500U 2.7GHz,8,12,Intel HD Graphics 620,0,False,False,1.6,13.3,1920x1080,0.6
+1033,MSI,MSI Gaming,Gaming,1167.67,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.94,15.6,1920x1080,0.6
+1034,Asus,Asus Gaming,Gaming,640.64,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 965M,4,True,True,4.0,17.3,1920x1080,0.6
+1035,Dell,Dell Notebook,Notebook,358.84,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics,0,False,False,2.25,15.6,1920x1080,0.6
+1036,Dell,Dell Notebook,Notebook,635.5,Intel Core i7 7500U 2.7GHz,8,16,AMD Radeon R7 M445,0,False,False,2.32,15.6,1920x1080,0.6
+1037,MSI,MSI Gaming,Gaming,1238.28,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.8,15.6,1920x1080,0.6
+1038,Dell,Dell Ultrabook,Ultrabook,935.93,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.29,13.3,1920x1080,0.6
+1039,Asus,Asus Gaming,Gaming,2551.66,Intel Core i7 6820HK 2.7GHz,8,64,Nvidia GeForce GTX 980 ,4,True,True,3.58,17.3,1920x1080,0.6
+1040,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,512.26,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.62,13.3,1920x1080,0.6
+1041,Dell,Dell Gaming,Gaming,853.12,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 970M,4,True,True,3.21,15.6,3840x2160,1.0
+1042,Apple,Apple Ultrabook,Ultrabook,834.51,Intel Core M 1.1GHz,2,8,Intel HD Graphics 515,0,False,False,0.92,12.0,2304x1440,0.4
+1043,Dell,Dell Notebook,Notebook,309.4,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,2.06,15.6,1366x768,0.4
+1044,HP,HP Notebook,Notebook,769.67,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.31,15.6,1366x768,0.4
+1045,HP,HP Ultrabook,Ultrabook,769.67,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+1046,HP,HP Notebook,Notebook,699.7,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.49,13.3,1920x1080,0.6
+1047,Lenovo,Lenovo Ultrabook,Ultrabook,1099.94,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.3,12.5,1920x1080,0.6
+1048,Lenovo,Lenovo Notebook,Notebook,423.03,Intel Core i5 6200U 2.3GHz,4,8,AMD Radeon R5 M330,0,False,False,3.0,17.3,1600x900,0.4
+1049,Lenovo,Lenovo Notebook,Notebook,627.16,Intel Core i5 6300HQ 2.3GHz,4,4,Nvidia GeForce GTX 950M,4,True,True,2.3,15.6,1920x1080,0.6
+1050,MSI,MSI Gaming,Gaming,1604.18,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,3.78,17.3,1920x1080,0.6
+1051,Lenovo,Lenovo Notebook,Notebook,346.64,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+1052,HP,HP Notebook,Notebook,603.41,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.31,15.6,1920x1080,0.6
+1053,Lenovo,Lenovo Ultrabook,Ultrabook,898.06,Intel Core M 6Y75 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,0.99,12.5,2560x1440,0.8
+1054,Lenovo,Lenovo Gaming,Gaming,2079.85,Intel Core i7 6820HK 2.7GHz,8,32,Nvidia GeForce GTX 980M,4,True,True,4.6,17.3,1920x1080,0.6
+1055,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,414.86,Intel Atom x5-Z8550 1.44GHz,2,4,Intel HD Graphics 400,0,False,False,0.69,10.1,1920x1200,0.6
+1056,HP,HP Ultrabook,Ultrabook,1315.31,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.3,13.3,3840x2160,1.0
+1057,Dell,Dell Notebook,Notebook,481.45,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.18,15.6,1920x1080,0.6
+1058,HP,HP Notebook,Notebook,661.82,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+1059,HP,HP Workstation,Workstation,959.68,Intel Core i7 6500U 2.5GHz,8,8,AMD FirePro W4190M,4,True,False,1.9,15.6,1920x1080,0.6
+1060,Lenovo,Lenovo Notebook,Notebook,769.67,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.7,14.0,1920x1080,0.6
+1061,HP,HP Notebook,Notebook,394.79,Intel Pentium Dual Core 4405Y 1.5GHz,2,4,Intel HD Graphics 515,0,False,False,1.29,13.3,3200x1800,0.4
+1062,Acer,Acer Notebook,Notebook,248.43,AMD A8-Series 7410 2.2GHz,2,4,AMD Radeon R5,0,False,False,2.4,15.6,1366x768,0.4
+1063,Dell,Dell Notebook,Notebook,252.59,Intel Pentium Quad Core N3700 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1064,HP,HP Notebook,Notebook,222.1,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,1.86,15.6,1366x768,0.4
+1065,Asus,Asus Gaming,Gaming,1026.44,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.7,17.3,1920x1080,0.6
+1066,Dell,Dell Ultrabook,Ultrabook,525.32,Intel Core i5 8250U 1.6GHz,4,4,AMD Radeon 530,4,True,False,1.4,13.3,1920x1080,0.6
+1067,HP,HP Netbook,Netbook,1026.44,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.4,12.5,1366x768,0.4
+1068,Acer,Acer Notebook,Notebook,512.9,Intel Core i5 7200U 2.5GHz,4,8,Nvidia GeForce GTX 950M,4,True,True,2.4,15.6,1920x1080,0.6
+1069,Dell,Dell Notebook,Notebook,410.06,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M445,0,False,False,2.36,15.6,1920x1080,0.6
+1070,MSI,MSI Gaming,Gaming,1026.44,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 965M,4,True,True,2.6,17.3,1920x1080,0.6
+1071,HP,HP Notebook,Notebook,320.96,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,1.96,15.6,1366x768,0.4
+1072,Asus,Asus Gaming,Gaming,1475.79,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.3,17.3,1920x1080,0.6
+1073,Dell,Dell Ultrabook,Ultrabook,728.68,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,1.5,12.5,1366x768,0.4
+1074,Dell,Dell Ultrabook,Ultrabook,749.11,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,1.5,12.5,1366x768,0.4
+1075,Acer,Acer Notebook,Notebook,134.16,Intel Celeron Dual Core 3205U 1.5GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1076,HP,HP Workstation,Workstation,1860.95,Intel Core i7 6700HQ 2.6GHz,8,8,AMD FirePro W6150M,4,True,False,3.0,17.3,1920x1080,0.6
+1077,Lenovo,Lenovo Gaming,Gaming,769.67,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.4,15.6,1920x1080,0.6
+1078,Dell,Dell Ultrabook,Ultrabook,907.11,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.5,12.5,1366x768,0.4
+1079,MSI,MSI Gaming,Gaming,970.07,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.9,17.3,1920x1080,0.6
+1080,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,556.55,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1920x1080,0.6
+1081,HP,HP Notebook,Notebook,255.49,AMD A6-Series 9220 2.5GHz,2,4,AMD Radeon R4,0,False,False,2.1,15.6,1920x1080,0.6
+1082,Asus,Asus Gaming,Gaming,859.54,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 960M,4,True,True,2.59,15.6,1920x1080,0.6
+1083,HP,HP Notebook,Notebook,1090.64,Intel Core M 6Y54 1.1GHz,2,8,Intel HD Graphics 515,0,False,False,1.16,13.3,3200x1800,0.4
+1084,Dell,Dell Notebook,Notebook,493.74,Intel Core i5 6200U 2.3GHz,4,4,AMD Radeon R5 M315,0,False,False,2.24,15.6,1366x768,0.4
+1085,Lenovo,Lenovo Notebook,Notebook,275.39,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+1086,HP,HP Ultrabook,Ultrabook,1263.96,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.16,13.3,1920x1080,0.6
+1087,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,352.42,Intel Atom x5-Z8550 1.44GHz,2,4,Intel HD Graphics 400,0,False,False,0.69,10.1,1920x1200,0.6
+1088,Dell,Dell Ultrabook,Ultrabook,885.22,Intel Core i7 7560U 2.4GHz,8,8,Intel Iris Plus Graphics 640,0,False,False,1.23,13.3,1920x1080,0.6
+1089,Lenovo,Lenovo Gaming,Gaming,1765.29,Intel Core i7 6820HK 2.7GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.6,17.3,1920x1080,0.6
+1090,Razer,Razer Ultrabook,Ultrabook,660.54,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.25,12.5,3840x2160,1.0
+1091,Toshiba,Toshiba Ultrabook,Ultrabook,1428.93,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.05,13.3,1920x1080,0.6
+1092,Asus,Asus Gaming,Gaming,842.52,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,3.52,17.3,1920x1080,0.6
+1093,Vero,Vero Notebook,Notebook,125.82,Intel Atom X5-Z8350 1.44GHz,2,4,Intel HD Graphics 400,0,False,False,1.35,13.3,1920x1080,0.6
+1094,HP,HP Notebook,Notebook,1084.86,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.16,13.3,1920x1080,0.6
+1095,HP,HP Notebook,Notebook,971.24,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.43,14.0,1920x1080,0.6
+1096,Dell,Dell Notebook,Notebook,336.13,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.09,15.6,1366x768,0.4
+1097,Asus,Asus Notebook,Notebook,279.24,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.0,15.6,1366x768,0.4
+1098,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1071.38,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+1099,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,307.48,Intel Atom x5-Z8550 1.44GHz,2,4,Intel HD Graphics 400,0,False,False,0.69,10.1,1920x1200,0.6
+1100,HP,HP Ultrabook,Ultrabook,1216.45,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1366x768,0.4
+1101,Lenovo,Lenovo Gaming,Gaming,634.87,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1060,4,True,True,2.4,15.6,1920x1080,0.6
+1102,HP,HP Gaming,Gaming,724.74,Intel Core i5 6300HQ 2.3GHz,4,8,Nvidia GeForce GTX 1060,4,True,True,3.35,17.3,1920x1080,0.6
+1103,HP,HP Notebook,Notebook,403.77,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,2.04,15.6,1366x768,0.4
+1104,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1316.2,Intel Core i7 6600U 2.6GHz,8,8,Nvidia Quadro M500M,4,True,True,1.8,14.0,1920x1080,0.6
+1105,Asus,Asus Notebook,Notebook,178.46,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,1.5,14.0,1366x768,0.4
+1106,HP,HP Ultrabook,Ultrabook,482.73,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.84,15.6,1920x1080,0.6
+1107,Acer,Acer Notebook,Notebook,395.43,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 940MX,4,True,True,2.23,15.6,1920x1080,0.6
+1108,Lenovo,Lenovo Notebook,Notebook,705.48,Intel Core i7 6500U 2.5GHz,8,16,AMD Radeon R7 M360,0,False,False,2.5,15.6,1920x1080,0.6
+1109,HP,HP Workstation,Workstation,2535.23,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia Quadro M3000M,4,True,True,3.0,17.3,1920x1080,0.6
+1110,Dell,Dell Notebook,Notebook,503.27,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M445,0,False,False,2.5,15.6,1366x768,0.4
+1111,MSI,MSI Gaming,Gaming,1539.98,Intel Core i7 6820HQ 2.7GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,3.78,17.3,1920x1080,0.6
+1112,HP,HP Ultrabook,Ultrabook,1394.09,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.88,15.6,1920x1080,0.6
+1113,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1566.3,Intel Core i7 6600U 2.6GHz,8,16,Intel HD Graphics 520,0,False,False,2.8,14.0,2560x1440,0.8
+1114,MSI,MSI Gaming,Gaming,733.59,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+1115,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1045.7,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.48,13.3,1920x1080,0.6
+1116,HP,HP Workstation,Workstation,1430.86,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia Quadro M1000M,4,True,True,2.59,15.6,1920x1080,0.6
+1117,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.48,13.3,2560x1440,0.8
+1118,HP,HP Workstation,Workstation,1219.02,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia Quadro M1000M,4,True,True,2.0,15.6,1920x1080,0.6
+1119,HP,HP Ultrabook,Ultrabook,1474.48,Intel Core i7 6500U 2.50GHz,8,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+1120,Dell,Dell Notebook,Notebook,648.28,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.18,15.6,1920x1080,0.6
+1121,HP,HP Notebook,Notebook,1013.6,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.88,15.6,1920x1080,0.6
+1122,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1501.47,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.27,14.0,2560x1440,0.8
+1123,Lenovo,Lenovo Notebook,Notebook,217.61,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,1.9,15.6,1366x768,0.4
+1124,HP,HP Notebook,Notebook,190.65,AMD E-Series 7110 1.8GHz,2,4,AMD Radeon R2 Graphics,0,False,False,1.86,15.6,1366x768,0.4
+1125,Lenovo,Lenovo Notebook,Notebook,384.51,Intel Core i5 6200U 2.3GHz,4,8,AMD Radeon R5 M330,0,False,False,2.32,15.6,1920x1080,0.6
+1126,Dell,Dell Gaming,Gaming,769.67,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050Ti,2,True,True,2.62,15.6,1920x1080,0.6
+1127,Dell,Dell Notebook,Notebook,1444.77,Intel Core i5 6300HQ 2.3GHz,4,8,Nvidia GeForce 960M,4,True,True,2.04,15.6,3840x2160,1.0
+1128,HP,HP Notebook,Notebook,307.41,AMD A6-Series A6-9220 2.5GHz,2,4,AMD Radeon 520,4,True,False,1.91,15.6,1920x1080,0.6
+1129,MSI,MSI Gaming,Gaming,958.27,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1050 Ti,2,True,True,2.7,17.3,1920x1080,0.6
+1130,Lenovo,Lenovo Ultrabook,Ultrabook,1475.79,Intel Core i7 6600U 2.6GHz,8,12,Intel HD Graphics 520,0,False,False,1.4,14.0,1920x1080,0.6
+1131,Lenovo,Lenovo Notebook,Notebook,506.15,Intel Core i5 6200U 2.3GHz,4,8,AMD Radeon R5 M330,0,False,False,2.5,15.6,1920x1080,0.6
+1132,HP,HP 2 in 1 Convertible,2 in 1 Convertible,1310.17,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.48,13.3,2560x1440,0.8
+1133,Lenovo,Lenovo Ultrabook,Ultrabook,962.25,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,1.7,14.0,1920x1080,0.6
+1134,MSI,MSI Gaming,Gaming,1135.57,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 970M,4,True,True,1.7,14.0,1920x1080,0.6
+1135,HP,HP Gaming,Gaming,577.09,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.62,15.6,1920x1080,0.6
+1136,Lenovo,Lenovo Notebook,Notebook,294.64,Intel Core i3 6006U 2.0GHz,2,8,Intel HD Graphics 520,0,False,False,2.2,15.6,1366x768,0.4
+1137,HP,HP Notebook,Notebook,306.19,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+1138,Dell,Dell Gaming,Gaming,961.61,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050 Ti,2,True,True,2.62,15.6,3840x2160,1.0
+1139,Lenovo,Lenovo Notebook,Notebook,892.28,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.95,15.6,1920x1080,0.6
+1140,Lenovo,Lenovo Notebook,Notebook,300.42,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce 920MX ,4,True,True,2.2,15.6,1920x1080,0.6
+1141,HP,HP Notebook,Notebook,159.84,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.44,14.0,1366x768,0.4
+1142,MSI,MSI Gaming,Gaming,538.58,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+1143,HP,HP Notebook,Notebook,435.87,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.96,15.6,1920x1080,0.6
+1144,HP,HP Notebook,Notebook,743.99,Intel Core i7 8550U 1.8GHz,8,16,Intel UHD Graphics 620,0,False,False,2.1,15.6,1920x1080,0.6
+1145,Asus,Asus Notebook,Notebook,236.87,Intel Celeron Dual Core N3050 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1146,Lenovo,Lenovo Notebook,Notebook,255.49,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1366x768,0.4
+1147,Lenovo,Lenovo Notebook,Notebook,455.13,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce 940MX,4,True,True,2.2,15.6,1920x1080,0.6
+1148,Asus,Asus Notebook,Notebook,493.64,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.0,14.0,1920x1080,0.6
+1149,Lenovo,Lenovo Notebook,Notebook,529.59,Intel Core i7 6500U 2.5GHz,8,4,Intel HD Graphics 520,0,False,False,2.32,15.6,1920x1080,0.6
+1150,Lenovo,Lenovo Gaming,Gaming,837.72,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 960,4,True,True,3.31,15.6,1920x1080,0.6
+1151,MSI,MSI Gaming,Gaming,1382.31,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 970M,4,True,True,1.91,15.6,1920x1080,0.6
+1152,HP,HP Notebook,Notebook,417.25,Intel Core i3 6100U 2.3GHz,2,4,Intel HD Graphics 520,0,False,False,2.07,15.6,1366x768,0.4
+1153,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,1050.84,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.36,14.0,2560x1440,0.8
+1154,Lenovo,Lenovo Ultrabook,Ultrabook,533.44,Intel Core i7 7500U 2.7GHz,8,6,Nvidia GeForce 920M,4,True,True,1.54,15.6,1920x1080,0.6
+1155,Dell,Dell Notebook,Notebook,574.53,Intel Core i7 7500U 2.7GHz,8,8,Nvidia GeForce GT 940MX,4,True,True,1.98,15.6,1920x1080,0.6
+1156,Acer,Acer Notebook,Notebook,213.76,Intel Celeron Dual Core N3350 2GHz,2,4,Intel HD Graphics 500,0,False,False,2.1,15.6,1366x768,0.4
+1157,HP,HP Notebook,Notebook,512.9,Intel Core i7 6700HQ 2.6GHz,8,6,Nvidia GeForce GTX 960M,4,True,True,2.18,15.6,1920x1080,0.6
+1158,Asus,Asus Gaming,Gaming,583.51,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.59,15.6,1920x1080,0.6
+1159,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,756.83,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,2.09,15.6,1920x1080,0.6
+1160,Acer,Acer Notebook,Notebook,443.57,Intel Core i5 7200U 2.5GHz,4,4,Nvidia GeForce 940MX,4,True,True,2.23,15.6,1920x1080,0.6
+1161,Dell,Dell Ultrabook,Ultrabook,705.48,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.23,13.3,3200x1800,0.4
+1162,Acer,Acer Gaming,Gaming,1668.37,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,4.2,17.3,1920x1080,0.6
+1163,Lenovo,Lenovo Gaming,Gaming,525.74,Intel Core i5 7300HQ 2.5GHz,4,8,Nvidia GeForce GTX 1050,2,True,True,2.4,15.6,1920x1080,0.6
+1164,Samsung,Samsung 2 in 1 Convertible,2 in 1 Convertible,423.03,Samsung Cortex A72&A53 2.0GHz,2,4,ARM Mali T860 MP4,4,True,False,1.15,12.3,2400x1600,0.4
+1165,HP,HP Notebook,Notebook,311.33,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.86,15.6,1366x768,0.4
+1166,Apple,Apple Ultrabook,Ultrabook,746.56,Intel Core M 1.1GHz,2,8,Intel HD Graphics 5300,0,False,False,0.92,12.0,2304x1440,0.4
+1167,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,769.67,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.6,13.3,1920x1080,0.6
+1168,HP,HP Notebook,Notebook,851.84,Intel Core i7 7700HQ 2.8GHz,8,12,Nvidia GeForce GTX 1050,2,True,True,2.21,15.6,1920x1080,0.6
+1169,Lenovo,Lenovo Notebook,Notebook,236.23,Intel Core i3 6006U 2GHz,2,4,AMD Radeon R5 M430,0,False,False,1.9,15.6,1366x768,0.4
+1170,Asus,Asus Gaming,Gaming,1380.14,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 980M,4,True,True,4.3,17.3,1920x1080,0.6
+1171,Acer,Acer Notebook,Notebook,174.6,Intel Celeron Dual Core N3350 2GHz,2,4,Intel HD Graphics 500,0,False,False,2.1,15.6,1366x768,0.4
+1172,MSI,MSI Gaming,Gaming,1315.25,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.43,17.3,1920x1080,0.6
+1173,Dell,Dell Notebook,Notebook,320.32,Intel Core i3 6006U 2.0GHz,2,4,AMD Radeon R7 M440,0,False,False,2.3,15.6,1366x768,0.4
+1174,Lenovo,Lenovo Notebook,Notebook,403.77,Intel Core i7 6500U 2.5GHz,8,8,Nvidia GeForce 920MX,4,True,True,2.2,15.6,1366x768,0.4
+1175,Dell,Dell Ultrabook,Ultrabook,1720.37,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.2,13.3,3200x1800,0.4
+1176,Asus,Asus Gaming,Gaming,750.41,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.2,15.6,1920x1080,0.6
+1177,Dell,Dell Notebook,Notebook,570.67,Intel Core i5 7200U 2.5GHz,4,8,AMD Radeon R7 M445,0,False,False,2.36,15.6,1920x1080,0.6
+1178,HP,HP Notebook,Notebook,371.68,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,1.91,15.6,1366x768,0.4
+1179,Lenovo,Lenovo Notebook,Notebook,191.94,AMD E-Series 9000 2.2GHz,2,4,AMD Radeon R2 Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1180,Acer,Acer Notebook,Notebook,403.77,Intel Core i3 6006U 2.0GHz,2,8,Nvidia GeForce 940MX,4,True,True,3.3,17.3,1600x900,0.4
+1181,Asus,Asus Gaming,Gaming,1572.08,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.2,15.6,1920x1080,0.6
+1182,Apple,Apple Ultrabook,Ultrabook,821.03,Intel Core M 1.2GHz,2,8,Intel HD Graphics 515,0,False,False,0.92,12.0,2304x1440,0.4
+1183,Asus,Asus Notebook,Notebook,1122.73,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.2,15.6,1920x1080,0.6
+1184,MSI,MSI Gaming,Gaming,1251.11,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.43,17.3,1920x1080,0.6
+1185,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,641.29,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.19,15.6,1920x1080,0.6
+1186,Asus,Asus Gaming,Gaming,1251.12,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.9,17.3,1920x1080,0.6
+1187,Acer,Acer Netbook,Netbook,111.7,Intel Celeron Dual Core 3205U 1.5GHz,2,2,Intel HD Graphics,0,False,False,1.3,11.6,1366x768,0.4
+1188,Acer,Acer Notebook,Notebook,383.87,Intel Core i3 6006U 2GHz,2,4,Nvidia GeForce 940MX,4,True,True,3.3,17.3,1600x900,0.4
+1189,Lenovo,Lenovo Notebook,Notebook,346.0,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.8,17.3,1600x900,0.4
+1190,Lenovo,Lenovo Gaming,Gaming,816.53,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960<U+039C>,4,True,True,2.6,15.6,1920x1080,0.6
+1191,Acer,Acer 2 in 1 Convertible,2 in 1 Convertible,737.57,Intel Core i7 7Y75 1.3GHz,8,8,Intel HD Graphics 615,0,False,False,1.2,14.0,1920x1080,0.6
+1192,Lenovo,Lenovo Notebook,Notebook,981.51,Intel Core i7 6600U 2.6GHz,8,8,Intel HD Graphics 520,0,False,False,2.3,15.6,1920x1080,0.6
+1193,MSI,MSI Gaming,Gaming,947.56,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 1060,4,True,True,2.2,15.6,1920x1080,0.6
+1194,HP,HP Notebook,Notebook,339.58,AMD A12-Series 9720P 2.7GHz,2,6,AMD Radeon 530,4,True,False,2.1,15.6,1920x1080,0.6
+1195,Dell,Dell Ultrabook,Ultrabook,1099.86,Intel Core i5 6300U 2.4GHz,4,8,Intel HD Graphics 520,0,False,False,1.26,12.5,1920x1080,0.6
+1196,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,326.74,Intel Core i3 7100U 2.4GHz,2,4,Intel HD Graphics 620,0,False,False,2.08,15.0,1920x1080,0.6
+1197,Asus,Asus Notebook,Notebook,198.36,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics 405,0,False,False,2.65,15.6,1366x768,0.4
+1198,Dell,Dell Ultrabook,Ultrabook,948.13,Intel Core i7 7500U 2.7GHz,8,8,Intel HD Graphics 620,0,False,False,1.29,13.3,3200x1800,0.4
+1199,Dell,Dell Notebook,Notebook,335.0,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 520,0,False,False,2.18,15.6,1366x768,0.4
+1200,Lenovo,Lenovo Gaming,Gaming,660.54,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 960M,4,True,True,2.6,15.6,1920x1080,0.6
+1201,MSI,MSI Gaming,Gaming,737.57,Intel Core i7 7700HQ 2.8GHz,8,8,Nvidia GeForce GTX 1050,2,True,True,2.2,15.6,1920x1080,0.6
+1202,Lenovo,Lenovo Netbook,Netbook,1059.18,Intel Core i7 6500U 2.50GHz,8,16,Intel HD Graphics 520,0,False,False,1.3,12.5,1920x1080,0.6
+1203,Razer,Razer Gaming,Gaming,2246.11,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,1.95,14.0,1920x1080,0.6
+1204,Dell,Dell Notebook,Notebook,301.07,Intel Core i3 7100U 2.4GHz,2,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+1205,MSI,MSI Gaming,Gaming,1025.8,Intel Core i7 7700HQ 2.8GHz,8,16,Nvidia GeForce GTX 1060,4,True,True,2.7,17.3,1920x1080,0.6
+1206,Apple,Apple Ultrabook,Ultrabook,615.61,Intel Core i5 1.6GHz,4,4,Intel HD Graphics 6000,0,False,False,1.08,11.6,1366x768,0.4
+1207,HP,HP Notebook,Notebook,306.84,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.1,15.6,1920x1080,0.6
+1208,HP,HP Ultrabook,Ultrabook,1411.08,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.54,14.0,2560x1440,0.8
+1209,Dell,Dell Notebook,Notebook,473.1,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,2.24,15.6,1366x768,0.4
+1210,MSI,MSI Gaming,Gaming,750.41,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.3,15.6,1920x1080,0.6
+1211,Lenovo,Lenovo Notebook,Notebook,962.25,Intel Core i7 7500U 2.7GHz,8,16,Intel HD Graphics 620,0,False,False,1.4,13.3,1920x1080,0.6
+1212,Lenovo,Lenovo Notebook,Notebook,383.6,AMD A12-Series 9720P 3.6GHz,2,6,AMD Radeon 530,4,True,False,2.2,15.6,1920x1080,0.6
+1213,Asus,Asus Ultrabook,Ultrabook,821.67,Intel Core i7 6500U 2.5GHz,8,8,Intel HD Graphics 520,0,False,False,1.45,13.3,1920x1080,0.6
+1214,Acer,Acer Notebook,Notebook,232.25,Intel Core i3 6006U 2.0GHz,2,4,Intel HD Graphics 520,0,False,False,2.4,15.6,1366x768,0.4
+1215,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1154.83,Intel Core i7 7500U 2.7GHz,8,16,Nvidia GeForce 940MX,4,True,True,2.77,17.3,1920x1080,0.6
+1216,HP,HP Notebook,Notebook,706.11,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.54,14.0,1920x1080,0.6
+1217,Dell,Dell Notebook,Notebook,561.69,Intel Core i5 7200U 2.5GHz,4,4,Intel HD Graphics 620,0,False,False,1.6,14.0,1366x768,0.4
+1218,Asus,Asus Gaming,Gaming,1492.48,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 1070,6,True,True,2.34,15.6,1920x1080,0.6
+1219,Lenovo,Lenovo Notebook,Notebook,367.82,Intel Core i5 7200U 2.5GHz,4,8,Intel HD Graphics 620,0,False,False,2.3,15.6,1920x1080,0.6
+1220,Dell,Dell 2 in 1 Convertible,2 in 1 Convertible,1163.81,Intel Core i5 7Y54 1.2GHz,4,8,Intel HD Graphics 615,0,False,False,1.24,13.3,3200x1800,0.4
+1221,Dell,Dell Notebook,Notebook,207.98,Intel Pentium Quad Core N3710 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1222,HP,HP Notebook,Notebook,256.13,AMD A6-Series 9220 2.5GHz,2,4,AMD Radeon R4 Graphics,0,False,False,1.86,15.6,1366x768,0.4
+1223,Lenovo,Lenovo Notebook,Notebook,365.26,Intel Core i3 6100U 2.3GHz,2,6,Nvidia GeForce 920MX,4,True,True,2.4,15.6,1920x1080,0.6
+1224,Lenovo,Lenovo Notebook,Notebook,688.15,Intel Core i5 6200U 2.3GHz,4,8,Intel HD Graphics 520,0,False,False,1.9,14.0,1920x1080,0.6
+1225,Dell,Dell Notebook,Notebook,285.01,Intel Pentium Quad Core N3700 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1226,Asus,Asus Notebook,Notebook,217.61,Intel Celeron Dual Core N3350 1.1GHz,2,4,Intel HD Graphics 500,0,False,False,2.0,15.6,1366x768,0.4
+1227,Asus,Asus Gaming,Gaming,1219.66,Intel Core i7 6700HQ 2.6GHz,8,16,Nvidia GeForce GTX 970M,4,True,True,4.0,17.3,1920x1080,0.6
+1228,Dell,Dell Notebook,Notebook,314.54,Intel Core i3 6006U 2GHz,2,4,Intel HD Graphics 520,0,False,False,2.29,15.6,1366x768,0.4
+1229,Lenovo,Lenovo Notebook,Notebook,574.53,Intel Core i7 6500U 2.5GHz,8,8,AMD Radeon R5 M330,0,False,False,2.32,15.6,1920x1080,0.6
+1230,MSI,MSI Gaming,Gaming,788.93,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.4,15.6,1920x1080,0.6
+1231,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,534.73,Intel Core i5 6200U 2.3GHz,4,4,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+1232,Asus,Asus Ultrabook,Ultrabook,467.97,Intel Core M 6Y30 0.9GHz,2,8,Intel HD Graphics 515,0,False,False,1.2,13.3,1920x1080,0.6
+1233,Dell,Dell Notebook,Notebook,294.64,Intel Core i3 7100U 2.4GHz,2,6,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+1234,Acer,Acer Notebook,Notebook,185.52,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,2.4,15.6,1366x768,0.4
+1235,Dell,Dell Notebook,Notebook,243.29,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1236,Lenovo,Lenovo Notebook,Notebook,577.09,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.6,15.6,1920x1080,0.6
+1237,HP,HP Notebook,Notebook,353.05,AMD A9-Series 9410 2.9GHz,2,6,AMD Radeon R7 M440,0,False,False,2.04,15.6,1920x1080,0.6
+1238,Dell,Dell Notebook,Notebook,517.39,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.3,15.6,1366x768,0.4
+1239,HP,HP Netbook,Netbook,134.16,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.17,11.6,1366x768,0.4
+1240,Asus,Asus Notebook,Notebook,462.39,Intel Core i7 6500U 2.5GHz,8,4,Nvidia GeForce 920M,4,True,True,2.2,15.6,1366x768,0.4
+1241,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,409.55,Intel Core i7 6500U 2.5GHz,8,4,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+1242,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i7 6500U 2.5GHz,8,16,Intel HD Graphics 520,0,False,False,1.3,13.3,3200x1800,0.4
+1243,Lenovo,Lenovo Notebook,Notebook,147.0,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,1.5,14.0,1366x768,0.4
+1244,HP,HP Notebook,Notebook,490.43,Intel Core i7 6500U 2.5GHz,8,6,AMD Radeon R5 M330,0,False,False,2.19,15.6,1366x768,0.4
+1245,Asus,Asus Notebook,Notebook,236.87,Intel Celeron Dual Core N3050 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1246,Asus,Asus Ultrabook,Ultrabook,467.97,Intel Core M 6Y30 0.9GHz,2,8,Intel HD Graphics 515,0,False,False,1.2,13.3,1920x1080,0.6
+1247,Dell,Dell Notebook,Notebook,294.64,Intel Core i3 7100U 2.4GHz,2,6,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+1248,Acer,Acer Notebook,Notebook,185.52,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,2.4,15.6,1366x768,0.4
+1249,Dell,Dell Notebook,Notebook,243.29,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1250,Lenovo,Lenovo Notebook,Notebook,577.09,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.6,15.6,1920x1080,0.6
+1251,HP,HP Notebook,Notebook,353.05,AMD A9-Series 9410 2.9GHz,2,6,AMD Radeon R7 M440,0,False,False,2.04,15.6,1920x1080,0.6
+1252,Dell,Dell Notebook,Notebook,517.39,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.3,15.6,1366x768,0.4
+1253,HP,HP Netbook,Netbook,134.16,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.17,11.6,1366x768,0.4
+1254,Asus,Asus Notebook,Notebook,462.39,Intel Core i7 6500U 2.5GHz,8,4,Nvidia GeForce 920M,4,True,True,2.2,15.6,1366x768,0.4
+1255,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,409.55,Intel Core i7 6500U 2.5GHz,8,4,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+1256,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i7 6500U 2.5GHz,8,16,Intel HD Graphics 520,0,False,False,1.3,13.3,3200x1800,0.4
+1257,Lenovo,Lenovo Notebook,Notebook,147.0,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,1.5,14.0,1366x768,0.4
+1258,HP,HP Notebook,Notebook,490.43,Intel Core i7 6500U 2.5GHz,8,6,AMD Radeon R5 M330,0,False,False,2.19,15.6,1366x768,0.4
+1259,Asus,Asus Notebook,Notebook,236.87,Intel Celeron Dual Core N3050 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1260,Asus,Asus Ultrabook,Ultrabook,467.97,Intel Core M 6Y30 0.9GHz,2,8,Intel HD Graphics 515,0,False,False,1.2,13.3,1920x1080,0.6
+1261,Dell,Dell Notebook,Notebook,294.64,Intel Core i3 7100U 2.4GHz,2,6,Intel HD Graphics 620,0,False,False,2.3,15.6,1366x768,0.4
+1262,Acer,Acer Notebook,Notebook,185.52,Intel Celeron Dual Core N3060 1.6GHz,2,4,Intel HD Graphics 400,0,False,False,2.4,15.6,1366x768,0.4
+1263,Dell,Dell Notebook,Notebook,243.29,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4
+1264,Lenovo,Lenovo Notebook,Notebook,577.09,Intel Core i7 6700HQ 2.6GHz,8,8,Nvidia GeForce GTX 960M,4,True,True,2.6,15.6,1920x1080,0.6
+1265,HP,HP Notebook,Notebook,353.05,AMD A9-Series 9410 2.9GHz,2,6,AMD Radeon R7 M440,0,False,False,2.04,15.6,1920x1080,0.6
+1266,Dell,Dell Notebook,Notebook,517.39,Intel Core i7 7500U 2.7GHz,8,8,AMD Radeon R5 M430,0,False,False,2.3,15.6,1366x768,0.4
+1267,HP,HP Netbook,Netbook,134.16,Intel Celeron Dual Core N3060 1.6GHz,2,2,Intel HD Graphics 400,0,False,False,1.17,11.6,1366x768,0.4
+1268,Asus,Asus Notebook,Notebook,462.39,Intel Core i7 6500U 2.5GHz,8,4,Nvidia GeForce 920M,4,True,True,2.2,15.6,1366x768,0.4
+1269,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,409.55,Intel Core i7 6500U 2.5GHz,8,4,Intel HD Graphics 520,0,False,False,1.8,14.0,1920x1080,0.6
+1270,Lenovo,Lenovo 2 in 1 Convertible,2 in 1 Convertible,962.25,Intel Core i7 6500U 2.5GHz,8,16,Intel HD Graphics 520,0,False,False,1.3,13.3,3200x1800,0.4
+1271,Lenovo,Lenovo Notebook,Notebook,147.0,Intel Celeron Dual Core N3050 1.6GHz,2,2,Intel HD Graphics,0,False,False,1.5,14.0,1366x768,0.4
+1272,HP,HP Notebook,Notebook,490.43,Intel Core i7 6500U 2.5GHz,8,6,AMD Radeon R5 M330,0,False,False,2.19,15.6,1366x768,0.4
+1273,Asus,Asus Notebook,Notebook,236.87,Intel Celeron Dual Core N3050 1.6GHz,2,4,Intel HD Graphics,0,False,False,2.2,15.6,1366x768,0.4

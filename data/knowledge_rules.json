@@ -1,0 +1,23 @@
+{
+  "Deep Learning": {
+    "min_vram": 6,
+    "min_ram": 16,
+    "cuda_required": true,
+    "description": "Requiere GPU Nvidia con al menos 6GB de VRAM y 16GB de RAM para entrenamiento de modelos."
+  },
+  "Arquitectura / Render 3D": {
+    "min_cpu_cores": 8,
+    "dedicated_gpu_required": true,
+    "description": "Requiere procesador de 8 núcleos o más y tarjeta gráfica dedicada para renderizado pesado."
+  },
+  "Desarrollo de Software": {
+    "min_ram": 16,
+    "min_cpu_cores": 6,
+    "description": "Requiere 16GB de RAM y un procesador de al menos 6 núcleos para compilación, Docker y entornos virtuales."
+  },
+  "Uso de Oficina / Estudiante": {
+    "min_ram": 8,
+    "min_cpu_cores": 4,
+    "description": "Requisitos estándar de 8GB de RAM y procesador quad-core para tareas cotidianas y de productividad."
+  }
+}
