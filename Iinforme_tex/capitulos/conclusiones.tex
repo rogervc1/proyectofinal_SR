@@ -1,0 +1,21 @@
+\chapter{Conclusiones}
+
+\section{Logros Alcanzados}
+\begin{enumerate}
+    \item Se diseñó e implementó exitosamente un **Sistema de Recomendación Híbrido en Dos Niveles** que integra inferencia lógica binaria ($M_{rules}$), utilidad multi-atributo ($MAUT$), factorización matricial ($SVD$) y filtrado basado en contenido ($TF-IDF$).
+    \item Se mitigó al $100\%$ el problema del inicio en frío (*Cold Start*), alcanzando una métrica $CSR@10 = 100\%$ y una precisión $Precision@10 = 100\%$ en usuarios sin historial previo.
+    \item Se desarrolló una aplicación web completa y funcional utilizando **FastAPI** en el backend y un frontend dinámico en **JavaScript ES6+ y Chart.js**, incorporando características comerciales avanzadas como comparador 1vs1, selector multimoneda (USD, PEN, EUR), indicador calidad/precio (*Value Score*) y enlaces directos a ofertas en Amazon.
+    \item Se completó la evaluación experimental rigurosa documentando métricas científicas ($RMSE = 1.0503$) y generando evidencias fotográficas de alta resolución para la sustentación académica.
+\end{enumerate}
+
+\section{Limitaciones del Sistema}
+\begin1. \textbf{Catálogo Sintético Base}: Aunque el catálogo de 150 laptops contiene especificaciones reales, la matriz de ratings fue generada mediante distribuciones estocásticas sintéticas.
+    \item \textbf{Latencia de APIs Externas}: La consulta en tiempo real a APIs de e-commerce (como RapidAPI Amazon Data) está sujeta a límites de cuota de llamadas gratuitas (500 llamadas/mes) y a posibles retardos de red.
+\end{enumerate}
+
+\section{Aprendizajes Obtenidos}
+\begin{enumerate}
+    \item La hibridación algorítmica es la estrategia más efectiva en la ingeniería de sistemas de recomendación para resolver los dilemas de escasez de datos e inicio en frío.
+    \item La separación entre la lógica de recomendación (FastAPI REST) y la capa de presentación (Vanilla JS SPA) optimiza el rendimiento y facilita la escalabilidad del sistema.
+    \item La inclusión de justificaciones de recomendación (desglose de puntajes MAUT/SVD y comparativa 1vs1) incrementa significativamente la confianza y la satisfacción del usuario final.
+\end{enumerate}

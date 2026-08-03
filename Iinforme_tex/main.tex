@@ -1,0 +1,70 @@
+% ============================================================================
+% DOCUMENTO PRINCIPAL - Informe Técnico de Proyecto Final
+% Universidad Nacional del Altiplano - Puno
+% Curso: Sistemas de Recomendación
+% ============================================================================
+
+\input{preambulo}
+
+\begin{document}
+
+% ----- PÁGINAS PRELIMINARES -----
+\pagenumbering{roman}
+
+% Portada Institucional
+\thispagestyle{empty}
+\input{portada}
+\clearpage
+
+% Resumen / Abstract
+\thispagestyle{plain}
+\input{capitulos/resumen}
+\clearpage
+
+% Índice General (Tabla de contenidos)
+\thispagestyle{plain}
+\tableofcontents
+\addcontentsline{toc}{chapter}{Índice General}
+\clearpage
+
+% Índice de Tablas
+\thispagestyle{plain}
+\listoftables
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+\clearpage
+
+% Índice de Figuras
+\thispagestyle{plain}
+\listoffigures
+\addcontentsline{toc}{chapter}{Índice de Figuras}
+\clearpage
+
+% ----- CONTENIDO PRINCIPAL -----
+\clearpage
+\pagenumbering{arabic}
+
+% Capítulo I: Introducción
+\include{capitulos/introduccion}
+
+% Capítulo II: Descripción General y Arquitectura del Sistema
+\include{capitulos/descripcion_arquitectura}
+
+% Capítulo III: Metodología y Fases del Trabajo
+\include{capitulos/materiales_metodos}
+
+% Capítulo IV: Resultados y Análisis de Resultados
+\include{capitulos/resultados_discusion}
+
+% Capítulo V: Conclusiones
+\include{capitulos/conclusiones}
+
+% Capítulo VI: Recomendaciones y Trabajo Futuro
+\include{capitulos/recomendaciones}
+
+% ----- BIBLIOGRAFÍA -----
+\include{capitulos/referencias}
+
+% ----- ANEXOS -----
+\include{capitulos/anexos}
+
+\end{document}

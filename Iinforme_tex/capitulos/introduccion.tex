@@ -1,0 +1,35 @@
+\chapter{Introducción}
+
+\section{Contexto del Proyecto}
+En la era digital actual, el comercio electrónico de bienes tecnológicos experimenta un crecimiento exponencial. Sin embargo, la compra de computadoras portátiles (laptops) representa una decisión de alta complejidad cognitiva para los usuarios debido a la abundancia de especificaciones técnicas heterogéneas (microarquitectura de CPU, núcleos, memoria RAM, aceleradores GPU, potencia de VRAM, pantallas OLED/4K y soporte CUDA). 
+
+Los algoritmos de filtrado colaborativo tradicionales (*Collaborative Filtering*) sufren de limitaciones severas en este dominio, principalmente la escasez de datos (*data sparsity*) y el problema del inicio en frío (*cold start*), en el cual usuarios nuevos sin historial previo de calificaciones no pueden recibir sugerencias relevantes.
+
+\section{Planteamiento del Problema}
+Actualmente, los portales web de e-commerce convencionales dependen de buscadores por palabras clave o filtros manuales rígidos que no consideran la compensación multidimensional entre presupuesto, rendimiento y portabilidad. Las principales deficiencias identificadas son:
+\begin{enumerate}
+    \item \textbf{Recomendaciones irrelevantes para usuarios nuevos}: Los modelos puramente colaborativos fallan al no disponer de interacción previa del usuario.
+    \item \textbf{Violación de restricciones de hardware incompatibles}: Recomendar una laptop sin GPU dedicada a un usuario que requiere ejecutar modelos de Deep Learning o renderizado 3D genera insatisfacción crítica.
+    \item \textbf{Opacidad en la justificación}: Los usuarios no comprenden por qué un modelo específico es sugerido, careciendo de métricas de relación calidad/precio o comparativas directas.
+\end{enumerate}
+
+\section{Justificación}
+El desarrollo de un **Sistema de Recomendación Híbrido** que combine modelos basados en conocimiento explícito, teoría de decisión multicriterio (MAUT), factorización matricial (SVD) y similitud de contenido vectorial permite superar de forma integral las deficiencias mencionadas. Esta arquitectura garantiza que:
+\begin{itemize}
+    \item El usuario reciba recomendaciones 100\% válidas mediante filtrado por reglas en cascada.
+    \item El sistema responda de manera óptima tanto a usuarios con historial de calificaciones previo como a usuarios nuevos (*Cold Start*).
+    \item Se disponga de una interfaz interactiva moderna con indicadores visuales de relación calidad/precio (*Value Score*), gráficos históricos de precios y comparativa cara a cara (1vs1).
+\end{itemize}
+
+\section{Objetivos del Proyecto}
+
+\subsection{Objetivo General}
+Desarrollar e implementar una aplicación funcional de Sistema de Recomendación Híbrido en dos niveles para computadoras portátiles, evaluando cuantitativamente su precisión, cobertura e impacto en la experiencia del usuario.
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Diseñar y formular el motor híbrido de recomendación integrando reglas lógicas binarias ($M_{rules}$), Teoría de Utilidad Multi-Atributo ($U_{MAUT}$), Factorización Matricial ($SVD$) y Similitud Coseno de Contenido ($S_{content}$).
+    \item Desarrollar una aplicación web interactiva responsiva utilizando FastAPI, JavaScript ES6+ y Chart.js con selector multimoneda (USD, PEN, EUR) y comparador 1vs1.
+    \item Realizar la evaluación experimental cuantitativa calculando métricas científicas de rendimiento ($RMSE$, $Precision@K$, $Recall@K$ y $CSR@K$).
+    \item Documentar los hallazgos, la arquitectura del software y generar evidencias visuales completas para el informe técnico y sustentación.
+\end{enumerate}

@@ -1,0 +1,67 @@
+\chapter{Metodología y Fases del Trabajo}
+
+El desarrollo del proyecto se ejecutó siguiendo una metodología estructurada en 5 fases secuenciales, cubriendo desde la formulación matemática de los algoritmos hasta la implementación web y evaluación científica.
+
+\section{Fase 1: Mejora y Formulación del Modelo Híbrido}
+En esta fase se superó el modelo puramente colaborativo mediante la integración de cuatro componentes algorítmicos complementarios:
+
+\subsection{1. Filtro Estricto por Reglas Lógicas de Dominio}
+Evaluado en la clase `LogicInferenceModel`, asigna una máscara binaria $M_{rules}(i) \in \{0, 1\}$ basada en restricciones duras de presupuesto y características técnicas:
+\begin{equation}
+M_{rules}(i) = \mathbb{I}(Precio_i \le Presupuesto) \cdot \prod_{c \in Restricciones} \mathbb{I}(Atributo_i(c) \text{ cumple } c)
+\end{equation}
+
+\subsection{2. Teoría de Utilidad Multi-Atributo (MAUT)}
+Calcula la utilidad basada en conocimiento explícito ($U_{MAUT} \in [0, 1]$) ponderando las dimensiones de precio, rendimiento de CPU/GPU, portabilidad (peso) y pantalla:
+\begin{equation}
+U_{MAUT}(i) = w_{precio} \cdot U_{precio}(i) + w_{perf} \cdot U_{perf}(i) + w_{port} \cdot U_{port}(i) + w_{pantalla} \cdot U_{pantalla}(i)
+\end{equation}
+
+\subsection{3. Factorización Matricial SVD (Filtrado Colaborativo)}
+Descompone la matriz dispersa de calificaciones $R \approx U \cdot \Sigma \cdot V^T$ para predecir la calificación $\hat{r}_{u,i} \in [1, 5]$ de un usuario $u$ sobre la laptop $i$:
+\begin{equation}
+\hat{r}_{u,i} = \mu + b_u + b_i + P_u \cdot Q_i^T
+\end{equation}
+La predicción se normaliza al intervalo $[0, 1]$ mediante $\hat{r}_{norm} = \frac{\hat{r}_{u,i} - 1.0}{4.0}$.
+
+\subsection{4. Filtrado Basado en Contenido (TF-IDF y Similitud Coseno)}
+Construye vectores de características $V(i)$ para cada laptop y calcula la similitud del coseno $S_{content}(u, i)$ respecto al perfil vectorial medio del usuario $V(u)$:
+\begin{equation}
+S_{content}(u, i) = \frac{V(u) \cdot V(i)}{\|V(u)\| \|V(i)\|}
+\end{equation}
+
+\section{Fase 2: Desarrollo de la Aplicación Web Interactiva}
+Se construyó una aplicación web de una sola página (SPA) responsiva con las siguientes características técnicas:
+\begin{itemize}
+    \item \textbf{Backend en FastAPI (Python)}: Ejecuta la inferencia híbrida en milisegundos y expone la API REST JSON.
+    \item \textbf{Frontend Vanilla JS + CSS3}: Sin dependencias pesadas de frameworks, aplicando Glassmorphism y Dark Mode.
+    \item \textbf{Funcionalidades Avanzadas de Comercio Electrónico}:
+    \begin{enumerate}
+        \item \textbf{Comparador Cara a Cara (1vs1)}: Modal con tabla comparativa en dos columnas, resaltado en verde de especificaciones ganadoras y veredicto automático.
+        \item \textbf{Gráfica de Tendencia e Histórico de Precios}: Integración de **Chart.js** para dibujar la curva de precios de 6 meses.
+        \item \textbf{Indicador Calidad/Precio (Value Score)}: Asignación de insignias *Top Calidad/Precio*, *Gama Premium* y *Precio Justo*.
+        \item \textbf{Selector Multimoneda Global}: Conversión en tiempo real entre Dólares (**USD \$**), Soles Peruanos (**PEN S/**) y Euros (**EUR EUR**).
+        \item \textbf{Enlaces Directos a Amazon}: Vinculación automatizada a búsquedas y ofertas en vivo.
+    \end{enumerate}
+\end{itemize}
+
+\section{Fase 3: Evaluación Científica del Sistema}
+Se definieron cuatro métricas cuantitativas para evaluar la precisión y robustez del recomendador:
+\begin{enumerate}
+    \item \textbf{Raíz del Error Cuadrático Medio ($RMSE$)}:
+    \begin{equation}
+    RMSE = \sqrt{\frac{1}{|T|} \sum_{(u,i) \in T} (r_{u,i} - \hat{r}_{u,i})^2}
+    \end{equation}
+    \item \textbf{Precision@K}: Proporción de elementos recomendados en el Top-K que resultan relevantes ($r_{u,i} \ge 4.0$).
+    \item \textbf{Recall@K}: Proporción de elementos relevantes del usuario contenidos en el Top-K.
+    \item \textbf{Cobertura de Inicio en Frío ($CSR@K$)}: Porcentaje de usuarios nuevos (sin historial) para los cuales el sistema genera un Top-K válido sin errores:
+    \begin{equation}
+    CSR@K = \frac{\text{Usuarios Cold Start con Top-K válido}}{\text{Total de Usuarios Cold Start evaluados}} \times 100\%
+    \end{equation}
+\end{enumerate}
+
+\section{Fase 4: Experiencia de Usuario (UX) e Interfaz}
+La interfaz fue diseñada siguiendo principios de UX moderna: respuesta inmediata ($<200$ ms), contraste visual alto en modo oscuro, ausencia total de emojis de texto sustituidos por íconos SVG profesionales de FontAwesome, y soporte para exportación limpia de reportes en PDF (`@media print`).
+
+\section{Fase 5: Presentación Final y Sustentación}
+El sistema fue desplegado localmente en `http://127.0.0.1:8081/` con scripts automatizados (`run.py`), permitiendo demostraciones interactivas en vivo de ajuste de ponderaciones y escenarios de inicio en frío.
