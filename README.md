@@ -101,3 +101,4 @@ Nuestra evaluación comparativa frente a baselines independientes arrojó los si
 * **Precision@10**: El recomendador híbrido supera consistentemente a SVD Puro al re-ordenar el catálogo basándose en el vector de contenido y MAUT.
 
 *(Los gráficos comparativos se generan en tiempo real y se visualizan en la sección "Evaluación Científica" de la interfaz web).*
+*(Los gráficos comparativos se generan en tiempo real y se visualizan en la sección "Evaluación Científica" de la interfaz web).*
