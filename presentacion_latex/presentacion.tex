@@ -1,0 +1,322 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+
+% Tema minimalista y estético
+\usetheme{Boadilla}
+\usecolortheme{whale}
+
+% Paleta de colores personalizados (Estilo Moderno/Tech)
+\definecolor{DarkBlueTech}{RGB}{15, 32, 67}
+\definecolor{AccentCyan}{RGB}{0, 173, 181}
+\definecolor{LightGray}{RGB}{240, 243, 244}
+
+\setbeamercolor{structure}{fg=DarkBlueTech}
+\setbeamercolor{palette primary}{bg=DarkBlueTech, fg=white}
+\setbeamercolor{palette secondary}{bg=AccentCyan, fg=white}
+\setbeamercolor{palette tertiary}{bg=DarkBlueTech, fg=white}
+\setbeamercolor{title}{bg=DarkBlueTech, fg=white}
+\setbeamercolor{item}{fg=AccentCyan}
+
+% Quitar los botones de navegación de beamer
+\setbeamertemplate{navigation symbols}{}
+
+% Formato de título
+\title[Recomendador Híbrido]{\textbf{Sistema Híbrido de Recomendación de Laptops}}
+\subtitle{Arquitectura en Cascada de 2 Niveles para E-Commerce de Hardware}
+\author[Roger Vilcacari]{Roger Vilcacari}
+\institute[UNAP]{Sistemas de Recomendación - Proyecto Final}
+\date{\today}
+
+\begin{document}
+
+% -------------------------
+% Diapositiva 1
+% -------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% -------------------------
+% Diapositiva 2
+% -------------------------
+\begin{frame}{Introducción y Motivación}
+    \begin{itemize}
+        \item \textbf{Contexto:} La elección de una laptop es un proceso complejo. Involucra alta inversión económica y la necesidad de emparejar requisitos técnicos estrictos con perfiles de uso muy variados (estudiantes, programadores, arquitectos, gamers).
+        \vspace{0.3cm}
+        \item \textbf{Problema Central:} Los sistemas de recomendación actuales en plataformas de E-Commerce suelen basarse únicamente en popularidad o historial de compras, ignorando la incompatibilidad técnica (Ej. recomendar una laptop Celeron a un diseñador 3D solo porque es "muy vendida").
+        \vspace{0.3cm}
+        \item \textbf{Objetivo:} Desarrollar un sistema experto híbrido que garantice el 100\% de cumplimiento de restricciones técnicas y que además ofrezca una experiencia personalizada mitigando la falta de historial.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 3
+% -------------------------
+\begin{frame}{Definición de los Retos Técnicos}
+    \begin{block}{Reto 1: El \textit{Cold Start} (Inicio en frío)}
+        Las personas renuevan sus laptops cada 3-5 años. En la mayoría de sesiones, el usuario es "nuevo" para el sistema. El \textbf{Filtrado Colaborativo} puro colapsa sin datos de interacción previos.
+    \end{block}
+    
+    \vspace{0.2cm}
+    \begin{block}{Reto 2: Restricciones Duras (Constraints)}
+        En dominios de entretenimiento (cine, música), un falso positivo genera disgusto temporal. En hardware, un falso positivo (ej. recomendar una laptop sin GPU para tareas pesadas) invalida toda la compra.
+    \end{block}
+
+    \vspace{0.2cm}
+    \begin{block}{Reto 3: Espacio Multidimensional}
+        La relevancia no se define por "marca", sino por un vector compuesto por RAM, Almacenamiento, Tasa de Refresco, GPU, CPU, etc.
+    \end{block}
+\end{frame}
+
+% -------------------------
+% Diapositiva 4
+% -------------------------
+\begin{frame}{El Dataset de Trabajo}
+    Para el entorno de validación, se procesó información de escenarios reales:
+    
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Fuente de Datos:} Dataset "Laptop Price Prediction" de Kaggle (2024).
+        \item \textbf{Volumen:} 1,273 modelos únicos de laptops reales en el mercado.
+        \item \textbf{Preprocesamiento y Extracción:}
+        \begin{itemize}
+            \item Conversión automatizada de monedas a USD.
+            \item Extracción mediante \textit{Regex} de componentes vitales: Cantidad de RAM (GB), núcleos de CPU, existencia de GPU Dedicada y soporte CUDA.
+            \item Creación de un "Screen Score" basado en resoluciones y tecnologías de panel.
+        \end{itemize}
+        \item \textbf{Simulación Colaborativa:} Generación de casi 3,000 interacciones (ratings) sintéticas divididas en arquetipos (Gamers, Estudiantes, Editores) para entrenar el modelo latente.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 5
+% -------------------------
+\begin{frame}{Solución: Arquitectura Híbrida en Cascada}
+    \begin{center}
+    \resizebox{!}{0.7\textheight}{
+    \begin{tikzpicture}[
+        box/.style={draw=DarkBlueTech, thick, rounded corners, align=center, fill=LightGray, text width=6cm, minimum height=1.2cm},
+        arrow/.style={->, thick, DarkBlueTech, >=stealth}
+    ]
+        % Nodos
+        \node[box] (input) at (0, 3.5) {\textbf{Input del Usuario}\\Presupuesto + Perfil Cualitativo};
+        
+        \node[box, fill=DarkBlueTech!10] (nivel1) at (0, 1.75) {\textbf{Nivel 1: Motor Constraint-Based}\\Aplica reglas de exclusión lógicas};
+        
+        \node[box, fill=AccentCyan!10, text width=9cm] (nivel2) at (0, 0) {\textbf{Nivel 2: Ensamble Dinámico Ponderado}\\$U_{maut}$ (Knowledge) + $S_{content}$ (Content) + $\hat{r}_{svd}$ (Collaborative)};
+        
+        \node[box] (output) at (0, -1.75) {\textbf{Ranking Final (Top-K Recomendaciones)}};
+
+        % Flechas
+        \draw[arrow] (input) -- (nivel1);
+        \draw[arrow] (nivel1) -- node[right, font=\footnotesize] {Solo Pasan ítems válidos} (nivel2);
+        \draw[arrow] (nivel2) -- (output);
+    \end{tikzpicture}
+    }
+    \end{center}
+\end{frame}
+
+% -------------------------
+% Diapositiva 6
+% -------------------------
+\begin{frame}{Nivel 1: Inferencia Lógica (Filtro Duro)}
+    Actúa como la barrera principal del sistema. Transforma las especificaciones del usuario en \textbf{reglas binarias (Constraints)}.
+    
+    \vspace{0.3cm}
+    \begin{block}{Construcción Matemática de la Máscara}
+        Para cada laptop $i$, se genera un escalar $M_{rules}$:
+        \begin{equation}
+            M_{rules}(i) = \begin{cases} 
+            1 & \text{si } P_i \le B \land (R_i \ge R_{min}) \land (V_i \ge V_{min}) \\
+            0 & \text{en cualquier otro caso}
+            \end{cases}
+        \end{equation}
+    \end{block}
+
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Ejemplo:} Si el perfil es \textit{Data Science}, se fuerza $RAM \ge 16GB$ y GPU con CUDA.
+        \item Cualquier equipo con $M_{rules}(i) = 0$ queda descartado permanentemente, reduciendo el espacio de búsqueda y eliminando la fricción de falsos positivos.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 7
+% -------------------------
+\begin{frame}{Nivel 2 (Sub-Modelo A): Teoría de Utilidad (MAUT)}
+    El \textit{Multi-Attribute Utility Theory} (Knowledge-Based) permite puntuar laptops incluso si \textbf{ningún usuario las ha comprado antes}.
+    
+    \vspace{0.2cm}
+    El usuario define la importancia (pesos $w$) que le da a distintas dimensiones. El modelo normaliza (Min-Max) los valores técnicos de la laptop ($S$).
+    
+    \begin{block}{Cálculo de Utilidad $U_{maut}$}
+        \begin{equation}
+            U_{maut}(i) = w_{precio} \cdot S_{p}(i) + w_{rendimiento} \cdot S_{r}(i) + w_{pantalla} \cdot S_{s}(i) + w_{portab.} \cdot S_{m}(i)
+        \end{equation}
+    \end{block}
+    
+    \begin{itemize}
+        \item Las métricas se normalizan al rango $[0, 1]$.
+        \item Ej: Para $S_{precio}$, los equipos más económicos obtienen mayor puntaje cercano a $1$.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 8
+% -------------------------
+\begin{frame}{Nivel 2 (Sub-Modelo B): Factorización SVD}
+    Modelo \textbf{Collaborative Filtering} diseñado para descubrir patrones de consumo de la comunidad que no son obvios matemáticamente (ej. lealtad de marca).
+    
+    \begin{block}{Predicción de Calificación $\hat{r}$}
+        \begin{equation}
+            \hat{r}_{ui} = \mu + b_u + b_i + q_i^T p_u
+        \end{equation}
+    \end{block}
+    
+    \begin{itemize}
+        \item $\mu$: Promedio global.
+        \item $b_u, b_i$: Sesgos del usuario (criticismo) y del ítem (popularidad global).
+        \item $q_i^T p_u$: Producto punto de los vectores latentes (Factores Ocultos).
+        \item Se entrena minimizando el error con \textbf{Stochastic Gradient Descent (SGD)}.
+        \item \textit{Normalización:} El resultado (de 1 a 5 estrellas) se escala a $[0,1]$ para sumarse al híbrido.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 9
+% -------------------------
+\begin{frame}{Nivel 2 (Sub-Modelo C): Similitud Coseno}
+    Modelo \textbf{Content-Based} que mide la proximidad geométrica entre lo que el usuario necesita y lo que la laptop ofrece.
+    
+    \begin{block}{Métrica de Distancia Vectorial}
+        Se genera un vector ideal del usuario $v_u$ y un vector de la laptop $v_i$.
+        \begin{equation}
+            S_{content}(i) = \cos(v_u, v_i) = \frac{v_u \cdot v_i}{\|v_u\| \|v_i\|}
+        \end{equation}
+    \end{block}
+    
+    \begin{itemize}
+        \item El vector incluye: \texttt{[RAM\_Score, CPU\_Score, GPU\_Score, Calidad\_Pantalla]}.
+        \item Ignora el precio, centrándose exclusivamente en el paralelismo de las capacidades técnicas.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 10
+% -------------------------
+\begin{frame}{Ecuación Híbrida y Estrategia de Pesos Dinámicos}
+    Los tres modelos se integran en una combinación lineal ponderada, condicionada por el Nivel 1.
+    
+    \begin{block}{Función de Puntaje Global}
+    \begin{equation}
+        Score_i = M_{rules}(i) \times \Big[ \alpha \cdot U_{maut}(i) + \beta \cdot \hat{r}_{svd\_norm}(i) + \gamma \cdot S_{content}(i) \Big]
+    \end{equation}
+    \end{block}
+    
+    \vspace{0.2cm}
+    \textbf{Mitigación Inteligente del Cold Start:}
+    Los coeficientes cambian según la madurez del usuario.
+    \begin{itemize}
+        \item \textbf{Usuario Nuevo (Cold Start):} $\alpha = 0.60$ (Fuerte peso a reglas y preferencias), $\gamma = 0.30$, $\beta = 0.10$ (Se apaga casi por completo la predicción comunitaria).
+        \item \textbf{Usuario Frecuente:} $\alpha = 0.30, \beta = 0.50$ (Se le da poder a la sabiduría colaborativa).
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 11
+% -------------------------
+\begin{frame}{Implementación del Sistema Web (Dashboard)}
+    Para validar su funcionamiento, se construyó una interfaz E-Commerce funcional:
+    
+    \begin{itemize}
+        \item \textbf{Backend:} Servidor en Python usando \texttt{FastAPI} de alto rendimiento.
+        \item \textbf{Almacenamiento:} Modelos pre-entrenados cargados en memoria y base de datos vectorizada.
+        \item \textbf{Frontend:} SPA interactiva (HTML5, JS, CSS Glassmorphism) que permite ajustar los factores de peso y probar distintos perfiles en tiempo real.
+        \item \textbf{Endpoints:} \texttt{/api/recommend} recibe el JSON de preferencias y ejecuta la cascada en fracciones de segundo.
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 12
+% -------------------------
+\begin{frame}{Evaluación Científica: Constraint Satisfaction Rate (CSR)}
+    Se evaluó qué porcentaje de los Top-10 recomendados eran realmente \textbf{útiles} para el usuario (cumplían sus mínimos técnicos):
+    
+    \vspace{0.4cm}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{table}
+            \centering
+            \begin{tabular}{lc}
+                \toprule
+                \textbf{Algoritmo} & \textbf{CSR@10} \\
+                \midrule
+                SVD Puro & 31.7\% \\
+                Content-Based Puro & 48.3\% \\
+                \textbf{Arquitectura Híbrida} & \textbf{93.3\%} \\
+                \bottomrule
+            \end{tabular}
+        \end{table}
+        
+        \column{0.5\textwidth}
+        \begin{block}{Análisis}
+        El SVD tradicional recomienda ítems populares que a menudo violan el presupuesto o el uso específico. El Sistema Híbrido, gracias a $M_{rules}$, es virtualmente impecable.
+        \end{block}
+    \end{columns}
+\end{frame}
+
+% -------------------------
+% Diapositiva 13
+% -------------------------
+\begin{frame}{Evaluación Científica: Precisión y RMSE}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \textbf{Predictividad Colaborativa (RMSE):}
+        \begin{itemize}
+            \item RMSE del modelo SVD en dataset de test: \textbf{1.033}
+            \item Demuestra que el algoritmo SVD logra predecir el interés a 1 estrella de margen.
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \textbf{Precisión@10 y Recall@10:}
+        \begin{itemize}
+            \item En escenarios de \textit{Cold Start}, las métricas clásicas son engañosamente bajas, pero la integración del vector de conocimiento MAUT asegura que las recomendaciones sean objetivamente relevantes para el perfil consultado.
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+% -------------------------
+% Diapositiva 14
+% -------------------------
+\begin{frame}{Conclusiones y Trabajo Futuro}
+    \begin{itemize}
+        \item \textbf{Hibridación en Cascada:} Un modelo puramente basado en IA generativa o colaborativa no es seguro para comercio de hardware. Los sistemas basados en restricciones (\textit{Constraint-based}) son imperativos.
+        \item \textbf{Solución MAUT:} Transformar specs técnicas crudas a una "función de utilidad" normalizada resolvió la asimetría de los datos y permitió recomendaciones perfectas sin interacciones pasadas.
+        \item \textbf{Trabajo Futuro:} 
+        \begin{itemize}
+            \item Integrar procesamiento de lenguaje natural (NLP) para que el usuario escriba sus necesidades en texto libre.
+            \item Migración a Bases de Datos Vectoriales (\textit{Milvus} o \textit{Pinecone}) para escalar a catálogos de millones de productos.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% -------------------------
+% Diapositiva 15
+% -------------------------
+\begin{frame}[plain]
+    \begin{center}
+        \vspace{1cm}
+        \Huge \textbf{¡Muchas Gracias!} \\
+        \vspace{0.5cm}
+        \Large Arquitectura Híbrida de 2 Niveles para E-Commerce \\
+        \vspace{1cm}
+        \normalsize \textit{Turno de Preguntas y Respuestas}
+    \end{center}
+\end{frame}
+
+\end{document}

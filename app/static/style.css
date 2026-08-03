@@ -302,6 +302,13 @@ body {
     background-color: #1c1c32;
 }
 
+.custom-select-wrapper select option {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
 .custom-select-wrapper::after {
     content: '\f078';
     font-family: 'Font Awesome 6 Free';
