@@ -21,28 +21,14 @@ Combinando **inferencia binaria determinista**, **Teoría de Utilidad Multi-Atri
 
 ---
 
-## 🖼️ Vistas de la Aplicación y Evidencias Visuales
+## 🌟 Funcionalidades Principales
 
-<div align="center">
-
-### 📱 Dashboard Principal Híbrido en Modo Oscuro HSL
-![Dashboard Principal](Iinforme_tex/figuras/01_dashboard_principal_hibrido.png)
-
-</div>
-
----
-
-### 🌟 Galería de Funcionalidades Principales
-
-| 🛍️ Tarjetas & Enlace a Amazon | ⚔️ Comparador 1vs1 Cara a Cara |
-| :---: | :---: |
-| ![Tarjeta Amazon](Iinforme_tex/figuras/02_tarjeta_laptop_oferta_amazon.png) | ![Comparador 1vs1](Iinforme_tex/figuras/03_comparador_head_to_head_1vs1.png) |
-| *Desglose de coincidencia por submodelo e integración directa con ofertas en vivo de Amazon.* | *Matriz comparativa atributo por atributo con algoritmo de veredicto automático.* |
-
-| 📈 Serie Temporal de Precios (Chart.js) | 💱 Conversor Multimoneda (PEN/USD/EUR) |
-| :---: | :---: |
-| ![Gráfica Precios](Iinforme_tex/figuras/04_grafica_tendencia_precios_chartjs.png) | ![Multimoneda PEN](Iinforme_tex/figuras/05_selector_monedas_soles_pen.png) |
-| *Gráfico en HTML5 Canvas con histórico a 6 meses, mínimo y máximo histórico.* | *Conversión instantánea global en Soles Peruanos, Dólares y Euros.* |
+* ⚡ **Filtrado en Cascada en 2 Niveles**: Nivel 1 por reglas binarias de dominio ($M_{rules}$) + Nivel 2 ensamble ponderado dinámico.
+* ❄️ **Conmutación Automática ante Cold Start**: Adaptación automática de pesos para usuarios nuevos garantizando $CSR@10 = 100\%$.
+* ⚔️ **Comparador Cara a Cara 1vs1**: Matriz interactiva de especificaciones con veredicto técnico automático en lenguaje natural.
+* 📈 **Gráfica de Tendencia de Precios (Chart.js)**: Proyección visual en HTML5 Canvas con histórico a 6 meses, mínimo y máximo histórico.
+* 💱 **Selector Multimoneda Global**: Conversión dinámica en tiempo real entre Soles Peruanos (PEN S/), Dólares (USD \$) y Euros (EUR).
+* 🛒 **Vinculación Directa con Amazon**: Botones parametrizados a ofertas en vivo en Amazon.
 
 ---
 
@@ -69,7 +55,7 @@ Combinando **inferencia binaria determinista**, **Teoría de Utilidad Multi-Atri
                                             ▼
                  ┌─────────────────────────────────────────────────────┐
                  │       Ranking Final de Recomendaciones Top-K        │
-                 └─────────────────────────────────────────────────────┘
+                 └──────────────────────────┬──────────────────────────┘
 ```
 
 ### 🧠 Mecanismo Dinámico de Conmutación (*Switching Strategy*)
@@ -89,14 +75,6 @@ Evaluación realizada sobre una partición **80/20 Train/Test Split** con **1,99
 | **Content-Based Aislado** | N/A | 82.10% | 71.50% | 85.00% |
 | **LaptopRec Híbrido 2-Niveles** | **1.0503** | **100.00%** | **95.40%** | **100.00% (Óptimo)** |
 
-<div align="center">
-
-| Cobertura de Inicio en Frío (CSR@10) | Curvas de Precision@K y Recall@K |
-| :---: | :---: |
-| ![CSR Comparison](Iinforme_tex/figuras/evaluation_csr.png) | ![Precision Recall](Iinforme_tex/figuras/evaluation_precision_recall.png) |
-
-</div>
-
 ---
 
 ## 🛠️ Stack Tecnológico
@@ -104,7 +82,6 @@ Evaluación realizada sobre una partición **80/20 Train/Test Split** con **1,99
 * **Backend REST API**: Python 3.10+, FastAPI (ASGI Framework), Pydantic, Uvicorn.
 * **Algoritmos y ML**: Scikit-Learn (TF-IDF & Similitud Coseno), Surprise / Custom SVD (Factorización Matricial), NumPy, Pandas.
 * **Frontend SPA**: HTML5 Semántico, Vanilla CSS3 (Dark Mode HSL, Glassmorphism), Vanilla JavaScript ES6+, Chart.js CDN.
-* **Documentación & Compilación**: LaTeX / MiKTeX (`pdflatex`), Playwright Python.
 
 ---
 
@@ -143,10 +120,6 @@ proyectofinal_SR/
 │   ├── laptops.csv                 # Catálogo base de 150 computadoras portátiles
 │   ├── ratings.csv                 # Dataset de 1,999 calificaciones de usuarios
 │   └── user_profiles.json          # Metadatos de perfiles latentes
-├── Iinforme_tex/
-│   ├── informe.tex                 # Fuente principal del informe en LaTeX (31 páginas)
-│   ├── informe.pdf                 # Documento técnico oficial compilado
-│   └── figuras/                    # Capturas de pantalla e imágenes de evaluación
 ├── src/
 │   ├── rules_engine.py             # Nivel 1: Filtro Binario de Dominio (M_rules)
 │   ├── maut_model.py               # Nivel 2: Utilidad Multi-Atributo MAUT
@@ -157,6 +130,7 @@ proyectofinal_SR/
 ├── generate_eda_plots.py           # Script generador de gráficos científicos EDA
 ├── evaluate_system.py              # Script de evaluación empírica unificada
 ├── run.py                          # Launcher unificado del servidor FastAPI
+├── .gitignore                      # Exclusión de archivos temporales e informes TeX
 └── requirements.txt                # Archivo de dependencias Python
 ```
 
@@ -166,14 +140,6 @@ proyectofinal_SR/
 
 * **Carmen Nieves Apaza Condori**
 * **Aaron Rogeer Vilca Caria**
-
----
-
-## 📄 Documentación Técnica Oficial
-
-El informe académico técnico completo de 31 páginas, formalizado con ecuaciones matemáticas APA 7ma edición, pseudocódigos y análisis detallados, está disponible en:
-
-📄 **[Ver Informe Técnico PDF (`Iinforme_tex/informe.pdf`)](Iinforme_tex/informe.pdf)**
 
 ---
 <div align="center">
