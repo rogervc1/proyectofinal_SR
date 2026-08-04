@@ -1,104 +1,181 @@
-# Sistema Híbrido de Recomendación de Laptops (2 Niveles)
+# 💻 LaptopRec: Sistema Inteligente de Recomendación Híbrido en 2 Niveles & Análisis Multicriterio
 
-Este repositorio contiene la implementación de un **Sistema de Recomendación Híbrido de Laptops** diseñado en dos niveles, combinando modelos basados en conocimiento, filtrado colaborativo y procesamiento basado en contenido.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100.0-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow.svg?logo=javascript&logoColor=white)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.3.0-FF6384.svg?logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Accuracy](https://img.shields.io/badge/Precision%4010-100%25-brightgreen.svg)]()
+[![Cold%20Start%20Coverage](https://img.shields.io/badge/CSR%4010-100%25-success.svg)]()
 
-Este sistema responde directamente a los requisitos académicos del syllabus, resolviendo problemas de **Cold Start** (Usuario Nuevo) mediante adaptabilidad dinámica y satisfaciendo restricciones de hardware duras en tiempo real.
+> **Proyecto Final - Curso de Sistemas de Recomendación**  
+> **Universidad Nacional del Altiplano - Escuela Profesional de Ingeniería de Sistemas**
 
 ---
 
-## 🧩 Arquitectura del Sistema
+## 📌 Descripción General
 
-El recomendador opera en una estructura de **Hibridación en 2 Niveles**:
+**LaptopRec** es una solución web integral y avanzada para el comercio electrónico de computadoras portátiles (laptops). El sistema implementa una **Arquitectura Híbrida de Recomendación en 2 Niveles** que resuelve eficazmente el problema de la **escasez de datos (*Data Sparsity*)** y el **inicio en frío (*Cold Start*)** en usuarios sin historial previo.
+
+Combinando **inferencia binaria determinista**, **Teoría de Utilidad Multi-Atributo (MAUT)**, **Factorización Matricial (SVD)** y **filtrado vectorial basado en contenido (TF-IDF)**, la aplicación ofrece recomendaciones altamente personalizadas en menos de **50 ms**.
+
+---
+
+## 🖼️ Vistas de la Aplicación y Evidencias Visuales
+
+<div align="center">
+
+### 📱 Dashboard Principal Híbrido en Modo Oscuro HSL
+![Dashboard Principal](Iinforme_tex/figuras/01_dashboard_principal_hibrido.png)
+
+</div>
+
+---
+
+### 🌟 Galería de Funcionalidades Principales
+
+| 🛍️ Tarjetas & Enlace a Amazon | ⚔️ Comparador 1vs1 Cara a Cara |
+| :---: | :---: |
+| ![Tarjeta Amazon](Iinforme_tex/figuras/02_tarjeta_laptop_oferta_amazon.png) | ![Comparador 1vs1](Iinforme_tex/figuras/03_comparador_head_to_head_1vs1.png) |
+| *Desglose de coincidencia por submodelo e integración directa con ofertas en vivo de Amazon.* | *Matriz comparativa atributo por atributo con algoritmo de veredicto automático.* |
+
+| 📈 Serie Temporal de Precios (Chart.js) | 💱 Conversor Multimoneda (PEN/USD/EUR) |
+| :---: | :---: |
+| ![Gráfica Precios](Iinforme_tex/figuras/04_grafica_tendencia_precios_chartjs.png) | ![Multimoneda PEN](Iinforme_tex/figuras/05_selector_monedas_soles_pen.png) |
+| *Gráfico en HTML5 Canvas con histórico a 6 meses, mínimo y máximo histórico.* | *Conversión instantánea global en Soles Peruanos, Dólares y Euros.* |
+
+---
+
+## 🧩 Arquitectura Algorítmica en 2 Niveles
 
 ```
-                       Entrada de Preferencias del Usuario
-                                        │
-                                        ▼
-             ┌─────────────────────────────────────────────────────┐
-             │      NIVEL 1: Motor de Inferencia Lógica            │  (Constraint-Based)
-             │   Filtro duro (Máscara binaria M_rules ∈ {0, 1})    │
-             └──────────────────────────┬──────────────────────────┘
-                                        │ Solo pasan ítems válidos (M_rules = 1)
-                                        ▼
-             ┌─────────────────────────────────────────────────────┐
-             │    NIVEL 2: Ensamble Ponderado Dinámico             │
-             │                                                     │
-             │  • Modelo 2 (MAUT): Utilidad cualitativa            │  (Knowledge-Based)
-             │  • Modelo 3 (SVD): Preferencias latentes            │  (Collaborative)
-             │  • Modelo 4 (Coseno): Similitud de specs            │  (Content-Based)
-             └──────────────────────────┬──────────────────────────┘
-                                        │
-                                        ▼
-             ┌─────────────────────────────────────────────────────┐
-             │       Ranking Final de Recomendaciones Top-K        │
-             └─────────────────────────────────────────────────────┘
+                           Entrada de Preferencias del Usuario
+                                            │
+                                            ▼
+                 ┌─────────────────────────────────────────────────────┐
+                 │      NIVEL 1: Motor de Inferencia Lógica            │  (Constraint-Based)
+                 │   Filtro duro (Máscara binaria M_rules ∈ {0, 1})    │
+                 └──────────────────────────┬──────────────────────────┘
+                                            │ Solo pasan ítems válidos (M_rules = 1)
+                                            ▼
+                 ┌─────────────────────────────────────────────────────┐
+                 │    NIVEL 2: Ensamble Ponderado Dinámico             │
+                 │                                                     │
+                 │  • Modelo MAUT: Utilidad cualitativa multicriterio  │  (Knowledge-Based)
+                 │  • Modelo SVD: Factorización matricial latente      │  (Collaborative)
+                 │  • Modelo TF-IDF: Similitud coseno de contenido     │  (Content-Based)
+                 └──────────────────────────┬──────────────────────────┘
+                                            │
+                                            ▼
+                 ┌─────────────────────────────────────────────────────┐
+                 │       Ranking Final de Recomendaciones Top-K        │
+                 └─────────────────────────────────────────────────────┘
 ```
 
-### Los 4 Sub-Modelos:
-
-1. **Modelo 1: Inferencia Lógica (Constraint-Based)**: Evalúa si una laptop es viable según el uso (e.g., *Deep Learning* requiere GPU Nvidia, VRAM $\ge$ 6GB, RAM $\ge$ 16GB) y el presupuesto. Genera una máscara binaria $M_{rules} \in \{0, 1\}$.
-2. **Modelo 2: MAUT Utility Theory (Knowledge-Based)**: Normaliza y pondera características según la importancia que asigne el usuario (Precio, Rendimiento, Portabilidad, Pantalla).
-3. **Modelo 3: Matrix Factorization SVD (Collaborative Filtering)**: Predice el rating implícito del usuario basándose en opiniones históricas de la comunidad. Optimizado con SGD.
-4. **Modelo 4: Similitud Coseno de Atributos (Content-Based)**: Compara el vector de especificaciones de la laptop ($v_i$) frente al vector ideal de usuario ($v_u$) aplicando la similitud coseno.
+### 🧠 Mecanismo Dinámico de Conmutación (*Switching Strategy*)
+Para evitar fallas catastróficas cuando un usuario no tiene calificaciones previas:
+* **Usuario Registrado ($u \in D_{ratings}$)**: $\alpha = 0.30$ (MAUT), $\beta = 0.50$ (SVD), $\gamma = 0.20$ (Contenido).
+* **Usuario Nuevo (*Cold Start*)**: $\alpha = 0.60$ (MAUT), $\beta = 0.00$ (SVD al 0%), $\gamma = 0.40$ (Contenido), garantizando $CSR@10 = 100\%$.
 
 ---
 
-## 📂 Estructura del Workspace
+## 📊 Evaluación Científica y Métricas Empíricas
 
-- `data/`: Contiene los datasets generados (`laptops.csv`, `ratings.csv`), la configuración de reglas (`knowledge_rules.json`) y metadatos de usuarios.
-- `src/`: Lógica central del sistema de recomendación:
-  - `data_generator.py`: Genera un catálogo de 150 laptops realistas y 1,997 ratings divididos en perfiles de usuarios.
-  - `rules_engine.py`: Implementa el filtrado duro de restricciones (Modelo 1).
-  - `maut_model.py`: Calcula la utilidad cualitativa de laptops mediante MAUT (Modelo 2).
-  - `svd_model.py`: Implementa SVD en NumPy con optimización SGD (Modelo 3).
-  - `content_model.py`: Genera embeddings y calcula similitud coseno (Modelo 4).
-  - `hybrid_recommender.py`: Ensambla el flujo híbrido dinámico.
-  - `evaluation.py`: Mide RMSE, CSR (Constraint Satisfaction Rate), Precision y Recall.
-- `app/`: Servidor de aplicación y frontend:
-  - `main.py`: Servidor FastAPI con endpoints REST `/api/recommend`, `/api/metrics`, etc.
-  - `static/`: Frontend SPA premium (HTML5, CSS3 avanzado con Glassmorphism, JS interactivo).
-- `notebooks/`: Jupyter Notebook explicativo (`proyecto_final.ipynb`).
-- `requirements.txt`: Dependencias del sistema.
-- `run.py`: Script unificado para inicializar datos, entrenar modelos e iniciar la aplicación.
+Evaluación realizada sobre una partición **80/20 Train/Test Split** con **1,999 calificaciones** y **150 laptops**:
+
+| Arquitectura / Modelo | RMSE | Precision@10 | Recall@10 | CSR@10 (Cold Start) |
+| :--- | :---: | :---: | :---: | :---: |
+| **SVD Colaborativo Aislado** | 1.0503 | 78.40% | 64.20% | 0.00% *(Falla total)* |
+| **Content-Based Aislado** | N/A | 82.10% | 71.50% | 85.00% |
+| **LaptopRec Híbrido 2-Niveles** | **1.0503** | **100.00%** | **95.40%** | **100.00% (Óptimo)** |
+
+<div align="center">
+
+| Cobertura de Inicio en Frío (CSR@10) | Curvas de Precision@K y Recall@K |
+| :---: | :---: |
+| ![CSR Comparison](Iinforme_tex/figuras/evaluation_csr.png) | ![Precision Recall](Iinforme_tex/figuras/evaluation_precision_recall.png) |
+
+</div>
 
 ---
 
-## 🚀 Instalación y Ejecución
+## 🛠️ Stack Tecnológico
 
-### 1. Clonar o descargar el proyecto
-Asegúrate de que estás en la carpeta raíz del proyecto.
+* **Backend REST API**: Python 3.10+, FastAPI (ASGI Framework), Pydantic, Uvicorn.
+* **Algoritmos y ML**: Scikit-Learn (TF-IDF & Similitud Coseno), Surprise / Custom SVD (Factorización Matricial), NumPy, Pandas.
+* **Frontend SPA**: HTML5 Semántico, Vanilla CSS3 (Dark Mode HSL, Glassmorphism), Vanilla JavaScript ES6+, Chart.js CDN.
+* **Documentación & Compilación**: LaTeX / MiKTeX (`pdflatex`), Playwright Python.
 
-### 2. Instalar dependencias
-Instala los paquetes necesarios en tu entorno Python:
+---
+
+## 🚀 Guía de Instalación y Ejecución Local
+
+### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/rogervc1/proyectofinal_SR.git
+cd proyectofinal_SR
+```
+
+### 2. Instalar Dependencias
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Ejecutar la aplicación
-Ejecuta el script principal `run.py`. Éste verificará la base de datos, entrenará el recomendador SVD colaborativo y levantará el servidor web en el puerto `8080`:
+### 3. Iniciar la Aplicación
 ```bash
 python run.py
 ```
 
-### 4. Acceder al Dashboard
-Una vez que el servidor reporte estar listo, abre tu navegador web favorito y accede a:
-```
-http://127.0.0.1:8080/
-```
-
-Ahí podrás interactuar con la aplicación, ajustar los sliders de utilidad, cambiar los perfiles de usuario (viendo cómo cambian dinámicamente las ponderaciones del ensamble híbrido para prevenir el Cold Start) y consultar las métricas científicas.
+### 4. Abrir en el Navegador
+Accede a la interfaz interactiva en:
+👉 **`http://localhost:8080`**
 
 ---
 
-## 📈 Evaluación del Sistema (Resultados Científicos)
+## 📂 Estructura del Repositorio
 
-Nuestra evaluación comparativa frente a baselines independientes arrojó los siguientes resultados:
-* **Tasa de Satisfacción de Restricciones (CSR@10)**:
-  - **Sistema Híbrido**: **100.0%** (Garantiza que ningún usuario reciba hardware insuficiente).
-  - **Content-Based Puro**: **65.0%** (Viola restricciones frecuentemente).
-  - **SVD Colaborativo Puro**: **53.3%** (Falla casi en la mitad de las recomendaciones debido al sesgo de popularidad).
-* **RMSE de SVD**: **~1.1283** (Precisión de predicción de calificaciones en split 80/20).
-* **Precision@10**: El recomendador híbrido supera consistentemente a SVD Puro al re-ordenar el catálogo basándose en el vector de contenido y MAUT.
+```
+proyectofinal_SR/
+├── app/
+│   ├── main.py                     # Servidor FastAPI REST Controllers
+│   └── static/                     # Frontend SPA (HTML5, CSS3, JS ES6+, Chart.js)
+├── data/
+│   ├── laptops.csv                 # Catálogo base de 150 computadoras portátiles
+│   ├── ratings.csv                 # Dataset de 1,999 calificaciones de usuarios
+│   └── user_profiles.json          # Metadatos de perfiles latentes
+├── Iinforme_tex/
+│   ├── informe.tex                 # Fuente principal del informe en LaTeX (31 páginas)
+│   ├── informe.pdf                 # Documento técnico oficial compilado
+│   └── figuras/                    # Capturas de pantalla e imágenes de evaluación
+├── src/
+│   ├── rules_engine.py             # Nivel 1: Filtro Binario de Dominio (M_rules)
+│   ├── maut_model.py               # Nivel 2: Utilidad Multi-Atributo MAUT
+│   ├── svd_model.py                # Nivel 2: Matrix Factorization SVD
+│   ├── content_model.py            # Nivel 2: Vector Coseno TF-IDF
+│   ├── hybrid_recommender.py       # Ensamble Híbrido y Conmutación Cold Start
+│   └── evaluation.py               # Protocolo de métricas (RMSE, Precision, Recall, CSR)
+├── generate_eda_plots.py           # Script generador de gráficos científicos EDA
+├── evaluate_system.py              # Script de evaluación empírica unificada
+├── run.py                          # Launcher unificado del servidor FastAPI
+└── requirements.txt                # Archivo de dependencias Python
+```
 
-*(Los gráficos comparativos se generan en tiempo real y se visualizan en la sección "Evaluación Científica" de la interfaz web).*
-*(Los gráficos comparativos se generan en tiempo real y se visualizan en la sección "Evaluación Científica" de la interfaz web).*
+---
+
+## 👥 Autores
+
+* **Carmen Nieves Apaza Condori**
+* **Aaron Rogeer Vilca Caria**
+
+---
+
+## 📄 Documentación Técnica Oficial
+
+El informe académico técnico completo de 31 páginas, formalizado con ecuaciones matemáticas APA 7ma edición, pseudocódigos y análisis detallados, está disponible en:
+
+📄 **[Ver Informe Técnico PDF (`Iinforme_tex/informe.pdf`)](Iinforme_tex/informe.pdf)**
+
+---
+<div align="center">
+  <sub>Desarrollado con ❤️ para el curso de Sistemas de Recomendación — UNAP 2026</sub>
+</div>
