@@ -305,7 +305,7 @@ El desarrollo del proyecto integró un stack tecnológico moderno, ligero y desa
 \centering
 \caption{Stack tecnológico de desarrollo empleado en el proyecto LaptopRec.}
 \label{tab:tecnologias_stack}
-\begin{tabular}{lll}
+\begin{tabularx}{\textwidth}{p{3.8cm} p{4.2cm} X}
 \toprule
 \textbf{Capa / Componente} & \textbf{Tecnología / Librería} & \textbf{Función en el Sistema} \\
 \midrule
@@ -318,7 +318,7 @@ Estilos Visuales & Vanilla CSS3 & Diseño responsivo en Dark Mode HSL y Glassmor
 Gráficos Dinámicos & Chart.js (via CDN) & Visualización de series temporales de precios. \\
 Captura de Evidencias & Playwright Python & Generación automatizada de capturas en alta resolución. \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{itemize}
@@ -452,7 +452,7 @@ La Tabla \ref{tab:resultados_metricas} compara cuantitativamente las tres arquit
 \centering
 \caption{Comparación experimental cuantitativa de métricas entre modelos.}
 \label{tab:resultados_metricas}
-\begin{tabular}{lcccc}
+\begin{tabularx}{\textwidth}{X c c c c}
 \toprule
 \textbf{Modelo / Arquitectura} & \textbf{RMSE} & \textbf{Precision@10} & \textbf{Recall@10} & \textbf{CSR@10 (Cold Start)} \\
 \midrule
@@ -460,7 +460,7 @@ SVD Colaborativo Aislado & 1.0503 & 78.40\% & 64.20\% & 0.00\% (Falla) \\
 Content-Based Aislado & N/A & 82.10\% & 71.50\% & 85.00\% \\
 \textbf{Recomendador Híbrido 2-Niveles} & \textbf{1.0503} & \textbf{100.00\%} & \textbf{95.40\%} & \textbf{100.00\% (Óptimo)} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{Gráficos Científicos de Rendimiento}
