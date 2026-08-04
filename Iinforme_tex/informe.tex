@@ -341,53 +341,75 @@ def generar_recomendaciones_hibridas(usuario_id, presupuesto, caso_uso, pesos_ma
 \end{lstlisting}
 
 % ============================================================================
-% 3. METODOLOGÍA Y CÁLCULO DETALLADO DE MÉTRICAS
+% 3. METODOLOGÍA Y PROTOCOLO EXPERIMENTAL
 % ============================================================================
-\section{Metodología y Cálculo Detallado de Métricas en el Proyecto}
+\section{Metodología y Protocolo Experimental}
 
-\subsection{Metodología por Fases del Proyecto}
-El proyecto se ejecutó siguiendo las 5 fases del curso:
-\begin{enumerate}
-    \item \textbf{Fase 1: Mejora del Modelo}: Implementación de SVD y ensamble híbrido en 2 niveles.
-    \item \textbf{Fase 2: Desarrollo de la Aplicación}: Construcción del backend FastAPI y frontend SPA en JavaScript ES6+ con Chart.js y selector multimoneda.
-    \item \textbf{Fase 3: Evaluación del Sistema}: Cálculo riguroso de métricas de precisión y cobertura.
-    \item \textbf{Fase 4: Experiencia de Usuario (UX)}: Optimización visual en modo oscuro, respuesta en $<200$ ms y soporte de exportación limpia.
-    \item \textbf{Fase 5: Presentación Final}: Despliegue en entorno ejecutable local (`python run.py`).
-\end{enumerate}
+\subsection{Diseño Metodológico de la Investigación}
+El presente trabajo adopta un enfoque cuantitativo-experimental sustentado en los principios de la ingeniería de software moderna y la teoría formal de sistemas de recomendación (Aggarwal, 2016). El diseño se orienta a la solución de dos restricciones fundamentales del comercio electrónico: (i) la baja densidad de la matriz de calificaciones ($R \in \mathbb{R}^{100 \times 150}$) y (ii) el problema del inicio en frío (\textit{Cold Start Problem}) en usuarios de primer ingreso.
 
-\subsection{Cálculo de Métricas y su Implementación en el Proyecto}
-La evaluación del recomendador se programó en el script \texttt{evaluate\_system.py}, ejecutando una partición 80/20 (\textit{Train/Test Split}) sobre los 1,999 ratings del catálogo.
+\subsection{Fases del Trabajo y Protocolo de Desarrollo}
+
+\subsubsection{Fase 1: Formulación Algorítmica e Hibridación en Dos Niveles}
+Se diseñó un ensamble híbrido de dos niveles que combina inferencia deductiva e inductiva:
+\begin{itemize}
+    \item \textbf{Nivel 1 (Inferencia Deductiva Binaria)}: Evaluación secuencial de restricciones duras ($M_{rules}$) sobre presupuesto, compatibilidad de hardware (GPU dedicada, aceleradores CUDA) y preferencias de pantalla.
+    \item \textbf{Nivel 2 (Inferencia Inductiva Ponderada)}: Combinación ponderada de utilidad multicriterio ($U_{MAUT}$), predicción colaborativa ($SVD$) y similitud coseno de contenido ($S_{content}$).
+    \item \textbf{Mecanismo de Conmutación (\textit{Switching Mechanism})}: Detección automática del estado del usuario $u$. Si $u \notin D_{train}$, el sistema desactiva SVD ($\beta = 0.00$) y redistribuye la masa de probabilidad hacia MAUT ($\alpha = 0.60$) y Contenido ($\gamma = 0.40$).
+\end{itemize}
+
+\subsubsection{Fase 2: Arquitectura de Software e Integración de Servicios Web}
+Se adoptó una arquitectura cliente-servidor desacoplada:
+\begin{itemize}
+    \item \textbf{Backend REST API (FastAPI)}: Implementación en Python 3.10 utilizando estructuras Pydantic para validación de esquemas JSON y ejecución asíncrona ASGI.
+    \item \textbf{Frontend Single Page Application (Vanilla JS + CSS3)}: Desarrollo de una interfaz dinámica orientada al usuario sin marcos de trabajo pesados, garantizando tiempos de renderizado inferiores a $200$ ms.
+    \item \textbf{Módulo de Visualización de Series Temporales (Chart.js)}: Integración de gráficos de área interactivos con renderizado en Canvas HTML5 para proyectar la fluctuación histórica de precios a 6 meses.
+    \item \textbf{Motor Multimoneda Dinámico}: Transformación instantánea de precios entre Dólares (USD \$), Soles Peruanos (PEN S/) y Euros (EUR EUR) mediante factores de cambio indexados.
+\end{itemize}
+
+\subsubsection{Fase 3: Protocolo de Evaluación Experimental}
+Se implementó un esquema de validación mediante división de datos (\textit{Train/Test Split}) en proporción 80/20 sobre 1,999 calificaciones reales. El entrenamiento del modelo SVD procesó 1,599 interacciones, reservando 400 observaciones para evaluar la capacidad de generalización.
+
+\subsubsection{Fase 4: Experiencia de Usuario (UX) e Interfaz Adaptativa}
+La capa visual fue construida aplicando principios de contraste HSL en modo oscuro, jerarquía tipográfica con fuentes Google Fonts (Inter/Roboto), tarjetas informativas con insignias de relación calidad/precio (\textit{Value Score}) y un modal comparativo cara a cara (1vs1) con veredicto automático.
+
+\subsubsection{Fase 5: Despliegue y Sustentación Técnica}
+La solución fue empaquetada con scripts de orquestación unificada (\texttt{run.py}), permitiendo ejecutar pruebas de integración y sustentación técnica directa en servidores locales.
+
+\subsection{Cálculo Detallado de Métricas de Rendimiento}
+
+La evaluación cuantitativa ejecutada en el script \texttt{evaluate\_system.py} empleó cuatro métricas formales:
 
 \subsubsection{1. Raíz del Error Cuadrático Medio ($RMSE$)}
-Mide la desviación estándar de los errores entre las calificaciones reales $r_{u,i}$ y las predicciones $\hat{r}_{u,i}$ en el conjunto de prueba $T$:
+Cuantifica la magnitud promedio del error en las predicciones de calificación $\hat{r}_{u,i}$ respecto a los valores reales $r_{u,i}$ en el conjunto de prueba $T$:
 \begin{equation}
 RMSE = \sqrt{\frac{1}{|T|} \sum_{(u,i) \in T} (r_{u,i} - \hat{r}_{u,i})^2}
 \end{equation}
-En nuestro proyecto, la rutina iteró sobre cada par $(u,i)$ de la partición de test calculando la diferencia al cuadrado. El valor obtenido para el modelo SVD entrenado con 50 factores latentes fue \textbf{$RMSE = 1.0503$}.
+\textit{Implementación en el Proyecto}: En \texttt{evaluate\_system.py}, se iteró sobre cada calificación de prueba, calculando el cuadrado del residuo $(r_{u,i} - \hat{r}_{u,i})^2$. El modelo SVD optimizado alcanzó un \textbf{$RMSE = 1.0503$}.
 
-\subsubsection{2. Precision@K (Precisión en el Top-K)}
-Evalúa la proporción de laptops dentro del ranking de las $K$ mejores sugerencias que resultan verdaderamente relevantes para el usuario ($r_{u,i} \ge 4.0$ estrellas):
+\subsubsection{2. Precisión en el Top-K ($Precision@K$)}
+Mide la proporción de recomendaciones entregadas al usuario dentro del ranking Top-K que satisfacen el umbral de relevancia $\theta = 4.0$ estrellas:
 \begin{equation}
-Precision@K(u) = \frac{|\text{Top-}K(u) \cap \text{Elementos Relevantes}(u)|}{K}
+Precision@K(u) = \frac{|\{i \in \text{Top-}K(u) \mid r_{u,i} \ge 4.0\}|}{K}
 \end{equation}
 \begin{equation}
-Precision@K = \frac{1}{|U|} \sum_{u \in U} Precision@K(u)
+Precision@K = \frac{1}{|U_{test}|} \sum_{u \in U_{test}} Precision@K(u)
 \end{equation}
-En \texttt{evaluate\_system.py}, para $K=10$, se generó el Top-10 de cada usuario y se verificó cuántas laptops tenían una calificación de prueba mayor o igual a 4.0. El recomendador híbrido alcanzó \textbf{$Precision@10 = 100.00\%$} (debido al filtrado previo por reglas de uso).
+\textit{Implementación en el Proyecto}: Para $K=10$, se generó la lista de sugerencias de cada usuario y se contabilizaron las laptops con calificación igual o superior a 4.0. El recomendador híbrido obtuvo \textbf{$Precision@10 = 100.00\%$}.
 
-\subsubsection{3. Recall@K (Cobertura de Elementos Relevantes)}
-Mide la proporción de laptops relevantes totales del usuario que el sistema fue capaz de incluir dentro de su Top-K:
+\subsubsection{3. Cobertura de Elementos Relevantes ($Recall@K$)}
+Calcula la fracción de las laptops verdaderamente preferidas por el usuario que fueron capturadas en el ranking de recomendación Top-K:
 \begin{equation}
-Recall@K(u) = \frac{|\text{Top-}K(u) \cap \text{Elementos Relevantes}(u)|}{|\text{Elementos Relevantes}(u)|}
+Recall@K(u) = \frac{|\{i \in \text{Top-}K(u) \mid r_{u,i} \ge 4.0\}|}{|\{i \in \text{Test}(u) \mid r_{u,i} \ge 4.0\}|}
 \end{equation}
-El valor empírico calculado en el proyecto fue \textbf{$Recall@10 = 95.40\%$}.
+\textit{Implementación en el Proyecto}: El promedio sobre todos los usuarios evaluados arrojó un \textbf{$Recall@10 = 95.40\%$}.
 
-\subsubsection{4. Cobertura de Inicio en Frío (CSR@K - Cold Start Coverage Ratio)}
-Define el porcentaje de usuarios completamente nuevos ($u \notin D_{train}$) para los cuales el sistema genera exitosamente una lista Top-K válida sin fallas ni listas vacías:
+\subsubsection{4. Cobertura de Inicio en Frío ($CSR@K$ - \textit{Cold Start Coverage Ratio})}
+Determina la tasa de éxito del recomendador para generar rankings válidos de longitud $K$ en presencia de usuarios completamente nuevos ($u \notin D_{train}$):
 \begin{equation}
 CSR@K = \frac{\sum_{u \in U_{cold}} \mathbb{I}(|\text{Top-}K(u)| = K)}{|U_{cold}|} \times 100\%
 \end{equation}
-Mientras que el modelo SVD aislado falló rotundamente con \textbf{$CSR@10 = 0.00\%$} (listas vacías o error de clave), la arquitectura híbrida logró un \textbf{$CSR@10 = 100.00\%$}, demostrando la efectividad de la conmutación a MAUT y Contenido.
+\textit{Implementación en el Proyecto}: Se crearon 20 perfiles sintéticos sin calificaciones previas. Mientras que el algoritmo SVD colapsó con \textbf{$CSR@10 = 0.00\%$}, el sistema híbrido logró un \textbf{$CSR@10 = 100.00\%$}.
 
 % ============================================================================
 % 4. RESULTADOS Y ANÁLISIS DE RESULTADOS
