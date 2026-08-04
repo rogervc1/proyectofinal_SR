@@ -54,6 +54,9 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, shadows, fit, backgrounds}
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -280,21 +283,64 @@ La Figura \ref{fig:diagrama_arquitectura} muestra el acoplamiento de tres capas 
 
 \begin{figure}[H]
     \centering
-    \setlength{\unitlength}{1cm}
-    \begin{picture}(14,6.5)
-        \put(0.2,4.8){\framebox(13.6,1.4){\shortstack{\textbf{CAPA DE PRESENTACIÓN (FRONTEND SPA - Vanilla JS + CSS3 + Chart.js)}\\[3pt]\small Dashboard Responsivo | Selector Multimoneda (USD, PEN, EUR) | Modal 1vs1 | Modal Precios Chart.js}}}
-        
-        \put(7.0,4.8){\vector(0,-1){1.0}}
-        
-        \put(0.2,2.4){\framebox(13.6,1.4){\shortstack{\textbf{CAPA DE SERVICIOS REST (Python FastAPI Backend Engine)}\\[3pt]\small Controller Endpoints: /api/recommend, /api/laptops, /api/users, /api/metrics}}}
-        
-        \put(7.0,2.4){\vector(0,-1){1.0}}
-        
-        \put(0.2,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 1: Logic Engine}\\[2pt]\small Reglas $M_{rules}$ (Presupuesto/CUDA)}}}
-        \put(4.9,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 2: MAUT + Content}\\[2pt]\small Utilidad $U_{MAUT}$ + TF-IDF}}}
-        \put(9.6,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 2: SVD Engine}\\[2pt]\small Matrix Factorization $\hat{r}_{u,i}$}}}
-    \end{picture}
-    \caption{Diagrama Arquitectónico Modular del Sistema Recomendador Híbrido.}
+    \begin{tikzpicture}[
+        node distance = 1.0cm and 0.4cm,
+        box/.style = {
+            rectangle, 
+            rounded corners=6pt, 
+            draw=black!70, 
+            thick,
+            align=center, 
+            inner sep=8pt,
+            font=\sffamily\small,
+            drop shadow={opacity=0.25, shadow xshift=2pt, shadow yshift=-2pt}
+        },
+        frontend/.style = {box, fill=blue!10, draw=blue!80!black},
+        backend/.style = {box, fill=teal!10, draw=teal!80!black},
+        engine/.style = {box, minimum height=1.6cm, text width=3.8cm},
+        arr/.style = {-{Stealth[length=3mm, width=2mm]}, thick, draw=black!80}
+    ]
+        % Node 1: Frontend Layer
+        \node (front) [frontend, text width=13.5cm] {
+            \textbf{\large CAPA DE PRESENTACIÓN (FRONTEND SPA - Client Layer)}\\[3pt]
+            \footnotesize Interfaz Interactiva | Dashboard Responsivo Dark Mode HSL | Selector Multimoneda (USD, PEN, EUR)\\[2pt]
+            \footnotesize Modal Comparador 1vs1 | Gráficas de Tendencia de Precios en Canvas HTML5 (Chart.js)
+        };
+
+        % Node 2: REST Layer
+        \node (back) [backend, text width=13.5cm, below=of front] {
+            \textbf{\large CAPA DE SERVICIOS REST (Python FastAPI ASGI Backend Engine)}\\[3pt]
+            \footnotesize Controller Endpoints API: \texttt{/api/recommend} \;|\; \texttt{/api/laptops} \;|\; \texttt{/api/users} \;|\; \texttt{/api/metrics}\\[2pt]
+            \footnotesize Serialización Asíncrona Pydantic | Manejo de Caché | Middleware de Conversión Multimoneda
+        };
+
+        % Layer 3: Engines (3 columns)
+        \node (eng2) [engine, fill=purple!15, draw=purple!80!black, below=of back] {
+            \textbf{Nivel 2: MAUT + Content}\\[3pt]
+            \scriptsize Utilidad Multicriterio $U_{MAUT}$\\
+            \scriptsize + Cosine TF-IDF $S_{content}$
+        };
+
+        \node (eng1) [engine, fill=orange!15, draw=orange!80!black, left=0.4cm of eng2] {
+            \textbf{Nivel 1: Rules Engine}\\[3pt]
+            \scriptsize Filtro Estricto Binario $M_{rules}$\\
+            \scriptsize (Presupuesto, CUDA, OLED)
+        };
+
+        \node (eng3) [engine, fill=green!15, draw=green!70!black, right=0.4cm of eng2] {
+            \textbf{Nivel 2: SVD Engine}\\[3pt]
+            \scriptsize Matrix Factorization SVD\\
+            \scriptsize Predicción Latente $\hat{r}_{u,i}$
+        };
+
+        % Arrows
+        \draw [arr] (front.south) -- (back.north) node [midway, right, font=\tiny\sffamily] {Peticiones HTTP REST / JSON};
+        \draw [arr] (back.south) -- (eng1.north);
+        \draw [arr] (back.south) -- (eng2.north);
+        \draw [arr] (back.south) -- (eng3.north);
+
+    \end{tikzpicture}
+    \caption{Diagrama Arquitectónico Modular y Capas del Sistema Recomendador Híbrido.}
     \label{fig:diagrama_arquitectura}
 \end{figure}
 
