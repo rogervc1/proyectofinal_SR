@@ -2,7 +2,7 @@
 % INFORME TÉCNICO COMPLETO DE GRADO ACADÉMICO / PROYECTO FINAL
 % Curso: Sistemas de Recomendación
 % Título: Desarrollo de una Aplicación de Sistema de Recomendación Híbrido de Laptops
-% Autora: Carmen Nieves Apaza Condori
+% Autores: Carmen Nieves Apaza Condori & Aaron Rogeer Vilca Caria
 % Universidad Nacional del Altiplano - Puno
 % ============================================================================
 
@@ -98,14 +98,15 @@
     \normalsize CURSO: SISTEMAS DE RECOMENDACIÓN
 \end{center}
 
-\vspace{0.8cm}
+\vspace{0.6cm}
 
 \begin{center}
     \normalsize PRESENTADO POR: \\[0.2cm]
-    \large\textbf{CARMEN NIEVES APAZA CONDORI}
+    \large\textbf{CARMEN NIEVES APAZA CONDORI} \\[0.1cm]
+    \large\textbf{AARON ROGEER VILCA CARIA}
 \end{center}
 
-\vspace{0.8cm}
+\vspace{0.6cm}
 
 \begin{center}
     \normalsize INFORME TÉCNICO DE APLICACIÓN FUNCIONAL, PIPELINE DE DATOS, PSEUDOCÓDIGO Y EVALUACIÓN DE MODELOS
@@ -123,7 +124,7 @@
 \pagenumbering{roman}
 
 % ============================================================================
-% RESUMEN / ABSTRACT
+% RESUMEN (SIN ABSTRACT)
 % ============================================================================
 \section*{Resumen}
 \addcontentsline{toc}{section}{Resumen}
@@ -134,18 +135,6 @@ La plataforma web fue desarrollada utilizando \textbf{FastAPI} como backend de a
 
 \vspace{0.5cm}
 \noindent \textbf{Palabras Clave:} Sistemas de Recomendación Híbridos, Factorización Matricial SVD, MAUT, Inicio en Frío, FastAPI, Chart.js.
-
-\clearpage
-
-\section*{Abstract}
-\addcontentsline{toc}{section}{Abstract}
-
-This project reports the design, development, implementation, and scientific evaluation of a \textbf{Two-Level Hybrid Recommender System} for laptop computers, engineered to mitigate data sparsity and cold start problems. The architecture integrates a \textbf{Cascaded Domain Rule Mask} ($M_{rules}$) at Level 1, followed by a \textbf{Dynamic Weighted Ensemble} at Level 2 combining: (i) Multi-Attribute Utility Theory (\textbf{MAUT}) based on domain knowledge models, (ii) \textbf{SVD} Matrix Factorization for collaborative filtering, and (iii) Content-Based Filtering via vector cosine similarity (\textbf{TF-IDF}).
-
-The web platform was built using \textbf{FastAPI} as a high-speed backend and an interactive frontend with \textbf{HTML5, Vanilla CSS3, JavaScript ES6+, and Chart.js}, incorporating commercial-grade features such as a 1vs1 head-to-head comparison tool, multi-currency selector (USD, PEN, EUR), value score badges, lifestyle filters, and direct Amazon store offer integration. Experimental evaluation over a catalog of 150 laptops and 1,999 ratings demonstrated optimal performance with $RMSE = 1.0503$, $100\%$ $CSR@10$ robustness under cold start scenarios, and $100\%$ $Precision@10$, establishing a high-impact solution for modern e-commerce environments.
-
-\vspace{0.5cm}
-\noindent \textbf{Keywords:} Hybrid Recommender Systems, SVD Matrix Factorization, MAUT, Cold Start, FastAPI, Chart.js.
 
 \clearpage
 
@@ -172,9 +161,9 @@ The web platform was built using \textbf{FastAPI} as a high-speed backend and an
 \section{Introducción}
 
 \subsection{Contexto del Proyecto}
-En la era digital actual, el comercio electrónico de bienes tecnológicos experimenta un crecimiento exponencial. Sin embargo, la compra de computadoras portátiles (laptops) representa una decisión de alta complejidad cognitiva para los usuarios debido a la abundancia de especificaciones técnicas heterogéneas (microarquitectura de CPU, núcleos, memoria RAM, aceleradores GPU, potencia de VRAM, pantallas OLED/4K y soporte CUDA). 
+En la era digital actual, el comercio electrónico de bienes tecnológicos experimenta un crecimiento exponencial (Aggarwal, 2016). Sin embargo, la compra de computadoras portátiles (laptops) representa una decisión de alta complejidad cognitiva para los usuarios debido a la abundancia de especificaciones técnicas heterogéneas (microarquitectura de CPU, núcleos, memoria RAM, aceleradores GPU, potencia de VRAM, pantallas OLED/4K y soporte CUDA). 
 
-Los algoritmos de filtrado colaborativo tradicionales (\textit{Collaborative Filtering}) sufren de limitaciones severas en este dominio, principalmente la escasez de datos (\textit{data sparsity}) y el problema del inicio en frío (\textit{cold start}), en el cual usuarios nuevos sin historial previo de calificaciones no pueden recibir sugerencias relevantes.
+Los algoritmos de filtrado colaborativo tradicionales (\textit{Collaborative Filtering}) sufren de limitaciones severas en este dominio, principalmente la escasez de datos (\textit{data sparsity}) y el problema del inicio en frío (\textit{cold start}), en el cual usuarios nuevos sin historial previo de calificaciones no pueden recibir sugerencias relevantes (Ricci et al., 2015).
 
 \subsection{Planteamiento del Problema}
 Actualmente, los portales web de e-commerce convencionales dependen de buscadores por palabras clave o filtros manuales rígidos que no consideran la compensación multidimensional entre presupuesto, rendimiento y portabilidad. Las principales deficiencias identificadas son:
@@ -185,7 +174,7 @@ Actualmente, los portales web de e-commerce convencionales dependen de buscadore
 \end{enumerate}
 
 \subsection{Justificación}
-El desarrollo de un \textbf{Sistema de Recomendación Híbrido} que combine modelos basados en conocimiento explícito, teoría de decisión multicriterio (MAUT), factorización matricial (SVD) y similitud de contenido vectorial permite superar de forma integral las deficiencias mencionadas. Esta arquitectura garantiza que:
+El desarrollo de un \textbf{Sistema de Recomendación Híbrido} que combine modelos basados en conocimiento explícito, teoría de decisión multicriterio (MAUT), factorización matricial (SVD) y similitud de contenido vectorial permite superar de forma integral las deficiencias mencionadas (Burke, 2002). Esta arquitectura garantiza que:
 \begin{itemize}
     \item El usuario reciba recomendaciones 100\% válidas mediante filtrado por reglas en cascada.
     \item El sistema responda de manera óptima tanto a usuarios con historial de calificaciones previo como a usuarios nuevos (\textit{Cold Start}).
@@ -206,51 +195,22 @@ Desarrollar e implementar una aplicación funcional de Sistema de Recomendación
 \end{enumerate}
 
 % ============================================================================
-% 2. DESCRIPCIÓN GENERAL Y ARQUITECTURA DEL SISTEMA
+% 2. DESCRIPCIÓN GENERAL Y TEORÍA DE MODELOS
 % ============================================================================
-\section{Descripción General y Arquitectura del Sistema}
+\section{Descripción General y Fundamentación Teórica de los Modelos}
 
 \subsection{Descripción General del Proyecto}
 El proyecto \textbf{LaptopRec Híbrido} es una plataforma integral de recomendación de computadoras portátiles diseñada bajo los principios de desacoplamiento de software (REST API) e hibridación en dos niveles. El sistema procesa los requerimientos de hardware del usuario, sus ponderaciones de preferencia y su presupuesto en tiempo real, generando un ranking ordenado de las $K$ mejores laptops que maximizan la utilidad del comprador.
 
-\subsection{Pipeline de Procesamiento de Datos y Análisis Exploratorio (EDA)}
-El flujo de datos del sistema sigue un procesamiento secuencial en pipeline desde la ingesta de catálogo hasta la inferencia híbrida, como se ilustra en la Figura \ref{fig:pipeline_datos}.
+\subsection{Análisis Exploratorio de Datos (EDA) y Preprocesamiento}
+El conjunto de datos comprende 150 computadoras portátiles distribuidas en 6 marcas principales (ASUS, Apple, Dell, Lenovo, HP, MSI) y 1,999 calificaciones generadas por 100 usuarios sintéticos estructurados en 3 perfiles latentes de comportamiento.
 
-\begin{figure}[H]
-    \centering
-    \setlength{\unitlength}{1cm}
-    \begin{picture}(14,5.5)
-        \put(0.2,4.0){\framebox(3.8,1.2){\shortstack{\textbf{1. Ingesta y EDA}\\[2pt]\small 150 Laptops / 1999 Ratings}}}
-        \put(4.2,4.6){\vector(1,0){0.6}}
-        
-        \put(4.9,4.0){\framebox(4.0,1.2){\shortstack{\textbf{2. Normalización}\\[2pt]\small MinMax / One-Hot Encoding}}}
-        \put(9.0,4.6){\vector(1,0){0.6}}
-        
-        \put(9.7,4.0){\framebox(4.0,1.2){\shortstack{\textbf{3. SVD / MAUT}\\[2pt]\small Vectorización TF-IDF}}}
-        
-        \put(2.1,4.0){\vector(0,-1){1.2}}
-        
-        \put(0.2,1.5){\framebox(3.8,1.3){\shortstack{\textbf{4. Nivel 1: Reglas}\\[2pt]\small Máscara Binaria $M_{rules}$}}}
-        \put(4.2,2.15){\vector(1,0){0.6}}
-        
-        \put(4.9,1.5){\framebox(4.0,1.3){\shortstack{\textbf{5. Nivel 2: Ensamble}\\[2pt]\small $Score_{hyb} = \alpha U + \beta r + \gamma S$}}}
-        \put(9.0,2.15){\vector(1,0){0.6}}
-        
-        \put(9.7,1.5){\framebox(4.0,1.3){\shortstack{\textbf{6. REST API / UI}\\[2pt]\small Top-K / 1vs1 / Chart.js}}}
-    \end{picture}
-    \caption{Diagrama del Pipeline de Procesamiento de Datos del Recomendador Híbrido.}
-    \label{fig:pipeline_datos}
-\end{figure}
-
-\subsubsection{Análisis Exploratorio de Datos (EDA)}
-El conjunto de datos comprende 150 computadoras portátiles distribuidas en 6 marcas principales (ASUS, Apple, Dell, Lenovo, HP, MSI) y 1,999 calificaciones generadas por 100 usuarios sintéticos estructurados en 3 perfiles latentes de comportamiento: Gamer / Power User, Estudiante / Oficina y Científico de Datos / IA.
-
-Las Figuras \ref{fig:eda_precios}, \ref{fig:eda_ram}, \ref{fig:eda_corr} y \ref{fig:eda_ratings} presentan las distribuciones estadísticas fundamentales del catálogo y las interacciones entre variables de hardware.
+Las Figuras \ref{fig:eda_precios}, \ref{fig:eda_ram}, \ref{fig:eda_corr} y \ref{fig:eda_ratings} presentan las distribuciones estadísticas fundamentales del catálogo.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.88\textwidth]{figuras/eda_distribucion_precios.png}
-    \caption{Distribución de Precios en el Catálogo de Laptops (Histograma y Esttimador de Densidad KDE).}
+    \caption{Distribución de Precios en el Catálogo de Laptops (Histograma y Estimador de Densidad KDE).}
     \label{fig:eda_precios}
 \end{figure}
 
@@ -275,24 +235,63 @@ Las Figuras \ref{fig:eda_precios}, \ref{fig:eda_ram}, \ref{fig:eda_corr} y \ref{
     \label{fig:eda_ratings}
 \end{figure}
 
-\subsection{Arquitectura General del Sistema y Diagrama Modular}
-La arquitectura del sistema está organizada en tres capas acopladas mediante REST JSON, como se detalla en la Figura \ref{fig:diagrama_arquitectura}.
+\subsection{Fundamentación Teórica de los Modelos de Recomendación}
+
+\subsubsection{Modelo 1: Filtro Lógico por Reglas de Dominio ($M_{rules}$)}
+Basado en la teoría de restricciones duras (\textit{Hard Constraints}) descrita por Burke (2002), este modelo actúa en el Nivel 1. Aplica un operador lógico booleano secuencial para generar una máscara binaria $M_{rules}(i) \in \{0, 1\}$ sobre la laptop $i$:
+\begin{equation}
+M_{rules}(i) = \mathbb{I}(p_i \le B) \cdot \mathbb{I}(\text{Uso}_i \text{ compatible}) \cdot \prod_{c \in \text{Estilo}} \mathbb{I}(\text{Atributo}_i(c) = 1)
+\end{equation}
+Donde $p_i$ es el precio de la laptop, $B$ es el presupuesto máximo seleccionado por el usuario, y $\mathbb{I}(\cdot)$ es la función indicadora.
+
+\subsubsection{Modelo 2: Teoría de Utilidad Multi-Atributo ($U_{MAUT}$)}
+Fundamentado en la teoría de decisión multicriterio de Keeney \& Raiffa (1993), el modelo MAUT asume una función de utilidad aditiva basada en conocimiento explícito. La utilidad parcial de cada atributo continuo $x_k$ se normaliza mediante min-max en el intervalo $[0, 1]$:
+\begin{equation}
+U_k(x) = \frac{x - x_{min}}{x_{max} - x_{min}} \quad \text{o} \quad U_k(x) = 1.0 - \frac{x - x_{min}}{x_{max} - x_{min}}
+\end{equation}
+La utilidad global de la laptop $i$ se calcula como la suma ponderada por las preferencias del usuario $w_k$:
+\begin{equation}
+U_{MAUT}(i) = \sum_{k=1}^M w_k \cdot U_k(x_{i,k}), \quad \text{con } \sum_{k=1}^M w_k = 1, \; w_k \ge 0
+\end{equation}
+
+\subsubsection{Modelo 3: Factorización Matricial SVD (\textit{Singular Value Decomposition})}
+Siguiendo la formulación estándar de Koren et al. (2009), la matriz dispersa de calificaciones $R \in \mathbb{R}^{U \times I}$ se aproxima mediante el producto de matrices de factores latentes de rango reducido $f$:
+\begin{equation}
+\hat{r}_{u,i} = \mu + b_u + b_i + P_u^T Q_i
+\end{equation}
+Donde $\mu$ es la media global de calificaciones, $b_u \in \mathbb{R}$ es el sesgo del usuario $u$, $b_i \in \mathbb{R}$ es el sesgo del elemento $i$, $P_u \in \mathbb{R}^f$ es la representación latente del usuario y $Q_i \in \mathbb{R}^f$ es la representación latente de la laptop. La predicción se normaliza mediante $\hat{r}_{norm}(u,i) = (\hat{r}_{u,i} - 1.0) / 4.0$.
+
+\subsubsection{Modelo 4: Filtrado Basado en Contenido Vectorial (TF-IDF + Coseno)}
+Según la metodología de Ricci et al. (2015), las especificaciones de texto de cada laptop se representan mediante vectores TF-IDF. El perfil vectorial del usuario $V_u$ se construye promediando los vectores de los elementos calificados favorablemente ($r_{u,i} \ge 4$). La similitud de contenido $S_{content}(u,i)$ se calcula como el coseno del ángulo entre $V_u$ y el vector de la laptop $V_i$:
+\begin{equation}
+S_{content}(u,i) = \cos(V_u, V_i) = \frac{V_u \cdot V_i}{\|V_u\|_2 \|V_i\|_2}
+\end{equation}
+
+\subsubsection{Modelo Híbrido en 2 Niveles y Estrategia de Conmutación (\textit{Switching})}
+La arquitectura híbrida combina filtrado en cascada y ponderado meta-nivel. Para evitar fallas ante usuarios nuevos (\textit{Cold Start}), el sistema ejecuta un mecanismo dinámico de conmutación de pesos:
+\begin{equation}
+Score_{hybrid}(u,i) = M_{rules}(i) \cdot \left[ \alpha \cdot U_{MAUT}(i) + \beta \cdot \hat{r}_{norm}(u,i) + \gamma \cdot S_{content}(u,i) \right]
+\end{equation}
+\begin{itemize}
+    \item \textbf{Usuario Existente ($u \in D_{ratings}$)}: $\alpha = 0.30$, $\beta = 0.50$, $\gamma = 0.20$.
+    \item \textbf{Usuario Nuevo (\textit{Cold Start})}: $\alpha = 0.60$, $\beta = 0.00$, $\gamma = 0.40$ (desactivando SVD al 0\% e incrementando el peso de conocimiento MAUT y contenido).
+\end{itemize}
+
+\subsection{Diagrama de Arquitectura de Software}
+La Figura \ref{fig:diagrama_arquitectura} muestra el acoplamiento de tres capas del sistema.
 
 \begin{figure}[H]
     \centering
     \setlength{\unitlength}{1cm}
     \begin{picture}(14,6.5)
-        % Capa Frontend
         \put(0.2,4.8){\framebox(13.6,1.4){\shortstack{\textbf{CAPA DE PRESENTACIÓN (FRONTEND SPA - Vanilla JS + CSS3 + Chart.js)}\\[3pt]\small Dashboard Responsivo | Selector Multimoneda (USD, PEN, EUR) | Modal 1vs1 | Modal Precios Chart.js}}}
         
         \put(7.0,4.8){\vector(0,-1){1.0}}
         
-        % Capa FastAPI REST
         \put(0.2,2.4){\framebox(13.6,1.4){\shortstack{\textbf{CAPA DE SERVICIOS REST (Python FastAPI Backend Engine)}\\[3pt]\small Controller Endpoints: /api/recommend, /api/laptops, /api/users, /api/metrics}}}
         
         \put(7.0,2.4){\vector(0,-1){1.0}}
         
-        % Capa de Motores Híbridos
         \put(0.2,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 1: Logic Engine}\\[2pt]\small Reglas $M_{rules}$ (Presupuesto/CUDA)}}}
         \put(4.9,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 2: MAUT + Content}\\[2pt]\small Utilidad $U_{MAUT}$ + TF-IDF}}}
         \put(9.6,0.0){\framebox(4.2,1.4){\shortstack{\textbf{Nivel 2: SVD Engine}\\[2pt]\small Matrix Factorization $\hat{r}_{u,i}$}}}
@@ -303,24 +302,17 @@ La arquitectura del sistema está organizada en tres capas acopladas mediante RE
 
 \subsection{Pseudocódigo de los Algoritmos Principales}
 
-\subsubsection{Algoritmo 1: Filtro Estricto por Reglas Lógicas de Dominio (Nivel 1)}
-El Algoritmo \ref{algo:rules} genera la máscara binaria $M_{rules}$ para descartar laptops fuera de presupuesto o incompatibles.
-
 \begin{lstlisting}[language=Python, caption={Pseudocódigo del Filtro de Reglas Lógicas de Dominio (Nivel 1)}, label={algo:rules}]
 def calcular_mascara_reglas(catalogo, presupuesto_max, caso_uso, etiquetas_estilo):
     mascara = []
     for laptop in catalogo:
-        # Regla 1: Restriccion dura de Presupuesto
         cumple_presupuesto = laptop.precio <= presupuesto_max
-        
-        # Regla 2: Restriccion de Caso de Uso
         cumple_uso = True
         if caso_uso == "gaming" and not laptop.tiene_gpu_dedicada:
             cumple_uso = False
         elif caso_uso == "data_science" and not laptop.soporta_cuda:
             cumple_uso = False
             
-        # Regla 3: Filtros de Estilo de Vida (Lifestyle Tags)
         cumple_estilo = True
         if "oled" in etiquetas_estilo and laptop.pantalla != "OLED":
             cumple_estilo = False
@@ -329,62 +321,14 @@ def calcular_mascara_reglas(catalogo, presupuesto_max, caso_uso, etiquetas_estil
     return mascara
 \end{lstlisting}
 
-\subsubsection{Algoritmo 2: Cálculo de Utilidad Multi-Atributo MAUT (Nivel 2)}
-El Algoritmo \ref{algo:maut} evalúa la utilidad multi-atributo $U_{MAUT}(i) \in [0, 1]$ basada en conocimiento explícito.
-
-\begin{lstlisting}[language=Python, caption={Pseudocódigo del Cálculo de Utilidad MAUT}, label={algo:maut}]
-def calcular_utilidad_maut(catalogo, pesos_usuario):
-    # pesos_usuario: {w_precio, w_cpu, w_ram, w_vram, w_peso, w_pantalla}
-    utilidades = []
-    for laptop in catalogo:
-        u_precio = 1.0 - (laptop.precio_norm)  # Menor precio = mayor utilidad
-        u_cpu = laptop.cpu_cores_norm
-        u_ram = laptop.ram_norm
-        u_vram = laptop.vram_norm
-        u_peso = 1.0 - (laptop.peso_norm)      # Menor peso = mayor portabilidad
-        u_pantalla = laptop.pantalla_score_norm
-        
-        u_total = (pesos_usuario.w_precio * u_precio +
-                   pesos_usuario.w_cpu * u_cpu +
-                   pesos_usuario.w_ram * u_ram +
-                   pesos_usuario.w_vram * u_vram +
-                   pesos_usuario.w_peso * u_peso +
-                   pesos_usuario.w_pantalla * u_pantalla)
-        utilidades.append(u_total)
-    return utilidades
-\end{lstlisting}
-
-\subsubsection{Algoritmo 3: Factorización Matricial SVD (Nivel 2)}
-El Algoritmo \ref{algo:svd} realiza la inferencia colaborativa normalizada $\hat{r}_{norm}(u, i)$.
-
-\begin{lstlisting}[language=Python, caption={Pseudocódigo de Predicción Colaborativa SVD}, label={algo:svd}]
-def predecir_svd_normalizado(usuario_id, laptop_id, modelo_svd, es_cold_start):
-    if es_cold_start or usuario_id no en modelo_svd.usuarios:
-        return 0.0  # Fallback a 0 para delegar a MAUT / Contenido
-    else:
-        mu = modelo_svd.media_global
-        bu = modelo_svd.sesgo_usuario[usuario_id]
-        bi = modelo_svd.sesgo_item[laptop_id]
-        Pu = modelo_svd.vector_usuario[usuario_id]
-        Qi = modelo_svd.vector_item[laptop_id]
-        
-        r_hat = mu + bu + bi + dot_product(Pu, Qi)
-        # Normalizar r_hat de [1.0, 5.0] a [0.0, 1.0]
-        r_norm = (clamp(r_hat, 1.0, 5.0) - 1.0) / 4.0
-        return r_norm
-\end{lstlisting}
-
-\subsubsection{Algoritmo 4: Ensamble Híbrido Ponderado y Ranking Final}
-El Algoritmo \ref{algo:ensemble} integra los tres modelos y asigna insignias de valor.
-
-\begin{lstlisting}[language=Python, caption={Pseudocódigo del Ensamble Híbrido Ponderado}, label={algo:ensemble}]
+\begin{lstlisting}[language=Python, caption={Pseudocódigo del Ensamble Híbrido Ponderado y Conmutación Cold Start}, label={algo:ensemble}]
 def generar_recomendaciones_hibridas(usuario_id, presupuesto, caso_uso, pesos_maut, es_cold_start, K=9):
     mascara = calcular_mascara_reglas(catalogo, presupuesto, caso_uso)
     u_maut = calcular_utilidad_maut(catalogo, pesos_maut)
     s_content = calcular_similitud_contenido(usuario_id, catalogo)
     
     if es_cold_start:
-        alpha, beta, gamma = 0.60, 0.00, 0.40  # 0% SVD ante usuarios nuevos
+        alpha, beta, gamma = 0.60, 0.00, 0.40  # Conmutacion para inicio en frio
     else:
         alpha, beta, gamma = 0.30, 0.50, 0.20
         
@@ -399,38 +343,53 @@ def generar_recomendaciones_hibridas(usuario_id, presupuesto, caso_uso, pesos_ma
 \end{lstlisting}
 
 % ============================================================================
-% 3. METODOLOGÍA Y FASES DEL TRABAJO
+% 3. METODOLOGÍA Y CÁLCULO DETALLADO DE MÉTRICAS
 % ============================================================================
-\section{Metodología y Fases del Trabajo}
+\section{Metodología y Cálculo Detallado de Métricas en el Proyecto}
 
-El proyecto se ejecutó siguiendo 5 fases secuenciales:
-
-\subsection{Fase 1: Mejora del Modelo (Hibridación en 2 Niveles)}
-Se formularon e integraron cuatro componentes algorítmicos complementarios:
+\subsection{Metodología por Fases del Proyecto}
+El proyecto se ejecutó siguiendo las 5 fases del curso:
 \begin{enumerate}
-    \item \textbf{Filtro Estricto por Reglas de Dominio ($M_{rules}$)}: Máscara binaria que descarte laptops fuera de presupuesto o incompatibles.
-    \item \textbf{Utilidad Multi-Atributo ($U_{MAUT}$)}: Basada en Teoría de Decisiones Multicriterio.
-    \item \textbf{Factorización Matricial SVD}: Predicción colaborativa $\hat{r}_{u,i} = \mu + b_u + b_i + P_u \cdot Q_i^T$.
-    \item \textbf{Filtrado Basado en Contenido ($S_{content}$)}: Similitud Coseno vectorial de TF-IDF.
+    \item \textbf{Fase 1: Mejora del Modelo}: Implementación de SVD y ensamble híbrido en 2 niveles.
+    \item \textbf{Fase 2: Desarrollo de la Aplicación}: Construcción del backend FastAPI y frontend SPA en JavaScript ES6+ con Chart.js y selector multimoneda.
+    \item \textbf{Fase 3: Evaluación del Sistema}: Cálculo riguroso de métricas de precisión y cobertura.
+    \item \textbf{Fase 4: Experiencia de Usuario (UX)}: Optimización visual en modo oscuro, respuesta en $<200$ ms y soporte de exportación limpia.
+    \item \textbf{Fase 5: Presentación Final}: Despliegue en entorno ejecutable local (`python run.py`).
 \end{enumerate}
 
-\subsection{Fase 2: Desarrollo de la Aplicación Web Interactiva}
-Se desarrolló una SPA responsiva con **FastAPI** en backend y **Vanilla JS, CSS3 y Chart.js** en frontend, con las características:
-\begin{itemize}
-    \item \textbf{Selector Multimoneda Global}: Conversión dinámica en tiempo real (USD, PEN S/, EUR).
-    \item \textbf{Comparador Cara a Cara (1vs1)}: Modal con resaltado en verde de especificaciones ganadoras y veredicto explicativo.
-    \item \textbf{Gráfica de Histórico de Precios}: Visualización de 6 meses mediante Chart.js.
-    \item \textbf{Enlaces Directos a Amazon}: Enlaces dinámicos automatizados a ofertas en vivo.
-\end{itemize}
+\subsection{Cálculo de Métricas y su Implementación en el Proyecto}
+La evaluación del recomendador se programó en el script \texttt{evaluate\_system.py}, ejecutando una partición 80/20 (\textit{Train/Test Split}) sobre los 1,999 ratings del catálogo.
 
-\subsection{Fase 3: Evaluación del Sistema}
-Métricas calculadas: $RMSE = 1.0503$, $Precision@10 = 100\%$, $Recall@10 = 95.40\%$, y $CSR@10 = 100\%$ (\textit{Cold Start Coverage Ratio}).
+\subsubsection{1. Raíz del Error Cuadrático Medio ($RMSE$)}
+Mide la desviación estándar de los errores entre las calificaciones reales $r_{u,i}$ y las predicciones $\hat{r}_{u,i}$ en el conjunto de prueba $T$:
+\begin{equation}
+RMSE = \sqrt{\frac{1}{|T|} \sum_{(u,i) \in T} (r_{u,i} - \hat{r}_{u,i})^2}
+\end{equation}
+En nuestro proyecto, la rutina iteró sobre cada par $(u,i)$ de la partición de test calculando la diferencia al cuadrado. El valor obtenido para el modelo SVD entrenado con 50 factores latentes fue \textbf{$RMSE = 1.0503$}.
 
-\subsection{Fase 4: Experiencia de Usuario (UX)}
-Modo oscuro con alta legibilidad, respuesta rápida ($<200$ ms), ausencia de emojis reemplazados por SVG profesionales.
+\subsubsection{2. Precision@K (Precisión en el Top-K)}
+Evalúa la proporción de laptops dentro del ranking de las $K$ mejores sugerencias que resultan verdaderamente relevantes para el usuario ($r_{u,i} \ge 4.0$ estrellas):
+\begin{equation}
+Precision@K(u) = \frac{|\text{Top-}K(u) \cap \text{Elementos Relevantes}(u)|}{K}
+\end{equation}
+\begin{equation}
+Precision@K = \frac{1}{|U|} \sum_{u \in U} Precision@K(u)
+\end{equation}
+En \texttt{evaluate\_system.py}, para $K=10$, se generó el Top-10 de cada usuario y se verificó cuántas laptops tenían una calificación de prueba mayor o igual a 4.0. El recomendador híbrido alcanzó \textbf{$Precision@10 = 100.00\%$} (debido al filtrado previo por reglas de uso).
 
-\subsection{Fase 5: Presentación Final y Sustentación}
-Despliegue local en `http://127.0.0.1:8081/` mediante script `run.py`.
+\subsubsection{3. Recall@K (Cobertura de Elementos Relevantes)}
+Mide la proporción de laptops relevantes totales del usuario que el sistema fue capaz de incluir dentro de su Top-K:
+\begin{equation}
+Recall@K(u) = \frac{|\text{Top-}K(u) \cap \text{Elementos Relevantes}(u)|}{|\text{Elementos Relevantes}(u)|}
+\end{equation}
+El valor empírico calculado en el proyecto fue \textbf{$Recall@10 = 95.40\%$}.
+
+\subsubsection{4. Cobertura de Inicio en Frío (CSR@K - Cold Start Coverage Ratio)}
+Define el porcentaje de usuarios completamente nuevos ($u \notin D_{train}$) para los cuales el sistema genera exitosamente una lista Top-K válida sin fallas ni listas vacías:
+\begin{equation}
+CSR@K = \frac{\sum_{u \in U_{cold}} \mathbb{I}(|\text{Top-}K(u)| = K)}{|U_{cold}|} \times 100\%
+\end{equation}
+Mientras que el modelo SVD aislado falló rotundamente con \textbf{$CSR@10 = 0.00\%$} (listas vacías o error de clave), la arquitectura híbrida logró un \textbf{$CSR@10 = 100.00\%$}, demostrando la efectividad de la conmutación a MAUT y Contenido.
 
 % ============================================================================
 % 4. RESULTADOS Y ANÁLISIS DE RESULTADOS
@@ -438,7 +397,7 @@ Despliegue local en `http://127.0.0.1:8081/` mediante script `run.py`.
 \section{Resultados y Análisis de Resultados}
 
 \subsection{Resultados de la Evaluación Experimental}
-La Tabla \ref{tab:resultados_metricas} compara las tres arquitecturas evaluadas.
+La Tabla \ref{tab:resultados_metricas} compara cuantitativamente las tres arquitecturas evaluadas.
 
 \begin{table}[H]
 \centering
@@ -456,7 +415,7 @@ Content-Based Aislado & N/A & 82.10\% & 71.50\% & 85.00\% \\
 \end{table}
 
 \subsection{Gráficos Científicos de Rendimiento}
-Las Figuras \ref{fig:eval_csr} y \ref{fig:eval_pr} ilustran el rendimiento empírico del recomendador.
+Las Figuras \ref{fig:eval_csr} y \ref{fig:eval_pr} ilustran las curvas empíricas de rendimiento obtenidas.
 
 \begin{figure}[H]
     \centering
@@ -611,14 +570,14 @@ Los hallazgos empíricos confirman la hipótesis de que un enfoque híbrido en d
 \section{Referencias Bibliográficas}
 
 \begin{enumerate}
-    \item Ricci, F., Rokach, L., \& Shapira, B. (2015). \textit{Recommender Systems Handbook} (2nd ed.). Springer. https://doi.org/10.1007/978-1-4899-7637-6
-    \item Koren, Y., Bell, R., \& Volinsky, C. (2009). Matrix factorization techniques for recommender systems. \textit{Computer}, 42(8), 30--37. https://doi.org/10.1109/MC.2009.263
-    \item Keeney, R. L., \& Raiffa, H. (1993). \textit{Decisions with Multiple Objectives: Preferences and Value Trade-Offs}. Cambridge University Press.
+    \item Aggarwal, C. C. (2016). \textit{Recommender Systems: The Textbook}. Springer International Publishing. https://doi.org/10.1007/978-3-319-29659-3
     \item Burke, R. (2002). Hybrid recommender systems: Survey and experiments. \textit{User Modeling and User-Adapted Interaction}, 12(4), 331--370. https://doi.org/10.1023/A:1021240730564
-    \item Aggarwal, C. C. (2016). \textit{Recommender Systems: The Textbook}. Springer International Publishing.
-    \item Ramírez, A., \& Gómez, J. (2021). Sistemas de recomendación híbridos aplicados al comercio electrónico de tecnología. \textit{Revista Iberoamericana de Inteligencia Artificial}, 24(2), 45--58.
-    \item FastAPI Framework Documentation. (2026). \textit{FastAPI: High performance Python web framework}. https://fastapi.tiangolo.com/
     \item Chart.js Documentation. (2026). \textit{Open source HTML5 charts for developers}. https://www.chartjs.org/
+    \item FastAPI Framework Documentation. (2026). \textit{FastAPI: High performance Python web framework}. https://fastapi.tiangolo.com/
+    \item Keeney, R. L., \& Raiffa, H. (1993). \textit{Decisions with Multiple Objectives: Preferences and Value Trade-Offs}. Cambridge University Press.
+    \item Koren, Y., Bell, R., \& Volinsky, C. (2009). Matrix factorization techniques for recommender systems. \textit{Computer}, 42(8), 30--37. https://doi.org/10.1109/MC.2009.263
+    \item Ramírez, A., \& Gómez, J. (2021). Sistemas de recomendación híbridos aplicados al comercio electrónico de tecnología. \textit{Revista Iberoamericana de Inteligencia Artificial}, 24(2), 45--58.
+    \item Ricci, F., Rokach, L., \& Shapira, B. (2015). \textit{Recommender Systems Handbook} (2nd ed.). Springer. https://doi.org/10.1007/978-1-4899-7637-6
 \end{enumerate}
 
 % ============================================================================
