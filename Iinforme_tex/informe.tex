@@ -616,52 +616,36 @@ Diseñado para la auditoría docente durante la sustentación, este panel consul
 % 5. DISCUSIÓN
 % ============================================================================
 \section{Discusión}
-Los hallazgos empíricos confirman la hipótesis de que un enfoque híbrido en dos niveles resuelve simultáneamente la escasez de datos y el inicio en frío. Mientras que el modelo SVD requiere un volumen mínimo de calificaciones previas para factorizar los vectores latentes, la capa MAUT y de Contenido actúa como un respaldo robusto de conocimiento explícito. Esto garantiza que un usuario nuevo siempre obtenga un Top-K útil y personalizado.
+
+El análisis comparativo entre los modelos individuales y la arquitectura híbrida propuesta demuestra que la integración de inferencia lógica binaria ($M_{rules}$) en el Nivel 1 con un ensamble ponderado dinámico (MAUT, SVD y Contenido) en el Nivel 2 supera las limitaciones intrínsecas de las técnicas monocriterio. Mientras que los modelos de Factorización Matricial SVD aislados sufren un colapso total ($CSR@10 = 0.00\%$) ante usuarios sin historial previo por la imposibilidad de construir factores latentes, la conmutación adaptativa hacia la Teoría de Utilidad Multi-Atributo (MAUT) y la similitud coseno vectorial (TF-IDF) garantiza la continuidad y personalización de las sugerencias. Este comportamiento coincide con lo argumentado por Aggarwal (2016) y Burke (2002), confirmando que las estrategias de conmutación ponderada maximizan la robustez en dominios de comercio electrónico con alta rotación de usuarios y catálogos heterogéneos.
+
+Desde la perspectiva de la ingeniería de software y la experiencia de usuario (UX), los resultados obtenidos corroboran la efectividad de una arquitectura cliente-servidor desacoplada que combina un backend asíncrono en FastAPI con una Single Page Application (SPA) en Vanilla JavaScript. La inclusión de herramientas comerciales avanzadas —como el comparador cara a cara (1vs1) con veredicto automático, el motor multimoneda dinámico (USD, PEN, EUR) y la proyección gráfica de series temporales de precios mediante Canvas HTML5 y Chart.js— no solo enriquece la interacción, sino que proporciona explicabilidad al proceso de recomendación. En concordancia con Ricci et al. (2015), la transparencia visual mediante desgloses porcentuales de coincidencia incrementa la confianza del comprador y reduce la carga cognitiva durante la toma de decisiones en el comercio electrónico.
+
+La evaluación cuantitativa sobre el conjunto de prueba evidencia la superioridad del modelo híbrido al alcanzar un $RMSE = 1.0503$, una $Precision@10 = 100.00\%$, un $Recall@10 = 95.40\%$ y un $CSR@10 = 100.00\%$. La alta precisión obtenida se explica por el filtrado de reglas lógicas de dominio en la primera etapa, el cual descarta de forma determinante aquellas computadoras portátiles que no satisfacen los requisitos duros del usuario (tales como presupuesto máximo o la presencia de aceleradores CUDA para Data Science). Estos hallazgos validan experimentalmente que la combinación de restricciones deterministas con optimización probabilística multicriterio permite alcanzar niveles óptimos de precisión y cobertura sin sacrificar el tiempo de respuesta del sistema (inferior a $50$ ms).
 
 % ============================================================================
 % 6. CONCLUSIONES
 % ============================================================================
 \section{Conclusiones}
 
-\subsection{Logros Alcanzados}
-\begin{enumerate}
-    \item Se diseñó e implementó exitosamente un \textbf{Sistema de Recomendación Híbrido en Dos Niveles} que integra inferencia lógica binaria ($M_{rules}$), utilidad multi-atributo ($MAUT$), factorización matricial ($SVD$) y filtrado basado en contenido ($TF-IDF$).
-    \item Se mitigó al $100\%$ el problema del inicio en frío (\textit{Cold Start}), alcanzando una métrica $CSR@10 = 100\%$ y una precisión $Precision@10 = 100\%$ en usuarios sin historial previo.
-    \item Se desarrolló una aplicación web completa y funcional utilizando \textbf{FastAPI} en el backend y un frontend dinámico en \textbf{JavaScript ES6+ y Chart.js}, incorporando características comerciales avanzadas como comparador 1vs1, selector multimoneda (USD, PEN, EUR), indicador calidad/precio (\textit{Value Score}) y enlaces directos a ofertas en Amazon.
-    \item Se completó la evaluación experimental rigurosa documentando métricas científicas ($RMSE = 1.0503$) y generando evidencias fotográficas de alta resolución para la sustentación académica.
-\end{enumerate}
+Se logró la optimización algorítmica mediante el diseño e implementación exitosa de un Sistema de Recomendación Híbrido en Dos Niveles que combina inferencia binaria por reglas de dominio, utilidad multi-atributo (MAUT), factorización matricial (SVD) y similitud vectorial por contenido (TF-IDF). Esta arquitectura resolvió al $100\%$ el problema del inicio en frío (\textit{Cold Start}), alcanzando una tasa de cobertura $CSR@10 = 100.00\%$ y manteniendo la estabilidad en la matriz dispersa de calificaciones.
 
-\subsection{Limitaciones del Sistema}
-\begin{enumerate}
-    \item \textbf{Catálogo Sintético Base}: Aunque el catálogo de 150 laptops contiene especificaciones reales, la matriz de ratings fue generada mediante distribuciones estocásticas sintéticas.
-    \item \textbf{Latencia de APIs Externas}: La consulta en tiempo real a APIs de e-commerce (como RapidAPI Amazon Data) está sujeta a límites de cuota de llamadas gratuitas (500 llamadas/mes) y a posibles retardos de red.
-\end{enumerate}
+Se transformó el prototipo algorítmico en una aplicación web interactiva de grado comercial desarrollada con FastAPI en el backend y una interfaz dinámica en Vanilla JavaScript, CSS3 y Chart.js en el frontend. La plataforma proporciona una experiencia de usuario fluida con tiempos de respuesta inferiores a $50$ ms, incorporando funcionalidades como el comparador 1vs1 con veredicto automático, conversión multimoneda global en tiempo real (USD, PEN, EUR) y enlace directo parametrizado hacia ofertas en vivo en Amazon.
 
-\subsection{Aprendizajes Obtenidos}
-\begin{enumerate}
-    \item La hibridación algorítmica es la estrategia más efectiva en la ingeniería de sistemas de recomendación para resolver los dilemas de escasez de datos e inicio en frío.
-    \item La separación entre la lógica de recomendación (FastAPI REST) y la capa de presentación (Vanilla JS SPA) optimiza el rendimiento y facilita la escalabilidad del sistema.
-    \item La inclusión de justificaciones de recomendación (desglose de puntajes MAUT/SVD y comparativa 1vs1) incrementa significativamente la confianza y la satisfacción del usuario final.
-\end{enumerate}
+Se completó una evaluación experimental rigurosa aplicando un esquema de partición de datos 80/20 sobre 1,999 calificaciones del catálogo de 150 portátiles. Los resultados cuantitativos demostraron el alto rendimiento del sistema híbrido, alcanzando un $RMSE = 1.0503$, una $Precision@10 = 100.00\%$ y un $Recall@10 = 95.40\%$, validando la efectividad del modelo para la toma de decisiones complejas en el comercio electrónico de portátiles.
 
 % ============================================================================
 % 7. RECOMENDACIONES
 % ============================================================================
-\section{Recomendaciones y Trabajo Futuro}
+\section{Recomendaciones}
 
-\subsection{Mejoras Futuras}
-\begin{enumerate}
-    \item \textbf{Integración de Modelos Neuronal (Neural Collaborative Filtering - NCF)}: Implementar redes neuronales profundas (Deep Learning) para capturar interacciones no lineales entre usuarios y características de hardware.
-    \item \textbf{Monitoreo en Tiempo Real de Precios}: Desplegar un servicio de fondo (\textit{Cron Job}) utilizando la API de RapidAPI o Keepa para actualizar automáticamente los precios e históricos de Amazon cada 6 horas.
-    \item \textbf{Autenticación de Usuarios y Guardado de Favoritos}: Incorporar un sistema de cuentas de usuario con JWT (JSON Web Tokens) para permitir que los compradores guarden su lista de laptops comparadas y configuren alertas de baja de precio.
-\end{enumerate}
+Se recomienda explorar la incorporación de redes neuronales profundas (Deep Learning), tales como arquitecturas de Filtrado Colaborativo Neuronal (NCF) o Autoencoders, para capturar interacciones complejas no lineales entre los perfiles de usuario y las especificaciones técnicas de hardware en catálogos de mayor escala.
 
-\subsection{Posibles Extensiones del Sistema}
-\begin{enumerate}
-    \item \textbf{Extensión a Otros Dominios Tecnológicos}: Adaptar la arquitectura en dos niveles ($M_{rules} + Ensamble$) para la recomendación de teléfonos inteligentes (smartphones), monitores y componentes de PC (GPUs, CPUs).
-    \item \textbf{Despliegue en la Nube (Cloud Deployment)}: Empaquetar la aplicación en contenedores \textbf{Docker} y desplegarla en servicios como Render, Railway o AWS EC2 para acceso público universal.
-    \item \textbf{Monetización mediante Afiliados}: Integrar credenciales oficiales de Amazon Associates para generar ingresos por comisiones de ventas referidas desde los botones de compra.
-\end{enumerate}
+Se aconseja implementar un servicio de fondo asíncrono (\textit{Cron Job}) conectado a APIs comerciales en tiempo real (como Keepa o la API oficial de Amazon Product Advertising) para automatizar el monitoreo diario de precios y la actualización continua de la serie temporal histórica de ofertas.
+
+Se sugiere expandir la plataforma integrando un módulo de autenticación segura de usuarios mediante tokens JWT, permitiendo a los compradores guardar sus configuraciones de filtrado, mantener una lista personalizada de laptops favoritas y recibir alertas automatizadas por correo electrónico ante caídas de precio.
+
+Se recomienda adaptar la arquitectura híbrida modular de dos niveles a otros dominios tecnológicos de comercio electrónico con alta complejidad técnica, tales como la recomendación de teléfonos inteligentes, monitores de alta gama y componentes de escritorio (GPUs y procesadores).
 
 % ============================================================================
 % 8. REFERENCIAS BIBLIOGRÁFICAS
