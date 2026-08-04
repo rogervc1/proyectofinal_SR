@@ -494,7 +494,7 @@ La Figura \ref{fig:cap_dash} ilustra la vista general de la aplicación en modo 
     \caption{Dashboard Principal de la aplicación Recomendador Híbrido de Laptops.}
     \label{fig:cap_dash}
 \end{figure}
-\textit{Análisis Técnico}: La pantalla principal está dividida en tres zonas funcionales: (i) el panel lateral de control con sliders dinámicos para ajustar las ponderaciones MAUT ($\alpha, \beta, \gamma$), (ii) los botones de filtro rápido por perfiles latentes (Gamer, Oficina, Data Science), y (iii) la grilla principal de 9 tarjetas de recomendación Top-K. Cada ajuste en los sliders re-calcula el ranking híbrido $Score_{hybrid}$ en tiempo real ($<50$ ms) mediante la REST API en FastAPI.
+La pantalla principal está dividida en tres zonas funcionales: (i) el panel lateral de control con sliders dinámicos para ajustar las ponderaciones MAUT ($\alpha, \beta, \gamma$), (ii) los botones de filtro rápido por perfiles latentes (Gamer, Oficina, Data Science), y (iii) la grilla principal de 9 tarjetas de recomendación Top-K. Cada ajuste en los sliders re-calcula el ranking híbrido $Score_{hybrid}$ en tiempo real ($<50$ ms) mediante la REST API en FastAPI.
 
 \paragraph{2. Tarjeta de Recomendación y Vinculación con Amazon}
 La Figura \ref{fig:cap_card} exhibe la estructura anatómica de una tarjeta de recomendación.
@@ -504,7 +504,7 @@ La Figura \ref{fig:cap_card} exhibe la estructura anatómica de una tarjeta de r
     \caption{Tarjeta de recomendación con desglose de puntaje y enlace a oferta en Amazon.}
     \label{fig:cap_card}
 \end{figure}
-\textit{Análisis Técnico}: La tarjeta proyecta tres elementos clave: (i) la insignia de valor \textit{Value Score} (\textit{Precio Justo}, \textit{Top Calidad/Precio}), (ii) las barras de progreso desglosando la coincidencia por submodelo (MAUT 63\%, SVD 44\%, Contenido 74\%), y (iii) la barra inferior con botones independientes: a la izquierda el enlace directo parametrizado a **Amazon** (\texttt{https://www.amazon.com/s?k=Marca+Modelo}) y a la derecha el disparador del gráfico modal de precios.
+La tarjeta proyecta tres elementos clave: (i) la insignia de valor \textit{Value Score} (\textit{Precio Justo}, \textit{Top Calidad/Precio}), (ii) las barras de progreso desglosando la coincidencia por submodelo (MAUT 63\%, SVD 44\%, Contenido 74\%), y (iii) la barra inferior con botones independientes: a la izquierda el enlace directo parametrizado a \textbf{Amazon} (\texttt{https://www.amazon.com/s?k=Marca+Modelo}) y a la derecha el disparador del gráfico modal de precios.
 
 \paragraph{3. Comparador Cara a Cara (Head-to-Head 1vs1)}
 La Figura \ref{fig:cap_compare} muestra el modal comparativo cara a cara desplegado al seleccionar dos portátiles.
@@ -514,7 +514,7 @@ La Figura \ref{fig:cap_compare} muestra el modal comparativo cara a cara despleg
     \caption{Modal de Comparativa Cara a Cara (1vs1) entre dos computadoras portátiles.}
     \label{fig:cap_compare}
 \end{figure}
-\textit{Análisis Técnico}: El modal organiza una matriz comparativa de dos columnas paralelas. Un algoritmo de inferencia en JavaScript compara atributo por atributo (núcleos de CPU, memoria RAM, VRAM de GPU, peso y resolución) y resalta automáticamente en verde con íconos de check las especificaciones ganadoras. En la parte inferior, emite un párrafo de veredicto final fundamentado en la relación calidad/precio.
+El modal organiza una matriz comparativa de dos columnas paralelas. Un algoritmo de inferencia en JavaScript compara atributo por atributo (núcleos de CPU, memoria RAM, VRAM de GPU, peso y resolución) y resalta automáticamente en verde con íconos de check las especificaciones ganadoras. En la parte inferior, emite un párrafo de veredicto final fundamentado en la relación calidad/precio.
 
 \paragraph{4. Gráfica de Tendencia e Histórico de Precios en Chart.js}
 La Figura \ref{fig:cap_chart} presenta la ventana modal interactiva con la serie temporal del precio.
@@ -524,7 +524,7 @@ La Figura \ref{fig:cap_chart} presenta la ventana modal interactiva con la serie
     \caption{Gráfica interactiva de tendencia e histórico de precios en 6 meses con Chart.js.}
     \label{fig:cap_chart}
 \end{figure}
-\textit{Análisis Técnico}: Utilizando la librería **Chart.js** sobre un elemento Canvas HTML5, el modal dibuja la curva de fluctuación del precio en los últimos 6 meses a partir de la propiedad JSON \texttt{price\_history\_json}. Además, despliega tarjetas resumen con el Precio Actual, Mínimo Histórico, Máximo Histórico y Promedio a 6 meses.
+Utilizando la librería \textbf{Chart.js} sobre un elemento Canvas HTML5, el modal dibuja la curva de fluctuación del precio en los últimos 6 meses a partir de la propiedad JSON \texttt{price\_history\_json}. Además, despliega tarjetas resumen con el Precio Actual, Mínimo Histórico, Máximo Histórico y Promedio a 6 meses.
 
 \paragraph{5. Selector Multimoneda Global (Soles Peruanos PEN S/)}
 La Figura \ref{fig:cap_currency} demuestra el funcionamiento del motor dinámico multimoneda.
@@ -534,7 +534,7 @@ La Figura \ref{fig:cap_currency} demuestra el funcionamiento del motor dinámico
     \caption{Aplicación adaptada dinámicamente a la moneda Soles Peruanos (PEN S/).}
     \label{fig:cap_currency}
 \end{figure}
-\textit{Análisis Técnico}: Al seleccionar la opción \textbf{PEN (S/ Soles)} en la barra superior de navegación, un oyente de eventos en JavaScript ejecuta la función \texttt{formatPrice()}, convirtiendo al instante todas las cifras monetarias visible en la interfaz (tarjetas, modal 1vs1, modal de precios, catálogo y slider de presupuesto) multiplicando por el tipo de cambio oficial $1.0\text{ USD} = 3.75\text{ PEN}$.
+Al seleccionar la opción \textbf{PEN (S/ Soles)} en la barra superior de navegación, un oyente de eventos en JavaScript ejecuta la función \texttt{formatPrice()}, convirtiendo al instante todas las cifras monetarias visible en la interfaz (tarjetas, modal 1vs1, modal de precios, catálogo y slider de presupuesto) multiplicando por el tipo de cambio oficial $1.0\text{ USD} = 3.75\text{ PEN}$.
 
 \paragraph{6. Filtros de Estilo de Vida y Hardware}
 La Figura \ref{fig:cap_lifestyle} ilustra la aplicación del Nivel 1 de reglas lógicas.
@@ -544,7 +544,7 @@ La Figura \ref{fig:cap_lifestyle} ilustra la aplicación del Nivel 1 de reglas l
     \caption{Panel de preferencias con filtros de hardware y estilo de vida activados.}
     \label{fig:cap_lifestyle}
 \end{figure}
-\textit{Análisis Técnico}: Al marcar casillas de verificación como \textit{Pantalla OLED}, \textit{Aceleradores CUDA} o \textit{RAM $\ge 16$GB}, la máscara binaria $M_{rules}$ descarta de inmediato los modelos no aptos. La interfaz informa cuántas laptops superaron el filtro (ej. 702 de 1,273 modelos en el catálogo ampliado).
+Al marcar casillas de verificación como \textit{Pantalla OLED}, \textit{Aceleradores CUDA} o \textit{RAM $\ge 16$GB}, la máscara binaria $M_{rules}$ descarta de inmediato los modelos no aptos. La interfaz informa cuántas laptops superaron el filtro (ej. 702 de 1,273 modelos en el catálogo ampliado).
 
 \paragraph{7. Catálogo Completo y Búsqueda en Tiempo Real}
 La Figura \ref{fig:cap_catalog} exhibe la pestaña del catálogo completo de 150 portátiles.
@@ -554,7 +554,7 @@ La Figura \ref{fig:cap_catalog} exhibe la pestaña del catálogo completo de 150
     \caption{Vista de la pestaña del Catálogo Completo de 150 laptops con buscador.}
     \label{fig:cap_catalog}
 \end{figure}
-\textit{Análisis Técnico}: La vista proporciona una tabla de datos completa con ordenamiento por cualquier columna y un campo de búsqueda predictiva en tiempo real que filtra por marca o nombre de modelo.
+La vista proporciona una tabla de datos completa con ordenamiento por cualquier columna y un campo de búsqueda predictiva en tiempo real que filtra por marca o nombre de modelo.
 
 \paragraph{8. Pestaña de Evaluación Científica Embebida}
 La Figura \ref{fig:cap_eval} muestra el módulo de evaluación científica incorporado en el frontend.
@@ -564,7 +564,7 @@ La Figura \ref{fig:cap_eval} muestra el módulo de evaluación científica incor
     \caption{Pestaña de Evaluación Científica proyectando métricas y gráficos de rendimiento.}
     \label{fig:cap_eval}
 \end{figure}
-\textit{Análisis Técnico}: Diseñado para la auditoría docente durante la sustentación, este panel consulta el endpoint \texttt{/api/metrics} y proyecta en vivo las curvas de $RMSE$, $Precision@K$, $Recall@K$ y la comparación de $CSR@K$ frente al modelo SVD colaborativo aislado.
+Diseñado para la auditoría docente durante la sustentación, este panel consulta el endpoint \texttt{/api/metrics} y proyecta en vivo las curvas de $RMSE$, $Precision@K$, $Recall@K$ y la comparación de $CSR@K$ frente al modelo SVD colaborativo aislado.
 
 % ============================================================================
 % 5. DISCUSIÓN
