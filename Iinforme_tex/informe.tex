@@ -298,6 +298,35 @@ La Figura \ref{fig:diagrama_arquitectura} muestra el acoplamiento de tres capas 
     \label{fig:diagrama_arquitectura}
 \end{figure}
 
+\subsection{Tecnologías y Stack de Desarrollo Empleados}
+El desarrollo del proyecto integró un stack tecnológico moderno, ligero y desacoplado, como se detalla en la Tabla \ref{tab:tecnologias_stack}.
+
+\begin{table}[H]
+\centering
+\caption{Stack tecnológico de desarrollo empleado en el proyecto LaptopRec.}
+\label{tab:tecnologias_stack}
+\begin{tabular}{lll}
+\toprule
+\textbf{Capa / Componente} & \textbf{Tecnología / Librería} & \textbf{Función en el Sistema} \\
+\midrule
+Backend REST & Python 3.10 / FastAPI & Servidor ASGI asíncrono y controladores REST API. \\
+Inferencia y ML & Scikit-Learn / NumPy & Vectorización TF-IDF y operaciones matriciales. \\
+Modelo Colaborativo & Custom SVD / Surprise & Factorización matricial de calificaciones. \\
+Servidor Web & Uvicorn & Servidor ASGI de alto rendimiento. \\
+Frontend Client & Vanilla JavaScript ES6+ & Lógica de interacción SPA sin dependencias pesadas. \\
+Estilos Visuales & Vanilla CSS3 & Diseño responsivo en Dark Mode HSL y Glassmorphism. \\
+Gráficos Dinámicos & Chart.js (via CDN) & Visualización de series temporales de precios. \\
+Captura de Evidencias & Playwright Python & Generación automatizada de capturas en alta resolución. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Capa Backend (FastAPI + Python)}: Se utilizó \textbf{FastAPI} por su elevadísima velocidad de ejecución construida sobre Starlette y Pydantic, permitiendo serializar y validar esquemas JSON de recomendación en menos de 10 ms por petición.
+    \item \textbf{Capa Frontend (Vanilla JS + CSS3 + Chart.js)}: Se prescindió de frameworks frontend pesados para maximizar la velocidad de carga. La biblioteca \textbf{Chart.js} permite dibujar sobre elementos Canvas gráficos interactivos fluorescente con soporte para tooltip e inspección de precios históricos.
+    \item \textbf{Integración Comercial de Amazon y Multimoneda}: Se construyeron funciones en JavaScript que generan URLs parametrizadas de búsqueda directa a Amazon y reconvierten precios globalmente entre USD, PEN y EUR.
+\end{itemize}
+
 \subsection{Pseudocódigo de los Algoritmos Principales}
 
 \begin{lstlisting}[language=Python, caption={Pseudocódigo del Filtro de Reglas Lógicas de Dominio (Nivel 1)}, label={algo:rules}]
@@ -453,85 +482,89 @@ Las Figuras \ref{fig:eval_csr} y \ref{fig:eval_pr} ilustran las curvas empírica
 
 \subsection{Evidencias Fotográficas de la Aplicación Funcional}
 
-\subsubsection{1. Dashboard Principal e Interfaz Híbrida}
-La Figura \ref{fig:cap_dash} ilustra la vista general del dashboard en modo oscuro.
+\subsubsection{5. Evidencias Fotográficas y Análisis Detallado del Funcionamiento de la Aplicación}
 
+A continuación se presentan las evidencias visuales del software desarrollado, acompañadas del análisis técnico correspondiente a cada módulo funcional.
+
+\paragraph{1. Dashboard Principal e Interfaz Híbrida}
+La Figura \ref{fig:cap_dash} ilustra la vista general de la aplicación en modo oscuro.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/01_dashboard_principal_hibrido.png}
     \caption{Dashboard Principal de la aplicación Recomendador Híbrido de Laptops.}
     \label{fig:cap_dash}
 \end{figure}
+\textit{Análisis Técnico}: La pantalla principal está dividida en tres zonas funcionales: (i) el panel lateral de control con sliders dinámicos para ajustar las ponderaciones MAUT ($\alpha, \beta, \gamma$), (ii) los botones de filtro rápido por perfiles latentes (Gamer, Oficina, Data Science), y (iii) la grilla principal de 9 tarjetas de recomendación Top-K. Cada ajuste en los sliders re-calcula el ranking híbrido $Score_{hybrid}$ en tiempo real ($<50$ ms) mediante la REST API en FastAPI.
 
-\subsubsection{2. Tarjetas de Recomendación y Oferta en Amazon}
-La Figura \ref{fig:cap_card} muestra el diseño de una tarjeta de recomendación con desglose de utilidad y botón a Amazon.
-
+\paragraph{2. Tarjeta de Recomendación y Vinculación con Amazon}
+La Figura \ref{fig:cap_card} exhibe la estructura anatómica de una tarjeta de recomendación.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/02_tarjeta_laptop_oferta_amazon.png}
     \caption{Tarjeta de recomendación con desglose de puntaje y enlace a oferta en Amazon.}
     \label{fig:cap_card}
 \end{figure}
+\textit{Análisis Técnico}: La tarjeta proyecta tres elementos clave: (i) la insignia de valor \textit{Value Score} (\textit{Precio Justo}, \textit{Top Calidad/Precio}), (ii) las barras de progreso desglosando la coincidencia por submodelo (MAUT 63\%, SVD 44\%, Contenido 74\%), y (iii) la barra inferior con botones independientes: a la izquierda el enlace directo parametrizado a **Amazon** (\texttt{https://www.amazon.com/s?k=Marca+Modelo}) y a la derecha el disparador del gráfico modal de precios.
 
-\subsubsection{3. Comparador Cara a Cara (Head-to-Head 1vs1)}
-La Figura \ref{fig:cap_compare} exhibe el modal de comparativa cara a cara con veredicto automático.
-
+\paragraph{3. Comparador Cara a Cara (Head-to-Head 1vs1)}
+La Figura \ref{fig:cap_compare} muestra el modal comparativo cara a cara desplegado al seleccionar dos portátiles.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.90\textwidth]{figuras/03_comparador_head_to_head_1vs1.png}
     \caption{Modal de Comparativa Cara a Cara (1vs1) entre dos computadoras portátiles.}
     \label{fig:cap_compare}
 \end{figure}
+\textit{Análisis Técnico}: El modal organiza una matriz comparativa de dos columnas paralelas. Un algoritmo de inferencia en JavaScript compara atributo por atributo (núcleos de CPU, memoria RAM, VRAM de GPU, peso y resolución) y resalta automáticamente en verde con íconos de check las especificaciones ganadoras. En la parte inferior, emite un párrafo de veredicto final fundamentado en la relación calidad/precio.
 
-\subsubsection{4. Gráfica de Tendencia e Histórico de Precios (Chart.js)}
-La Figura \ref{fig:cap_chart} presenta la gráfica interactiva de tendencia de precios en 6 meses.
-
+\paragraph{4. Gráfica de Tendencia e Histórico de Precios en Chart.js}
+La Figura \ref{fig:cap_chart} presenta la ventana modal interactiva con la serie temporal del precio.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.90\textwidth]{figuras/04_grafica_tendencia_precios_chartjs.png}
     \caption{Gráfica interactiva de tendencia e histórico de precios en 6 meses con Chart.js.}
     \label{fig:cap_chart}
 \end{figure}
+\textit{Análisis Técnico}: Utilizando la librería **Chart.js** sobre un elemento Canvas HTML5, el modal dibuja la curva de fluctuación del precio en los últimos 6 meses a partir de la propiedad JSON \texttt{price\_history\_json}. Además, despliega tarjetas resumen con el Precio Actual, Mínimo Histórico, Máximo Histórico y Promedio a 6 meses.
 
-\subsubsection{5. Selector Multimoneda Global (Soles S/)}
-La Figura \ref{fig:cap_currency} demuestra la conversión multimoneda global en Soles Peruanos (PEN S/).
-
+\paragraph{5. Selector Multimoneda Global (Soles Peruanos PEN S/)}
+La Figura \ref{fig:cap_currency} demuestra el funcionamiento del motor dinámico multimoneda.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/05_selector_monedas_soles_pen.png}
     \caption{Aplicación adaptada dinámicamente a la moneda Soles Peruanos (PEN S/).}
     \label{fig:cap_currency}
 \end{figure}
+\textit{Análisis Técnico}: Al seleccionar la opción \textbf{PEN (S/ Soles)} en la barra superior de navegación, un oyente de eventos en JavaScript ejecuta la función \texttt{formatPrice()}, convirtiendo al instante todas las cifras monetarias visible en la interfaz (tarjetas, modal 1vs1, modal de precios, catálogo y slider de presupuesto) multiplicando por el tipo de cambio oficial $1.0\text{ USD} = 3.75\text{ PEN}$.
 
-\subsubsection{6. Filtros de Estilo de Vida (Lifestyle Tags)}
-La Figura \ref{fig:cap_lifestyle} ilustra la activación de filtros de hardware y estilo de vida.
-
+\paragraph{6. Filtros de Estilo de Vida y Hardware}
+La Figura \ref{fig:cap_lifestyle} ilustra la aplicación del Nivel 1 de reglas lógicas.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/06_filtros_estilo_de_vida_lifestyle.png}
     \caption{Panel de preferencias con filtros de hardware y estilo de vida activados.}
     \label{fig:cap_lifestyle}
 \end{figure}
+\textit{Análisis Técnico}: Al marcar casillas de verificación como \textit{Pantalla OLED}, \textit{Aceleradores CUDA} o \textit{RAM $\ge 16$GB}, la máscara binaria $M_{rules}$ descarta de inmediato los modelos no aptos. La interfaz informa cuántas laptops superaron el filtro (ej. 702 de 1,273 modelos en el catálogo ampliado).
 
-\subsubsection{7. Catálogo Completo de 150 Laptops}
-La Figura \ref{fig:cap_catalog} muestra la pestaña interactiva del catálogo completo con buscador.
-
+\paragraph{7. Catálogo Completo y Búsqueda en Tiempo Real}
+La Figura \ref{fig:cap_catalog} exhibe la pestaña del catálogo completo de 150 portátiles.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/07_catalogo_completo_150_laptops.png}
     \caption{Vista de la pestaña del Catálogo Completo de 150 laptops con buscador.}
     \label{fig:cap_catalog}
 \end{figure}
+\textit{Análisis Técnico}: La vista proporciona una tabla de datos completa con ordenamiento por cualquier columna y un campo de búsqueda predictiva en tiempo real que filtra por marca o nombre de modelo.
 
-\subsubsection{8. Pestaña de Evaluación Científica}
-La Figura \ref{fig:cap_eval} proyecta las métricas empíricas dentro de la interfaz web.
-
+\paragraph{8. Pestaña de Evaluación Científica Embebida}
+La Figura \ref{fig:cap_eval} muestra el módulo de evaluación científica incorporado en el frontend.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/08_evaluacion_cientifica_metricas_csr.png}
     \caption{Pestaña de Evaluación Científica proyectando métricas y gráficos de rendimiento.}
     \label{fig:cap_eval}
 \end{figure}
+\textit{Análisis Técnico}: Diseñado para la auditoría docente durante la sustentación, este panel consulta el endpoint \texttt{/api/metrics} y proyecta en vivo las curvas de $RMSE$, $Precision@K$, $Recall@K$ y la comparación de $CSR@K$ frente al modelo SVD colaborativo aislado.
 
 % ============================================================================
 % 5. DISCUSIÓN
